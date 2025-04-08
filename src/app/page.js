@@ -14,7 +14,7 @@ export default function Home() {
           priority
         />
         <ol>
-          <li>HELLO WORLD!</li>
+          <li>HELLO WORLD! This is the Good Boys Dog Grooming Website</li>
           <li>Save and see your changes instantly.</li>
         </ol>
 
