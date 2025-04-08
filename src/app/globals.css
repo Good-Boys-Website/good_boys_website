@@ -35,6 +35,21 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: black;
+  padding: 1rem 1.4rem 1rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

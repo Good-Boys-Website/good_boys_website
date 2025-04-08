@@ -1,5 +1,5 @@
 "use client";
 
 export default function Footer() {
-  return <hi>This is the Footer</hi>;
+  return <h1>This is the Footer</h1>;
 }
