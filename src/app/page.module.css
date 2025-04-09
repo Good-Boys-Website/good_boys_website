@@ -5,6 +5,10 @@
   min-height: 100vh;
 }
 
+.subHeader {
+  margin-bottom: 4rem;
+}
+
 .heroPhotoContainer {
   display: flex;
   align-items: center;
@@ -12,6 +16,7 @@
   width: 90vw;
   height: 800px;
   overflow: hidden;
+  border-radius: 8px;
   margin-bottom: 10rem;
 }
 
