@@ -1,0 +1,65 @@
+.footer {
+    background-color: #374d64;
+}
+
+.footerCtas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+.mascot {
+    width: 180px;
+    height: auto;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.buttonSection {
+    display: flex;
+}
+
+.footerButton {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    padding: 1.4rem 1.8rem 1.4rem 1.8rem;
+    margin: .5rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .linkSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .iconSection {
+margin-left: 3rem;
+padding-bottom: 10rem;
+  }
+
+  .icon {
+    color: white;
+    font-size: 24px;
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .links {
+    display: flex;
+    margin-right: 3rem;
+    width: 600px;
+    flex-wrap: wrap;
+  }
+
+  .link {
+    color: white;
+    font-weight: normal;
+    margin: 0rem 4.2rem 2rem 4.2rem;
+  }
