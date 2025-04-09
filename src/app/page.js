@@ -6,12 +6,6 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>HELLO WORLD! This is the Good Boys Dog Grooming Website</h1>
-        <Image
-          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860707/Poodle_GoodBoys_va3ted.svg"
-          alt="good boys lopgo featuring an illsutarion of a dog with sunglasses"
-          width={90}
-          height={81}
-        />
 
         {/*<div className={styles.ctas}>
           <a
