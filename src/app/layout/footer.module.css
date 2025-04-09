@@ -23,15 +23,22 @@
     display: flex;
 }
 
-.footerButton {
+.footerButtonOne, .footerButton {
     color: white;
     font-weight: bold;
     font-size: 18px;
     background-color: black;
-    padding: 1.4rem 1.8rem 1.4rem 1.8rem;
-    margin: .5rem;
+    padding: 1rem 1.4rem 1rem 1.4rem;
+    margin-left: 2rem;
+    border: 1px solid white;
     border-radius: 8px;
     cursor: pointer;
+  }
+
+  .footerButtonOne {
+color: black;
+background-color: white;
+border: 1px solid white;
   }
 
   .linkSection {

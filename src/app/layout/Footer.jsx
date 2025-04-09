@@ -21,7 +21,7 @@ export default function Footer() {
           height={81}
         />
         <div className={styles.buttonSection}>
-          <p className={styles.footerButton}>BOOK NOW</p>
+          <p className={styles.footerButtonOne}>BOOK NOW</p>
           <p className={styles.footerButton}>CONTACT US</p>
         </div>
       </section>
