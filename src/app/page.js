@@ -4,34 +4,34 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <h1>HELLO WORLD! This is the Good Boys Dog Grooming Website</h1>
-
-        {/*<div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>*/}
+      <main>
+        <h1>Your dog called - They want a makeover.</h1>
+        <h2 className={styles.subHeader}>
+          Book today for the ultimate spa day.
+        </h2>
+        <div className={styles.heroPhotoContainer}>
+          <Image
+            className={styles.heroPhoto}
+            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860611/FullSizeRender_VSCO_5_wrmerf.jpg"
+            alt="Photo of a freshly groomed dog"
+            width={3024}
+            height={4032}
+          />
+        </div>
+        <section>
+          {/*<Image
+            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860630/IMG_6897_pgvr53.heic"
+            alt="Photo of a freshly groomed dog"
+            width={3024}
+            height={4032}
+          />
+          <Image
+            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860666/IMG_5850_v4jj2r.heic"
+            alt="Photo of a freshly groomed dog"
+            width={3024}
+            height={4032}
+          />*/}
+        </section>
       </main>
     </div>
   );
