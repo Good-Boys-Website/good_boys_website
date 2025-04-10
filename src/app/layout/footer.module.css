@@ -24,6 +24,7 @@
 }
 
 .footerButtonOne, .footerButton {
+  font-family: "IntroRust", Arial, sans-serif;
     color: white;
     font-weight: bold;
     font-size: 18px;

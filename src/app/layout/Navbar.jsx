@@ -6,10 +6,10 @@ import styles from "./navbar.module.css";
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
-      <p>HOME</p>
-      <p>SERVICES</p>
-      <p>FAQ</p>
-      <p>ABOUT</p>
+      <p className={styles.link}>HOME</p>
+      <p className={styles.link}>SERVICES</p>
+      <p className={styles.link}>FAQ</p>
+      <p className={styles.link}>ABOUT</p>
       <Image
         className={styles.navLogo}
         src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860689/Logo_Extraction_4_kfuxzj.png"
@@ -17,9 +17,9 @@ export default function Navbar() {
         width={1563}
         height={1563}
       />
-      <p>STAFF</p>
-      <p>CONTACT US</p>
-      <button>BOOK HERE</button>
+      <p className={styles.link}>STAFF</p>
+      <p className={styles.link}>CONTACT US</p>
+      <button className={styles.link}>BOOK HERE</button>
     </nav>
   );
 }
