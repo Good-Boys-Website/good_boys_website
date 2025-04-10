@@ -2,7 +2,7 @@ export const reviews = [
   {
     id: 1,
     review:
-      "We love Good Boys! Nick is so lovely with our two small dogs, who always come out looking perky, pretty and squeaky clean. Good Boys has our full loyalty, we can’t imagine going anywhere else for our grooming.",
+      "We love Good Boys! Nick is so lovely with our two small dogs, who always come out looking perky, pretty and squeaky clean. Good Boys has our full loyalty, we can't imagine going anywhere else for our grooming.",
     name: "Bari S.",
   },
   {
