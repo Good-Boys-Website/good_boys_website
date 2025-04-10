@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 function ReviewCard({ review, name }) {
   return (
     <li className={styles.review}>
-      <p className={styles.reviewContent}>"{review}"</p>
+      <p className={styles.reviewContent}>&quot;{review}&quot;</p>
       <p className={styles.reviewName}>- {name}</p>
     </li>
   );
