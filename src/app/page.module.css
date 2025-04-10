@@ -5,7 +5,15 @@
   min-height: 100vh;
 }
 
-.subHeader {
+.header {
+  font-family: "IntroRust", Arial, sans-serif;
+  font-size: 60px;
+  line-height: 1.5;
+  width: 800px;
+}
+
+ .subHeader {
+  font-family: "IntroRust", Arial, sans-serif;
   margin-bottom: 4rem;
 }
 
@@ -27,7 +35,9 @@
 }
 
 .reviewsHeader {
-  font-size: 40px;
+  font-family: "IntroRust", Arial, sans-serif;
+  font-size: 50px;
+  line-height: 1.5;
   width: 720px;
   flex-wrap: wrap;
   margin-bottom: 2rem;

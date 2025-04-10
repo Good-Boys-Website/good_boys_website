@@ -15,7 +15,9 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main>
-        <h1>Your dog called - They want a makeover.</h1>
+        <h1 className={styles.header}>
+          Your dog called - They want a makeover.
+        </h1>
         <h2 className={styles.subHeader}>
           Book today for the ultimate spa day.
         </h2>

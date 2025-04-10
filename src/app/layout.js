@@ -1,7 +1,12 @@
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
+import localFont from "next/font/local";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+const introRust = localFont({
+  src: ".//fonts/IntroRust-Base.otf",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,7 +26,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${introRust.variable}`}
+      >
         <Navbar />
         {children}
         <Footer />
