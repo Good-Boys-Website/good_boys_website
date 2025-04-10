@@ -26,6 +26,42 @@
   margin-bottom: 8rem;
 }
 
+.reviewsHeader {
+  font-size: 40px;
+  width: 720px;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.reviewsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  list-style-type: none;
+  max-width: 380px;
+  padding: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 6rem;
+  border: 1px solid #c4c2bf;
+  border-radius: 8px;
+}
+
+.reviewContent, .reviewName {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 32px;
+}
+
+.reviewContent {
+  margin-bottom: 2rem;
+}
+
 @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;

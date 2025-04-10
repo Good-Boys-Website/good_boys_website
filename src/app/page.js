@@ -1,5 +1,15 @@
 import Image from "next/image";
+import { reviews } from "./data/reviews";
 import styles from "./page.module.css";
+
+function ReviewCard({ review, name }) {
+  return (
+    <li className={styles.review}>
+      <p className={styles.reviewContent}>"{review}"</p>
+      <p className={styles.reviewName}>- {name}</p>
+    </li>
+  );
+}
 
 export default function Home() {
   return (
@@ -20,7 +30,7 @@ export default function Home() {
         </div>
         <section>
           {/*<Image
-            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860630/IMG_6897_pgvr53.heic"
+            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860611/FullSizeRender_VSCO_5_wrmerf.jpg"
             alt="Photo of a freshly groomed dog"
             width={3024}
             height={4032}
@@ -31,6 +41,20 @@ export default function Home() {
             width={3024}
             height={4032}
           />*/}
+        </section>
+        <section>
+          <h1 className={styles.reviewsHeader}>
+            See what our clients are saying about us.
+          </h1>
+          <ul className={styles.reviewsContainer}>
+            {reviews.map((review) => (
+              <ReviewCard
+                key={review.id}
+                review={review.review}
+                name={review.name}
+              />
+            ))}
+          </ul>
         </section>
       </main>
     </div>
