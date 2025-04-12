@@ -46,7 +46,7 @@ export default function Home() {
           <h3>Best-in-class grooms for Chicago dogs.</h3>
           <p>
             Good boys prioritizes stress-free grooming by operating at a small
-            scale. It's simple: dogs get stressed out, just like us. We want to
+            scale. Its simple: dogs get stressed out, just like us. We want to
             keep the vibes mellow and ensure your dog <b>loves</b> their
             groomer.
           </p>
