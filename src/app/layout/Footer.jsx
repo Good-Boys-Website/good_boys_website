@@ -1,8 +1,6 @@
 "use client";
 
 import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 import Image from "next/image";
@@ -27,10 +25,15 @@ export default function Footer() {
       </section>
       <section className={styles.linkSection}>
         <div className={styles.iconSection}>
-          <FaFacebook className={styles.icon} />
-          <FaLinkedin className={styles.icon} />
-          <FaYoutube className={styles.icon} />
-          <FaInstagram className={styles.icon} />
+          <a href="https://www.facebook.com/gboysdoggrooming" target="_blank">
+            <FaFacebook className={styles.icon} />
+          </a>
+          <a
+            href="https://www.instagram.com/gbdoggrooming/?hl=en"
+            target="_blank"
+          >
+            <FaInstagram className={styles.icon} />
+          </a>
         </div>
         <div className={styles.links}>
           <p className={styles.link}>HOME</p>

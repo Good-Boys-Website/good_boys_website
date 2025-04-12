@@ -17,21 +17,17 @@
   margin-bottom: 4rem;
 }
 
-.heroPhotoContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.heroPhoto {
   width: 90vw;
-  height: 800px;
-  overflow: hidden;
-  border-radius: 8px;
-  margin-bottom: 10rem;
+  height: auto;
+  border-radius: 8px;;
+  margin-bottom: 8rem;
 }
 
-.heroPhoto {
-  width: 100vw;
+.spaDog {
+  width: 460px;
   height: auto;
-  margin-bottom: 8rem;
+  border-radius: 8px;
 }
 
 .reviewsHeader {
