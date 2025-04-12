@@ -21,29 +21,44 @@ export default function Home() {
         <h2 className={styles.subHeader}>
           Book today for the ultimate spa day.
         </h2>
-        <div className={styles.heroPhotoContainer}>
-          <Image
-            className={styles.heroPhoto}
-            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860611/FullSizeRender_VSCO_5_wrmerf.jpg"
-            alt="Photo of a freshly groomed dog"
-            width={3024}
-            height={4032}
-          />
-        </div>
+        <Image
+          className={styles.heroPhoto}
+          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744333722/resized_b08phu.jpg"
+          alt="Photo of a freshly groomed dog"
+          width={2972}
+          height={1699}
+        />
         <section>
-          {/*<Image
-            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860611/FullSizeRender_VSCO_5_wrmerf.jpg"
+          <Image
+            className={styles.spaDog}
+            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744333191/IMG_6897_aogyjy.jpg"
             alt="Photo of a freshly groomed dog"
             width={3024}
             height={4032}
           />
           <Image
-            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860666/IMG_5850_v4jj2r.heic"
+            className={styles.spaDog}
+            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744333190/IMG_9259_tb4coe.jpg"
             alt="Photo of a freshly groomed dog"
             width={3024}
             height={4032}
-          />*/}
+          />
+          <h3>Best-in-class grooms for Chicago dogs.</h3>
+          <p>
+            Good boys prioritizes stress-free grooming by operating at a small
+            scale. Its simple: dogs get stressed out, just like us. We want to
+            keep the vibes mellow and ensure your dog <b>loves</b> their
+            groomer.
+          </p>
         </section>
+        <Image
+          className={styles.spaDog}
+          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744333190/IMG_5850_kj7igd.jpg"
+          alt="Photo of a freshly groomed dog"
+          width={3024}
+          height={4032}
+        />
+        <section></section>
         <section>
           <h1 className={styles.reviewsHeader}>
             See what our clients are saying about us.
