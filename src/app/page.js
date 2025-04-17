@@ -85,13 +85,13 @@ export default function Home() {
               </li>
               <li className={styles.copyBody}>
                 ... taking it at your dogs pace. Sometimes we need to take treat
-                breaks, and that's okay.
+                breaks, and that&apos;s okay.
               </li>
               <li className={styles.copyHeader}>
                 Finally, a nail trim and ear cleaning...
               </li>
               <li className={styles.copyBody}>
-                ... and once we wrap up, they're sent home with a seasonal
+                ... and once we wrap up, they&apos;re sent home with a seasonal
                 bandana. How cute is that?
               </li>
             </ul>
