@@ -71,3 +71,47 @@ padding-bottom: 10rem;
     font-weight: normal;
     margin: 0rem 4.2rem 2rem 4.2rem;
   }
+
+  @media (max-width: 1000px) {
+    .footerCtas {
+      flex-direction: column;
+      margin: 0rem 1rem 0rem 1rem;
+    }
+
+    .mascot {
+      align-self: flex-start;
+      width: 100px;
+    }
+    .buttonSection {
+      flex-direction: column;
+      width: 90%;
+    }
+    .footerButtonOne, .footerButton {
+      text-align: center;
+      margin-left: 0rem;
+      margin-bottom: 2rem;
+    }
+    .linkSection {
+      flex-direction: column;
+    }
+
+    .iconSection {
+      align-self: center;
+      margin-left: 0rem;
+padding-bottom: 2rem;
+padding-top: 2rem;
+    }
+
+    .links {
+      flex-direction: row;
+      justify-content: center;
+      margin-right: 0rem;
+      margin-bottom: 4rem;
+      width: 100%;
+    }
+
+    .link {
+      margin: 1rem;
+      margin-top: 0rem;
+    }
+  }
