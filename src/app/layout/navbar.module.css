@@ -33,6 +33,7 @@
     display: block;
     width: 200px;
     height: auto;
+    margin-left: 1rem;
   }
 
   /* hamburger */
@@ -114,6 +115,10 @@
     display: block;
     flex-direction: column;
     text-align: center;
-    height: 50vh;
+    height: 60vh;
+  }
+  .navItem {
+    font-size: 22px;
+    margin: 2rem 0rem 2rem 0rem;
   }
 }
