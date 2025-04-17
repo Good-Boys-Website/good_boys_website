@@ -47,6 +47,10 @@ p {
   font-size: 18px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 button {
   color: white;
   font-weight: bold;

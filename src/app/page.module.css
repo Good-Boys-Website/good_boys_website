@@ -24,10 +24,68 @@
   margin-bottom: 8rem;
 }
 
-.spaDog {
-  width: 460px;
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+}
+
+.spaDog, .spaDogThree {
+  width: 380px;
   height: auto;
   border-radius: 8px;
+}
+
+.spaDogThree {
+  width: 640px;
+}
+
+.groomCopyMobile {
+  display: none;
+}
+
+.sectionHeader, .sectionHeaderTwo {
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: -1;
+  width: 340px;
+  margin-bottom: 2rem;
+}
+
+.sectionHeaderTwo {
+  width: 540px;
+  margin-bottom: 4rem;
+}
+
+.spaSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyHeader {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.copy, .copyBody {
+  color: #828282;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  width: 340px;
+}
+
+.copyBody {
+  width: 480px;
+  margin-bottom: 4rem;
+}
+
+.spaDayButton {
+  background-color: #d6d2d2;
+  color: black;
+  font-family: "IntroRust", Arial, sans-serif;
+  width: 360px;
 }
 
 .reviewsHeader {
@@ -68,6 +126,7 @@
   margin-bottom: 2rem;
 }
 
+
 @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;
@@ -99,32 +158,93 @@
 }
 
 @media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
+
+.page {
+  margin: 0rem;
+}
+  .subHeader {
+    font-size: 28px;
+    margin: 0rem 1rem 2rem 1rem;
   }
 
-  .main {
-    align-items: center;
+  .header {
+    font-size: 48px;
+    width: 90vw;
+    margin: 0rem 1rem 0rem 1rem;
   }
 
-  .main ol {
-    text-align: center;
+  .heroPhoto {
+    align-self: center;
+    width: 500px;
+    margin-bottom: 1rem;
   }
 
-  .ctas {
+  .section {
     flex-direction: column;
+    margin-bottom: 0rem;
   }
 
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
+  .sectionHeader {
+    line-height: 1.2;
   }
 
-  a.secondary {
-    min-width: auto;
+  .spaDog {
+    border-radius: 0px;
+    margin-bottom: 2rem;
   }
+
+  #spaDogBottom {
+    margin-bottom: 0rem;
+  }
+
+  .groomCopy {
+    display: none;
+  }
+
+  .groomCopyMobile {
+    display: block;
+    margin: 0rem 1rem 2rem 1rem;
+  }
+
+  .sectionHeaderTwo, .copyBody {
+    width: 100%;
+  }
+
+  .copyBody, .copyHeader, .copy {
+    font-size: 22px;
+  }
+
+  .spaSection {
+    margin: 0rem 1rem 2rem 1rem;
+  }
+
+  .spaDayButton {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .spaDogThree {
+    width: 100%;
+    border-radius: 0px;;
+  }
+
+  .reviewsHeader {
+    font-size: 40px;
+    width: 90vw;
+    margin: 0rem 1rem 2rem 1rem;
+  }
+
+  .reviewsContainer {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .review {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+
 
 
 }
