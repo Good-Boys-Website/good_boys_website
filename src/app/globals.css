@@ -13,7 +13,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f8f3f1;
   }
 }
 
@@ -52,10 +52,10 @@ ul {
 }
 
 button {
-  color: white;
+  color: var(--background);
   font-weight: bold;
   font-size: 18px;
-  background-color: black;
+  background-color: var(--foreground);
   padding: 1rem 1.4rem 1rem 1.4rem;
   border-radius: 8px;
   cursor: pointer;
