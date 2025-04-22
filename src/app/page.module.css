@@ -94,7 +94,7 @@
   line-height: 1.5;
   width: 720px;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .reviewsContainer {
@@ -128,34 +128,14 @@
 
 
 @media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
+  .review {
+    background-color: #252525;
+  }
+  .copy, .copyBody {
+    color: #ccc7c5;
   }
 }
 
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  /*.footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }*/
-}
 
 @media (max-width: 600px) {
 
@@ -244,13 +224,5 @@
     margin-bottom: 1rem;
   }
 
-
-
-
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-}
