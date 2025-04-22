@@ -11,13 +11,25 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <section className={styles.footerCtas}>
-        <Image
-          className={styles.mascot}
-          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860707/Poodle_GoodBoys_va3ted.svg"
-          alt="good boys lopgo featuring an illsutarion of a dog with sunglasses"
-          width={90}
-          height={81}
-        />
+        <div className={styles.leftContainer}>
+          <Image
+            className={styles.mascot}
+            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860707/Poodle_GoodBoys_va3ted.svg"
+            alt="good boys lopgo featuring an illsutarion of a dog with sunglasses"
+            width={90}
+            height={81}
+          />
+          <div className={styles.contacts}>
+            <p className={styles.contact}>
+              <a href="tel:+3127354214">(312) 735-4214</a>
+            </p>
+            <p className={styles.contact}>
+              <a href="mailto:gbdoggrooming@gmail.com">
+                gbdoggrooming@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
         <div className={styles.buttonSection}>
           <p className={styles.footerButtonOne}>BOOK NOW</p>
           <p className={styles.footerButton}>CONTACT US</p>
@@ -43,6 +55,7 @@ export default function Footer() {
           <p className={styles.link}>STAFF</p>
         </div>
       </section>
+      <p className={styles.copyright}>copyright Marf Inc. 2025</p>
     </footer>
   );
 }
