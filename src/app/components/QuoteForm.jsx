@@ -111,10 +111,10 @@ export default function QuoteForm() {
 
     emailjs
       .sendForm(
-        "", //email services service ID from emailjs gmail sync
-        "", //template ID from created emailjs template
+        "service_5she545", //email services service ID from emailjs gmail sync
+        "template_aud594g", //template ID from created emailjs template
         formRef.current,
-        "" //emailjs public key
+        "N8iJs0OwqbPvxYuRo" //emailjs public key
       )
       .then(
         () => {
@@ -123,7 +123,7 @@ export default function QuoteForm() {
           setIsLoading(false);
           setValidationError(inputValidationError);
           formRef.current.reset();
-          setFormValues(inputForm);
+          setFormValues(quoteForm);
           setIsModalVisible(true);
         },
         (error) => {
