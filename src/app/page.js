@@ -1,4 +1,5 @@
 import Image from "next/image";
+import QuoteForm from "./components/QuoteForm";
 import { reviews } from "./data/reviews";
 import styles from "./page.module.css";
 
@@ -105,6 +106,8 @@ export default function Home() {
             height={4032}
           />
         </section>
+        <h1>Get a custom quote.</h1>
+        <QuoteForm />
         <section>
           <h1 className={styles.reviewsHeader}>
             See what our clients are saying about us.
