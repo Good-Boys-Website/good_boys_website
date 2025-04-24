@@ -1,0 +1,47 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.formHeader {
+    margin-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+}
+
+.formLabel {
+    padding: 1rem 1rem .5rem 0rem;
+}
+
+.formInput, .formSelect, .formInputMessage, .formButton {
+    font-size: 18px;
+padding: .5rem;
+border: 1px solid black;
+border-radius: 5px;
+margin-bottom: .5rem;
+}
+
+.formInputMessage {
+    height: 120px;
+}
+
+.formButton {
+    font-family: "IntroRust", Arial, sans-serif;
+    background-color: var(--foreground);
+    color: var(--background);
+    cursor: pointer;
+}
+
+.requiredMessage {
+    margin-bottom: 2rem;
+}
+
+.validateMessage {
+    font-weight: normal;
+}
