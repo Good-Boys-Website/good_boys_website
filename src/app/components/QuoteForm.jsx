@@ -3,6 +3,8 @@
 import emailjs from "@emailjs/browser";
 import React, { useState, useRef } from "react";
 
+import styles from "@/app/styling/quote_form.module.css";
+
 export default function QuoteForm() {
   const formRef = useRef();
   const [messageStatus, setMessageStatus] = useState(null);
@@ -135,32 +137,36 @@ export default function QuoteForm() {
   };
 
   return (
-    <>
-      <h1>This is my form</h1>
+    <section className={styles.formContainer}>
+      <h1 className={styles.formHeader}>Get a custom quote.</h1>
       <form
+        className={styles.form}
         ref={formRef}
         onSubmit={sendEmail}
         encType="multipart/form-data"
         method="post"
       >
-        <label>Full Name:</label>
+        <label className={styles.formLabel}>Full Name*</label>
         <input
+          className={styles.formInput}
           type="text"
           name="owner_name"
           aria-label="owner_name"
           value={formValues.owner_name}
           onChange={handleInputChange}
         />
-        <label>Email:</label>
+        <label className={styles.formLabel}>Email*</label>
         <input
+          className={styles.formInput}
           type="email"
           name="owner_email"
           aria-label="owner_email"
           value={formValues.owner_email}
           onChange={handleInputChange}
         />
-        <label>Service needed:</label>
+        <label className={styles.formLabel}>Service needed*</label>
         <select
+          className={styles.formSelect}
           name="service_type"
           value={formValues.service_type}
           aria-label="service_type"
@@ -171,7 +177,7 @@ export default function QuoteForm() {
             }))
           }
         >
-          <option value="">Type of service</option>
+          <option value="">Select a service</option>
           {services.map((service, index) => (
             <option key={index} value={service}>
               {service}
@@ -179,8 +185,9 @@ export default function QuoteForm() {
           ))}
         </select>
 
-        <label>Dog breed:</label>
+        <label className={styles.formLabel}>Dog breed*</label>
         <select
+          className={styles.formSelect}
           name="dog_breed"
           value={formValues.dog_breed}
           aria-label="dog_breed"
@@ -191,7 +198,7 @@ export default function QuoteForm() {
             }))
           }
         >
-          <option value="">Type of breed</option>
+          <option value="">Select your dog's breed</option>
           {dogBreeds.map((breed, index) => (
             <option key={index} value={breed}>
               {breed}
@@ -199,8 +206,9 @@ export default function QuoteForm() {
           ))}
         </select>
 
-        <label>Weight:</label>
+        <label className={styles.formLabel}>Weight*</label>
         <select
+          className={styles.formSelect}
           name="dog_weight"
           value={formValues.dog_weight}
           aria-label="dog_weight"
@@ -211,7 +219,7 @@ export default function QuoteForm() {
             }))
           }
         >
-          <option value="">Weight range</option>
+          <option value="">Select a weight range</option>
           {dogWeights.map((weight, index) => (
             <option key={index} value={weight}>
               {weight}
@@ -219,35 +227,53 @@ export default function QuoteForm() {
           ))}
         </select>
 
-        <label>Additional information:</label>
+        <label className={styles.formLabel}>Additional information:</label>
         <textarea
+          className={styles.formInputMessage}
           name="owner_message"
           aria-label="ownerss_additional_information"
           value={formValues.owner_message}
           onChange={handleInputChange}
         />
+        <p className={styles.requiredMessage}>*Required</p>
         <input
+          className={styles.formButton}
           type="submit"
           aria-label="form_submit_button"
           value={isLoading ? "Sending..." : "Send"}
           disabled={isLoading}
         />
-        {validationError.owner_name && <p>*Please enter your name*</p>}
+
+        {validationError.owner_name && (
+          <p className={styles.validateMessage}>*Please enter your name*</p>
+        )}
         {validationError.owner_email && (
-          <p>*Please enter a valid email address*</p>
+          <p className={styles.validateMessage}>
+            *Please enter a valid email address*
+          </p>
         )}
         {validationError.service_type && (
-          <p>*Please select your dog's service*</p>
+          <p className={styles.validateMessage}>
+            *Please select your dog's service*
+          </p>
         )}
-        {validationError.dog_breed && <p>*Please selecy your dog's breed*</p>}
+        {validationError.dog_breed && (
+          <p className={styles.validateMessage}>
+            *Please select your dog's breed*
+          </p>
+        )}
         {validationError.dog_weight && (
-          <p>*Please select your dog's weight range*</p>
+          <p className={styles.validateMessage}>
+            *Please select your dog's weight range*
+          </p>
         )}
         {messageStatus === "error" && (
-          <p>**Message failed to send. Please try again**</p>
+          <p className={styles.validateMessage}>
+            *Message failed to send. Please try again*
+          </p>
         )}
       </form>
       <MessageSentModal />
-    </>
+    </section>
   );
 }

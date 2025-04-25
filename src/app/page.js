@@ -106,8 +106,9 @@ export default function Home() {
             height={4032}
           />
         </section>
-        <h1>Get a custom quote.</h1>
+
         <QuoteForm />
+
         <section>
           <h1 className={styles.reviewsHeader}>
             See what our clients are saying about us.

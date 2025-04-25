@@ -10,6 +10,7 @@
   font-size: 60px;
   line-height: 1.5;
   width: 800px;
+  padding-top: 2rem;
 }
 
  .subHeader {
@@ -137,7 +138,7 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1300px) {
 
 .page {
   margin: 0rem;
@@ -163,6 +164,12 @@
     flex-direction: column;
     margin-bottom: 0rem;
   }
+
+  /*.formSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }*/
 
   .sectionHeader {
     line-height: 1.2;
