@@ -15,7 +15,7 @@
 
  .subHeader {
   font-family: "IntroRust", Arial, sans-serif;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .heroPhoto {
@@ -101,6 +101,7 @@
 .reviewsContainer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8rem;
 }
 
 .review {
