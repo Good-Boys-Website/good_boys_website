@@ -46,9 +46,11 @@
 }
 
 .sectionHeader, .sectionHeaderTwo {
+  font-family: "InstrumentSans", Arial, sans-serif;
   font-size: 42px;
-  line-height: 1;
-  letter-spacing: -1;
+  font-weight: 600;
+  /*line-height: 1;
+  letter-spacing: -1;*/
   width: 340px;
   margin-bottom: 2rem;
 }
@@ -90,9 +92,9 @@
 }
 
 .reviewsHeader {
-  font-family: "IntroRust", Arial, sans-serif;
+  font-family: "InstrumentSans", Arial, sans-serif;
   font-size: 50px;
-  line-height: 1.5;
+  font-weight: 600;
   width: 720px;
   flex-wrap: wrap;
   margin-bottom: 4rem;
