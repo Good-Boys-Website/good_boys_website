@@ -91,7 +91,7 @@ export default function Home() {
               <li className={styles.copyHeader}>
                 Finally, a nail trim and ear cleaning...
               </li>
-              <li className={styles.copyBody}>
+              <li className={styles.copyBody} id={styles.copyBodyBottom}>
                 ... and once we wrap up, they&apos;re sent home with a seasonal
                 bandana. How cute is that?
               </li>
@@ -106,9 +106,7 @@ export default function Home() {
             height={4032}
           />
         </section>
-
         <QuoteForm />
-
         <section>
           <h1 className={styles.reviewsHeader}>
             See what our clients are saying about us.

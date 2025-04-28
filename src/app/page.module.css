@@ -15,7 +15,7 @@
 
  .subHeader {
   font-family: "IntroRust", Arial, sans-serif;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .heroPhoto {
@@ -101,6 +101,7 @@
 .reviewsContainer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8rem;
 }
 
 .review {
@@ -137,7 +138,7 @@
   }
 }
 
-
+/* mobile styling */
 @media (max-width: 1300px) {
 
 .page {
@@ -145,7 +146,7 @@
 }
   .subHeader {
     font-size: 28px;
-    margin: 0rem 1rem 2rem 1rem;
+    margin: 0rem 1rem 1rem 1rem;
   }
 
   .header {
@@ -157,19 +158,13 @@
   .heroPhoto {
     align-self: center;
     width: 500px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .section {
     flex-direction: column;
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
   }
-
-  /*.formSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }*/
 
   .sectionHeader {
     line-height: 1.2;
@@ -197,8 +192,16 @@
     width: 100%;
   }
 
+  .sectionHeaderTwo {
+    margin-bottom: 2rem;
+  }
+
   .copyBody, .copyHeader, .copy {
     font-size: 22px;
+  }
+
+  #copyBodyBottom {
+    margin-bottom: 2rem;
   }
 
   .spaSection {
@@ -212,7 +215,7 @@
 
   .spaDogThree {
     width: 100%;
-    border-radius: 0px;;
+    border-radius: 0px;
   }
 
   .reviewsHeader {
@@ -224,6 +227,7 @@
   .reviewsContainer {
     flex-direction: column;
     margin: 1rem;
+    margin-bottom: 8rem;
   }
 
   .review {
