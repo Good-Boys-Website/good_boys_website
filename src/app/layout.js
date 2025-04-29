@@ -9,6 +9,8 @@ const introRust = localFont({
 
 const instrumentSans = localFont({
   src: ".//fonts/InstrumentSans.ttf",
+  weight: "600",
+  subsets: ["latin"],
 });
 
 export const metadata = {
