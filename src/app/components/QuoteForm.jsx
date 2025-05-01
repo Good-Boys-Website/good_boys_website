@@ -113,10 +113,10 @@ export default function QuoteForm() {
 
     emailjs
       .sendForm(
-        "service_5she545", //email services service ID from emailjs gmail sync
-        "template_aud594g", //template ID from created emailjs template
+        "service_rg1y33t", //email services service ID from emailjs gmail sync
+        "template_2qi2mil", //template ID from created emailjs template
         formRef.current,
-        "N8iJs0OwqbPvxYuRo" //emailjs public key
+        "TusOyxhFS7wpSxyo6" //emailjs public key
       )
       .then(
         () => {
