@@ -2,6 +2,7 @@
 
 import emailjs from "@emailjs/browser";
 import React, { useState, useRef } from "react";
+import { dogBreeds, dogWeights, services } from "../data/data";
 
 import styles from "@/app/styling/quote_form.module.css";
 
@@ -41,24 +42,6 @@ export default function QuoteForm() {
   };
 
   const [formValues, setFormValues] = useState(quoteForm);
-
-  const services = [
-    "service 1",
-    "service 2",
-    "service 3",
-    "service 4",
-    "service 5",
-  ];
-
-  const dogBreeds = ["breed 1", "breed 2", "breed 3", "breed 4", "breed 5"];
-
-  const dogWeights = [
-    "weight range 1",
-    "weight range 2",
-    "weight range 3",
-    "weight range 4",
-    "weight range 5",
-  ];
 
   const inputValidationError = {
     owner_name: false,

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import QuoteForm from "./components/QuoteForm";
-import { reviews } from "./data/reviews";
+import { reviews } from "./data/data";
 import styles from "./page.module.css";
 
 function ReviewCard({ review, name }) {
