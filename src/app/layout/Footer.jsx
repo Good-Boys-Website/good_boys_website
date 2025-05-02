@@ -9,7 +9,7 @@ import styles from "./footer.module.css";
 
 export default function Footer() {
   return (
-    <footer className={`${styles.footer} fade-in`}>
+    <footer data-scroll-section className={`${styles.footer} fade-in`}>
       <section className={styles.footerCtas}>
         <div className={styles.leftContainer}>
           <Image

@@ -1,0 +1,14 @@
+.scroll {
+    position: fixed;
+    color: var(--background);
+    background-color: var(--gbBlue);
+    padding: 1rem;
+    padding-bottom: .5rem;
+    border-radius: 50px;;
+    margin-top: 38rem;
+    margin-left: 82rem;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 2.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
