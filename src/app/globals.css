@@ -6,6 +6,11 @@
 }
 
 :root {
+  --gbRed: #ca5c3d;
+  --gbBlue: #374d64;
+  --gbGrayButton: #d6d2d2;
+  --gbGrayText: #828282;
+
   --background: #f8f3f1;
   --foreground: #171717;
 }
@@ -55,9 +60,10 @@ button {
   color: var(--background);
   font-weight: bold;
   font-size: 18px;
-  background-color: var(--foreground);
+  background-color: var(--gbBlue);
   padding: 1rem 1.4rem 1rem 1.4rem;
   border-radius: 8px;
+  width: 180px;
   cursor: pointer;
 }
 
