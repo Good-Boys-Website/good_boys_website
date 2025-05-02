@@ -99,4 +99,7 @@
   .form {
     width: 90%;
   }
+  .autoComplete {
+    width: 100%
+  }
 }
