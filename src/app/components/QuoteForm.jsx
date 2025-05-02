@@ -8,6 +8,9 @@ import styles from "@/app/styling/quote_form.module.css";
 
 export default function QuoteForm() {
   const formRef = useRef();
+  const [filteredBreeds, setFilteredBreeds] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+
   const [messageStatus, setMessageStatus] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -169,25 +172,54 @@ export default function QuoteForm() {
         </select>
 
         <label className={styles.formLabel}>Dog breed*</label>
-        <select
-          className={styles.formSelect}
-          name="dog_breed"
-          value={formValues.dog_breed}
-          aria-label="dog_breed"
-          onChange={(e) =>
-            setFormValues((prevValues) => ({
-              ...prevValues,
-              dog_breed: e.target.value,
-            }))
-          }
-        >
-          <option value="">Select your dog's breed</option>
-          {dogBreeds.map((breed, index) => (
-            <option key={index} value={breed}>
-              {breed}
-            </option>
-          ))}
-        </select>
+        <div className={styles.autoComplete}>
+          <input
+            type="text"
+            className={styles.formInput}
+            id={styles.dogBreedInput}
+            name="dog_breed"
+            value={formValues.dog_breed}
+            aria-label="dog_breed"
+            placeholder="Start typing your dog's breed"
+            onChange={(e) => {
+              const value = e.target.value;
+              setFormValues((prevValues) => ({
+                ...prevValues,
+                dog_breed: e.target.value,
+              }));
+
+              if (value.length > 0) {
+                const matches = dogBreeds.filter((breed) =>
+                  breed.toLowerCase().startsWith(value.toLowerCase())
+                );
+                setFilteredBreeds(matches);
+                setShowSuggestions(true);
+              } else {
+                setShowSuggestions(false);
+              }
+            }}
+            onFocus={() => {
+              if (formValues.dog_breed.length > 0) setShowSuggestions(true);
+            }}
+            autoComplete="off"
+          />
+          {showSuggestions && filteredBreeds.length > 0 && (
+            <ul className={styles.suggestionList}>
+              {filteredBreeds.map((breed, index) => (
+                <li
+                  key={index}
+                  onClick={() => {
+                    setFormValues((prev) => ({ ...prev, dog_breed: breed }));
+                    setShowSuggestions(false);
+                  }}
+                  className={styles.suggestionItem}
+                >
+                  {breed}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
 
         <label className={styles.formLabel}>Weight*</label>
         <select

@@ -11,10 +11,31 @@
   margin-bottom: 2rem;
 }
 
-.form {
+.form, .autoComplete {
   display: flex;
   flex-direction: column;
   width: 460px;
+}
+
+.suggestionList{
+  position: absolute;
+  margin-top: 2.4rem;
+  background-color: white;
+  padding: .5rem;
+  z-index: 1000;
+  border: 1px solid var(--gbGrayText);
+  border-radius: 5px;
+}
+
+.suggestionItem {
+  padding: .2rem;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  color: var(--foreground);
+  cursor: pointer;
+  background-color: var(--gbGrayButton);
 }
 
 .formLabel {
@@ -32,6 +53,9 @@
   margin-bottom: 0.5rem;
 }
 
+#dogBreedInput {
+  margin-bottom: 0rem;
+}
 .formInputMessage {
   height: 120px;
 }
