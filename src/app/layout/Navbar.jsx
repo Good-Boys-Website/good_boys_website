@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={styles.nav}>
+      <nav className={`${styles.nav} fade-in`}>
         <p className={styles.link}>HOME</p>
         <p className={styles.link}>SERVICES</p>
         <p className={styles.link}>FAQ</p>
@@ -39,7 +39,7 @@ export default function Navbar() {
         <button className={styles.link}>BOOK HERE</button>
       </nav>
 
-      <nav className={styles.mobileNav}>
+      <nav className={`${styles.mobileNav} fade-in`}>
         <Image
           className={styles.navLogoMobile}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860689/Logo_Extraction_4_kfuxzj.png"

@@ -1,73 +1,105 @@
 .formContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
 }
 
 .formHeader {
-    font-size: 42px;
-    line-height: 1;
-    letter-spacing: -1;
-    margin-bottom: 2rem;
+  font-family: "InstrumentSans", Arial, sans-serif;
+  font-size: 42px;
+  margin-bottom: 2rem;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 460px;
+.form, .autoComplete {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+}
+
+.suggestionList{
+  position: absolute;
+  margin-top: 2.4rem;
+  background-color: white;
+  padding: .5rem;
+  z-index: 1000;
+  border: 1px solid var(--gbGrayText);
+  border-radius: 5px;
+}
+
+.suggestionItem {
+  padding: .2rem;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  color: var(--foreground);
+  cursor: pointer;
+  background-color: var(--gbGrayButton);
 }
 
 .formLabel {
-    padding: 1rem 1rem .5rem 0rem;
+  padding: 1rem 1rem 0.5rem 0rem;
 }
 
-.formInput, .formSelect, .formInputMessage, .formButton {
-    font-size: 18px;
-padding: .5rem;
-border: 1px solid var(--foreground);
-border-radius: 5px;
-margin-bottom: .5rem;
+.formInput,
+.formSelect,
+.formInputMessage,
+.formButton {
+  font-size: 18px;
+  padding: 0.5rem;
+  border: 1px solid var(--foreground);
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
 }
 
+#dogBreedInput {
+  margin-bottom: 0rem;
+}
 .formInputMessage {
-    height: 120px;
+  height: 120px;
 }
 
 .formButton {
-    font-family: "IntroRust", Arial, sans-serif;
-    background-color: var(--foreground);
-    color: var(--background);
-    cursor: pointer;
+  font-family: "IntroRust", Arial, sans-serif;
+  background-color: var(--gbBlue);
+  color: var(--background);
+  cursor: pointer;
 }
 
 .requiredMessage {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .validateMessage {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 @media (prefers-color-scheme: dark) {
-    .formInput, .formSelect, .formInputMessage, .formButton {
-        background-color: #252525;
-        border: 1px solid #c4c2bf;  
-    }
-    .formButton {
-        color: var(--foreground)
-    }
+  .formInput,
+  .formSelect,
+  .formInputMessage,
+  .formButton {
+    background-color: #252525;
+    border: 1px solid #c4c2bf;
   }
+  .formButton {
+    color: var(--foreground);
+  }
+}
 
 @media (max-width: 1300px) {
-    .formContainer {
-        margin-bottom: 2rem;
-    }
-    .formHeader {
-        font-size: 48px;
-        margin: 0rem 1rem 2rem 1rem;
-    }
-    .form {
-        width: 90%;
-    }
+  .formContainer {
+    margin-bottom: 2rem;
+  }
+  .formHeader {
+    font-size: 48px;
+    margin: 0rem 1rem 2rem 1rem;
+  }
+  .form {
+    width: 90%;
+  }
+  .autoComplete {
+    width: 100%
+  }
 }

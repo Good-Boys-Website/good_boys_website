@@ -1,6 +1,7 @@
 import Image from "next/image";
 import QuoteForm from "./components/QuoteForm";
-import { reviews } from "./data/reviews";
+import { reviews } from "./data/data";
+
 import styles from "./page.module.css";
 
 function ReviewCard({ review, name }) {
@@ -14,7 +15,7 @@ function ReviewCard({ review, name }) {
 
 export default function Home() {
   return (
-    <div className={styles.page} id="heroSection">
+    <div className={`${styles.page} fade-in`}>
       <main>
         <h1 className={styles.header}>
           Your dog called - They want a makeover.
@@ -29,7 +30,7 @@ export default function Home() {
           width={2972}
           height={1699}
         />
-        <section className={styles.section}>
+        <section data-scroll-section className={styles.section}>
           <div className={styles.groomCopyMobile}>
             <h3 className={styles.sectionHeader}>
               Best-in-class grooms for Chicago dogs.
@@ -69,7 +70,7 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.section}>
-          <div className={styles.spaSection}>
+          <div data-scroll-section className={styles.spaSection}>
             <h3 className={styles.sectionHeaderTwo}>
               Thorough baths. Shiny coats. Lots of treats.
             </h3>
@@ -106,8 +107,10 @@ export default function Home() {
             height={4032}
           />
         </section>
-        <QuoteForm />
-        <section>
+        <section data-scroll-section>
+          <QuoteForm />
+        </section>
+        <section data-scroll-section>
           <h1 className={styles.reviewsHeader}>
             See what our clients are saying about us.
           </h1>

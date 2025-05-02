@@ -6,6 +6,11 @@
 }
 
 :root {
+  --gbRed: #ca5c3d;
+  --gbBlue: #374d64;
+  --gbGrayButton: #d6d2d2;
+  --gbGrayText: #828282;
+
   --background: #f8f3f1;
   --foreground: #171717;
 }
@@ -24,7 +29,6 @@ body {
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -55,10 +59,37 @@ button {
   color: var(--background);
   font-weight: bold;
   font-size: 18px;
-  background-color: var(--foreground);
+  background-color: var(--gbBlue);
   padding: 1rem 1.4rem 1rem 1.4rem;
   border-radius: 8px;
+  width: 180px;
   cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
