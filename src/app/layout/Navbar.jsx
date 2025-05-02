@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={styles.nav}>
+      <nav className={`${styles.nav} fade-in`}>
         <p className={styles.link}>HOME</p>
         <p className={styles.link}>SERVICES</p>
         <p className={styles.link}>FAQ</p>

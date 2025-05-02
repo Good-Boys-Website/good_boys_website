@@ -14,7 +14,7 @@ function ReviewCard({ review, name }) {
 
 export default function Home() {
   return (
-    <div className={styles.page} id="heroSection">
+    <div className={`${styles.page} id="heroSection" fade-in`}>
       <main>
         <h1 className={styles.header}>
           Your dog called - They want a makeover.
