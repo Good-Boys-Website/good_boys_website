@@ -102,6 +102,12 @@
   padding: 2rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  .footerButtonOne {
+    color: var(--foreground);
+  }
+}
+
 @media (max-width: 1000px) {
   .footerCtas {
     flex-direction: column;
@@ -125,13 +131,14 @@
   }
   .buttonSection {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   }
   .footerButtonOne,
   .footerButton {
     text-align: center;
     margin-left: 0rem;
     margin-bottom: 2rem;
+    width: 100%;
   }
   .linkSection {
     flex-direction: column;
