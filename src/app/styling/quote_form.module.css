@@ -16,20 +16,31 @@
   flex-direction: column;
   width: 460px;
 }
-
+.autoComplete {
+ align-items: center;
+}
 .suggestionList{
   position: absolute;
-  margin-top: 2.4rem;
+  margin-top: 3.5rem;
   background-color: white;
-  padding: .5rem;
   z-index: 1000;
-  border: 1px solid var(--gbGrayText);
-  border-radius: 5px;
+  border-radius: 14px;
+  width: 360px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  max-height: 378px;
 }
 
 .suggestionItem {
-  padding: .2rem;
+  color: var(--foreground);
+  font-size: 18px;;
+  padding: 1rem 1rem 1rem 2rem;
   cursor: pointer;
+  border-bottom: 1px solid var(--gbGrayButton);
+}
+
+.suggestionItem:last-child {
+  border-bottom: none;
 }
 
 .suggestionItem:hover {
@@ -55,6 +66,7 @@
 
 #dogBreedInput {
   margin-bottom: 0rem;
+  width: 100%;
 }
 .formInputMessage {
   height: 120px;
@@ -85,6 +97,15 @@
     background-color: #252525;
     border: 1px solid #c4c2bf;
   }
+  .suggestionList {
+    background-color: #2b2a2a;
+  }
+  .suggestionItem {
+    border-bottom: 1px solid var(--gbGrayText);
+  }
+  .suggestionItem:hover {
+    background-color: var(--gbGrayText);
+  }
   .formButton {
     border: none;
     color: var(--foreground);
@@ -99,7 +120,7 @@
     font-size: 48px;
     margin: 0rem 1rem 2rem 1rem;
   }
-  .form {
+  .form, .suggestionList {
     width: 90%;
   }
   .autoComplete {
