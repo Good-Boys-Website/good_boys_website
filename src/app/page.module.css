@@ -89,7 +89,7 @@
   background-color: var(--gbGrayButton);
   color: var(--foreground);
   font-family: "IntroRust", Arial, sans-serif;
-  width: 360px;
+  width: 460px;
 }
 
 .reviewsHeader {
@@ -134,11 +134,18 @@
 
 
 @media (prefers-color-scheme: dark) {
+  .page {
+    color: var(--foreground);
+  }
   .review {
     background-color: #252525;
   }
-  .copy, .copyBody {
+  .copy, .copyBody, .subHeader {
     color: #ccc7c5;
+  }
+  .spaDayButton {
+    background-color: var(--gbBlue);
+    color: var(--foreground);
   }
 }
 
@@ -177,6 +184,7 @@
   .spaDog {
     border-radius: 0px;
     margin-bottom: 2rem;
+    width: 100%;
   }
 
   #spaDogBottom {

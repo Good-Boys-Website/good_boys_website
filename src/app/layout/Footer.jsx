@@ -21,7 +21,7 @@ export default function Footer() {
           />
           <div className={styles.contacts}>
             <p className={styles.contact}>
-              <a href="tel:+3127354214">(312) 735-4214</a>
+              <a href="tel:+1-312-735-4214">(312) 735-4214</a>
             </p>
             <p className={styles.contact}>
               <a href="mailto:gbdoggrooming@gmail.com">
