@@ -22,7 +22,7 @@
   height: auto;
 }
 
-.link {
+.link, .buttonText {
   font-family: "IntroRust", Arial, sans-serif;
   font-size: 20px;
 }
@@ -35,6 +35,9 @@
 @media (prefers-color-scheme: dark) {
   .navLogoContainer {
     background-color: #f8f3f1;
+  }
+  .nav, .buttonText {
+    color: var(--foreground);
   }
 }
 
@@ -147,11 +150,22 @@
   }
 
   @media (prefers-color-scheme: dark) {
-    .mobileNav {
-      background-color: #f8f3f1;
+    .mobileNav, .menuButtonBurger {
+      background-color: var(--background);
+    }
+    .menuButtonBurger, .menuButtonBurger::before,
+    .menuButtonBurger::after  {
+      background-color: var(--foreground);
+    }
+    .menu {
+      background-color: var(--gbBlue);
     }
     .navItem {
-      color: black;
+      color: var(--foreground);
+    }
+    #hamMenuContainer {
+      background-color: var(--gbBlue);
+      border: none;
     }
   }
 }

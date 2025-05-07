@@ -36,7 +36,7 @@ export default function Navbar() {
         </div>
         <p className={styles.link}>STAFF</p>
         <p className={styles.link}>CONTACT US</p>
-        <button className={styles.link}>BOOK HERE</button>
+        <button className={styles.buttonText}>BOOK HERE</button>
       </nav>
 
       <nav className={`${styles.mobileNav} fade-in`}>
