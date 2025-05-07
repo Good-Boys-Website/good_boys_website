@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 8rem;
+  padding-top: 8rem;
 }
 
 .formHeader {
@@ -93,7 +93,7 @@
 
 @media (max-width: 1300px) {
   .formContainer {
-    margin-bottom: 2rem;
+    padding-top: 2rem;
   }
   .formHeader {
     font-size: 48px;

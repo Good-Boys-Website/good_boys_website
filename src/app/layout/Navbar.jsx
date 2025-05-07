@@ -39,6 +39,7 @@ export default function Navbar() {
             alt="Good Boys Premium Dog Grooming"
             width={1563}
             height={1563}
+            loading="lazy"
           />
         </div>
         <p className={styles.link}>STAFF</p>
@@ -60,6 +61,7 @@ export default function Navbar() {
           alt="Good Boys Premium Dog Grooming"
           width={1563}
           height={1563}
+          loading="lazy"
         />
 
         {/*hamburger menu*/}

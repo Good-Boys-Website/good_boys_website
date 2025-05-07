@@ -69,8 +69,8 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className={styles.section}>
-          <div data-scroll-section className={styles.spaSection}>
+        <section data-scroll-section className={styles.section}>
+          <div className={styles.spaSection}>
             <h3 className={styles.sectionHeaderTwo}>
               Thorough baths. Shiny coats. Lots of treats.
             </h3>
@@ -110,7 +110,7 @@ export default function Home() {
         <section data-scroll-section>
           <QuoteForm />
         </section>
-        <section data-scroll-section>
+        <section data-scroll-section className={styles.reviewsSection}>
           <h1 className={styles.reviewsHeader}>
             See what our clients are saying about us.
           </h1>
