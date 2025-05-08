@@ -33,6 +33,14 @@ export default function Navbar() {
             width={1563}
             height={1563}
           />
+          <Image
+            className={styles.navLogoDark}
+            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1746153393/GB_Logo_-_Dark_Mode_3_uhzref.png"
+            alt="Good Boys Premium Dog Grooming"
+            width={1563}
+            height={1563}
+            loading="lazy"
+          />
         </div>
         <p className={styles.link}>STAFF</p>
         <p className={styles.link}>CONTACT US</p>
@@ -46,6 +54,14 @@ export default function Navbar() {
           alt="Good Boys Premium Dog Grooming"
           width={1563}
           height={1563}
+        />
+        <Image
+          className={styles.navLogoMobileDark}
+          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1746153393/GB_Logo_-_Dark_Mode_3_uhzref.png"
+          alt="Good Boys Premium Dog Grooming"
+          width={1563}
+          height={1563}
+          loading="lazy"
         />
 
         {/*hamburger menu*/}

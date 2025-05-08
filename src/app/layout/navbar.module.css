@@ -22,22 +22,31 @@
   height: auto;
 }
 
+.navLogoDark {
+ display: none;
+}
+
 .link, .buttonText {
   font-family: "IntroRust", Arial, sans-serif;
   font-size: 20px;
 }
 
-.navLogoMobile,
+.navLogoMobile, .navLogoMobileDark,
 .menu {
   display: none;
 }
 
 @media (prefers-color-scheme: dark) {
-  .navLogoContainer {
-    background-color: #f8f3f1;
-  }
   .nav, .buttonText {
     color: var(--foreground);
+  }
+  .navLogo {
+    display: none;
+  }
+  .navLogoDark {
+    display: block;
+    width: 300px;
+    height: auto;
   }
 }
 
@@ -154,6 +163,15 @@
   @media (prefers-color-scheme: dark) {
     .mobileNav, .menuButtonBurger {
       background-color: var(--background);
+    }
+    .navLogoMobile {
+      display: none;
+    }
+    .navLogoMobileDark {
+      display: block;
+      width: 220px;
+      height: auto;
+      margin-left: 1rem;
     }
     .menuButtonBurger, .menuButtonBurger::before,
     .menuButtonBurger::after  {

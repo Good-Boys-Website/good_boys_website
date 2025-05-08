@@ -25,13 +25,12 @@
   width: 90vw;
   height: auto;
   border-radius: 8px;;
-  margin-bottom: 8rem;
 }
 
 .section {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8rem;
+  padding-top: 8rem;
 }
 
 .spaDog, .spaDogThree {
@@ -90,6 +89,10 @@
   color: var(--foreground);
   font-family: "IntroRust", Arial, sans-serif;
   width: 460px;
+}
+
+.reviewsSection {
+  padding-top: 8rem;
 }
 
 .reviewsHeader {
@@ -157,7 +160,7 @@
 }
   .subHeader {
     font-size: 26px;
-    margin: 0rem 1rem 1rem 1rem;
+    margin: 0rem 1rem 2rem 1rem;
   }
 
   .header {
@@ -169,12 +172,15 @@
   .heroPhoto {
     align-self: center;
     width: 500px;
-    margin-bottom: 2rem;
   }
 
   .section {
     flex-direction: column;
-    margin-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  .reviewsSection {
+    padding-top: 2rem;
   }
 
   .sectionHeader {
@@ -197,7 +203,7 @@
 
   .groomCopyMobile {
     display: block;
-    margin: 0rem 1rem 2rem 1rem;
+    margin: 0rem 1rem 4rem 1rem;
   }
 
   .sectionHeaderTwo, .copyBody {
@@ -222,7 +228,7 @@
 
   .spaDayButton {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .spaDogThree {
