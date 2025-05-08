@@ -90,6 +90,68 @@
   font-weight: normal;
 }
 
+/* modal styling */
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(55, 77, 100, .8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1020;
+}
+
+.modalContent {
+  display: flex;
+  justify-content: space-between;
+  font-family: "IntroRust", Arial, sans-serif;
+  text-align: left;
+  border-radius: 8px;;
+  background:  var(--background);
+  padding: 1.5rem;
+}
+
+.mascot {
+  width: 180px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.modalSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalSectionTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalMessageHeader {
+  font-size: 34px;
+  margin-bottom: 3rem;
+}
+
+.closeButton {
+  color: var(--gbBlue);
+  font-size: 40px;
+  border-radius: 5px;;
+  background-color: var(--gbGrayButton);
+  cursor: pointer;
+}
+
+.modalMessage {
+  font-family: "InstrumentSans", Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 @media (prefers-color-scheme: dark) {
   .formInput,
   .formSelect,
@@ -110,6 +172,12 @@
     border: none;
     color: var(--foreground);
   }
+  .modal {
+    background: rgba(3, 5, 6, .7);
+  }
+  .modalContent {
+    background: #252525;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -126,4 +194,21 @@
   .autoComplete {
     width: 100%
   }
+  .modalContent {
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem;
+  }
+  .mascot {
+   display: none;
+  }
+  .modalMessageHeader {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+  .modalMessage {
+    font-size: 21px;
+    margin-bottom: .5rem;
+  }
+
 }

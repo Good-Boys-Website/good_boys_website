@@ -1,7 +1,9 @@
 "use client";
 
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
 import React, { useState, useRef } from "react";
+import { IoCloseOutline } from "react-icons/io5";
 import { dogBreeds, dogWeights, services } from "../data/data";
 
 import styles from "@/app/styling/quote_form.module.css";
@@ -23,11 +25,28 @@ export default function QuoteForm() {
     return (
       <>
         {isModalVisible && (
-          <div>
-            <div>
-              <p>Message Sent!</p>
-              <p>We will be in touch.</p>
-              <button onClick={closeModal}>close</button>
+          <div className={styles.modal}>
+            <div className={styles.modalContent}>
+              <Image
+                className={styles.mascot}
+                src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860707/Poodle_GoodBoys_va3ted.svg"
+                alt="good boys lopgo featuring an illsutarion of a dog with sunglasses"
+                width={90}
+                height={81}
+              />
+              <div className={styles.modalSection}>
+                <div className={styles.modalSectionTop}>
+                  <p className={styles.modalMessageHeader}>Message Sent!</p>
+                  <IoCloseOutline
+                    onClick={closeModal}
+                    className={styles.closeButton}
+                    aria-label="close modal button"
+                  />
+                </div>
+                <p className={styles.modalMessage}>
+                  We can't wait to meet your dog
+                </p>
+              </div>
             </div>
           </div>
         )}
