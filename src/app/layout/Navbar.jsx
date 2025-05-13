@@ -28,8 +28,9 @@ export default function Navbar() {
         <Link href="/faq">
           <p className={styles.link}>FAQ</p>
         </Link>
-
-        <p className={styles.link}>ABOUT</p>
+        <Link href="/about">
+          <p className={styles.link}>ABOUT</p>
+        </Link>
         <div className={styles.navLogoContainer}>
           <Image
             className={styles.navLogo}
@@ -109,7 +110,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className={styles.navItem}>
-          <Link className={styles.navContainer} href="">
+          <Link className={styles.navContainer} href="/about">
             <h4 className={styles.link} role="heading">
               ABOUT
             </h4>

@@ -56,7 +56,9 @@ export default function Footer() {
           <Link href="/faq">
             <p className={styles.link}>FAQ</p>
           </Link>
-          <p className={styles.link}>ABOUT</p>
+          <Link href="/about">
+            <p className={styles.link}>ABOUT</p>
+          </Link>
           <Link href="/staff">
             <p className={styles.link}>STAFF</p>
           </Link>
