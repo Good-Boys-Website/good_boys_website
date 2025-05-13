@@ -304,3 +304,46 @@ export const faqs = [
       "Color can be added on after an initial appointment where we get to know your pup! Not all dogs are candidates for color as it requires a the dog be comfortable with standing still, having whichever body part is being dyed maneuvered, and the confidence to garner attention from everyone on the block!",
   },
 ];
+
+export const staff = [
+  {
+    id: 1,
+    name: "Nick Petravich",
+    position: "Co-Owner, Lead Groomer, Dog Dad",
+    dog_breed: "Poodle",
+    dog_topping: "Ketchup & onion",
+    famous_dog: "Shadow, Homeward Bound",
+    photo:
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1744681771/Nick_Profile_lb7kjf.jpg",
+  },
+  {
+    id: 2,
+    name: "Arthur Petravich",
+    position: "Co-Owner, Finance & Strategy, also a Dog Dad",
+    dog_breed: "Great Dane",
+    dog_topping: "Chicago style",
+    famous_dog: "Winn-Dixie, Because of Winn- Dixie",
+    photo:
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1744681758/Arthur_Profile_uhbxmw.jpg",
+  },
+  {
+    id: 3,
+    name: "Emma Biggs",
+    position: "Bather Extraordinaire, Grooming Assistant",
+    dog_breed: "Boxer",
+    dog_topping: "Ketchup or Chili Cheese",
+    famous_dog: "Perdita, 101 Dalmatians",
+    photo:
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1744681839/IMG_5823_gqo3pw.jpg",
+  },
+  {
+    id: 4,
+    name: "Lo Mancini",
+    position: "Bathing Wizard, Grooming Assistant",
+    dog_breed: "Greyhound",
+    dog_topping: "Chili",
+    famous_dog: "Santa's Little Helper, The Simpsons",
+    photo:
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1744681838/IMG_9629_m7so9n.jpg",
+  },
+];
