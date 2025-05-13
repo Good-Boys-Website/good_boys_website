@@ -21,15 +21,15 @@ export default function About() {
         <p className={styles.copySection}>
           In 2018, fate (and a shared love for dogs) brought Arthur and Nick
           together in Chicago. Fast forward to 2020, and they embarked on a
-          heartwarming journey to add a furry family member - that's when they
-          bought their Standard Poodle, Ezekiel!
+          heartwarming journey to add a furry family member - that&apos;s when
+          they bought their Standard Poodle, Ezekiel!
         </p>
         <p className={styles.copySection}>
           Nick, the mastermind behind the shears, brings over 7 years of
           experience in the world of dog grooming to the table. With a paw-
           sitively impressive track record as an award-winning dog groomer,
-          Nick's passion for pampering pooches knows no bounds. His heart beats
-          for poodles and all things creative in dog grooming!
+          Nick&apos;s passion for pampering pooches knows no bounds. His heart
+          beats for poodles and all things creative in dog grooming!
         </p>
         <p className={styles.copySection}>
           Arthur, the numbers whiz, holds a BA in Business Analytics and spends
@@ -45,18 +45,18 @@ export default function About() {
         />
         <h4 className={styles.copyHeader}>Our Mission</h4>
         <p className={styles.copySection}>
-          At Good Boys, our mission is simple yet heartfelt: we're all about
-          making tails wag and fur shine! We strive to provide every dog with a
-          beautiful groom in an environment that's as comfy as their favorite
-          napping spot. Stress? That's a word we don't understand - our four-
-          legged clients experience only low-stress pampering and positive
-          vibes.
+          At Good Boys, our mission is simple yet heartfelt: we&apos;re all
+          about making tails wag and fur shine! We strive to provide every dog
+          with a beautiful groom in an environment that&apos;s as comfy as their
+          favorite napping spot. Stress? That&apos;s a word we don't understand
+          - our four- legged clients experience only low-stress pampering and
+          positive vibes.
         </p>
         <p className={styles.copySection}>
-          So, whether you're here to learn more about us, book an appointment
-          for your fur baby, or simply share your love for all things canine,
-          we're thrilled to have you join us on this tail-wagging adventure.
-          Welcome to the Good Boys family!
+          So, whether you&apos;re here to learn more about us, book an
+          appointment for your fur baby, or simply share your love for all
+          things canine, we&apos;re thrilled to have you join us on this
+          tail-wagging adventure. Welcome to the Good Boys family!
         </p>
         <button className={styles.button}>Book Now</button>
       </section>
