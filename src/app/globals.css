@@ -12,12 +12,12 @@
   --gbGrayText: #828282;
 
   --background: #f8f3f1;
-  --foreground: #474444;
+  --foreground:black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #474444;
+    --background: black;
     --foreground: #f8f3f1;
   }
 }

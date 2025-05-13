@@ -35,7 +35,7 @@
 .question,
 .answer {
   width: 460px;
-  padding-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .question {
@@ -46,10 +46,16 @@
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
+  padding: 1rem;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.4s ease-out, transform 0.4s ease-out;
   pointer-events: none;
+}
+
+.answer:hover {
+    background-color: var(--gbGrayButton);
+    border-radius: 8px;;
 }
 
 .visible {
@@ -84,6 +90,9 @@
     }
     .subheader, .answer {
         color: #ccc7c5;
+    }
+    .answer:hover {
+       background-color: #474444;
     }
     .button {
         color: var(--background);
@@ -122,5 +131,11 @@
       }
       .buttonSection {
         margin: 0rem 1rem 0rem 1rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .question {
+            border-top: 1px solid #ccc7c5;
+        }
       }
 }
