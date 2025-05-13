@@ -21,9 +21,14 @@ export default function Navbar() {
   return (
     <>
       <nav className={`${styles.nav} fade-in`}>
-        <p className={styles.link}>HOME</p>
+        <Link href="/">
+          <p className={styles.link}>HOME</p>
+        </Link>
         <p className={styles.link}>SERVICES</p>
-        <p className={styles.link}>FAQ</p>
+        <Link href="/faq">
+          <p className={styles.link}>FAQ</p>
+        </Link>
+
         <p className={styles.link}>ABOUT</p>
         <div className={styles.navLogoContainer}>
           <Image
