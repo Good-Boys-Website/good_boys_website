@@ -1,15 +1,38 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { faqs } from "@/app/data/data";
 
 import styles from "@/app/styling/faq.module.css";
 
 function FaqCard({ question, answer }) {
+  const ref = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        root: null,
+        threshold: 0.6,
+      }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+    return () => {
+      if (ref.current) observer.unobserve(ref.current);
+    };
+  }, []);
+
   return (
-    <li className={styles.faq}>
+    <li ref={ref} className={styles.faq}>
       <p className={styles.question}>{question}</p>
       <div className={styles.divider}></div>
-      <p className={styles.answer}>{answer}</p>
+      <p className={`${styles.answer} ${isVisible ? styles.visible : ""}`}>
+        {answer}
+      </p>
     </li>
   );
 }
