@@ -58,3 +58,58 @@ width: 620px;
     height: auto;
     border-radius: 8px;
   }
+
+  .photoMobile {
+    display: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .page {
+        color: var(--foreground);
+    }
+    .subheader, .copySection {
+        color: #ccc7c5;
+    }
+    .button {
+        color: var(--foreground);
+    }
+  }
+
+  /* mobile styling */
+@media (max-width: 1300px) {
+    .page {
+        margin: 0rem 1rem 4rem 1rem;
+        flex-direction: column;
+      } 
+
+      .leftSection {
+        margin: 0rem 0rem 0rem rem;
+        width: 100%;
+      }
+      .header {
+        font-size: 48px;
+        width: 100vw;
+      }
+      .subheader {
+        width: 90vw;
+      }
+      .copySection {
+        width: 90%;
+      }
+      .copyHeader {
+        padding-top: 2rem;
+      }
+      .photoMobile {
+        display: block;
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+      }
+      .photo {
+        display: none;
+      }
+      .button {
+        margin-top: 4rem;
+        width: 100%;
+      }
+}

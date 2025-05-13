@@ -10,6 +10,13 @@ export default function About() {
       <section className={styles.leftSection}>
         <h1 className={styles.header}>Meet Nick & Arthur</h1>
         <h2 className={styles.subheader}>Two dog-lovers with a mission.</h2>
+        <Image
+          className={styles.photoMobile}
+          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744681698/IMG_5455_gamb5j.jpg"
+          alt="photo of two dogs"
+          width={1600}
+          height={2000}
+        />
         <h3 className={styles.copyHeader}>Who we are</h3>
         <p className={styles.copySection}>
           In 2018, fate (and a shared love for dogs) brought Arthur and Nick
@@ -29,6 +36,13 @@ export default function About() {
           his days crunching data as a full-time data analyst. He takes the lead
           in managing the admin and financial aspects of our furry venture.
         </p>
+        <Image
+          className={styles.photoMobile}
+          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744681698/IMG_5455_gamb5j.jpg"
+          alt="photo of two dogs"
+          width={1600}
+          height={2000}
+        />
         <h4 className={styles.copyHeader}>Our Mission</h4>
         <p className={styles.copySection}>
           At Good Boys, our mission is simple yet heartfelt: we're all about
