@@ -37,6 +37,7 @@ export default function Navbar() {
             alt="Good Boys Premium Dog Grooming"
             width={1563}
             height={1563}
+            priority
           />
           <Image
             className={styles.navLogoDark}
@@ -47,7 +48,9 @@ export default function Navbar() {
             loading="lazy"
           />
         </div>
-        <p className={styles.link}>STAFF</p>
+        <Link href="/staff">
+          <p className={styles.link}>STAFF</p>
+        </Link>
         <p className={styles.link}>CONTACT US</p>
         <button className={styles.buttonText}>BOOK HERE</button>
       </nav>
@@ -85,7 +88,7 @@ export default function Navbar() {
         aria-label="Mobile Navigation"
       >
         <div className={styles.navItem}>
-          <Link className={styles.navContainer} href="">
+          <Link className={styles.navContainer} href="/">
             <h4 className={styles.link} role="heading">
               HOME
             </h4>
@@ -113,7 +116,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className={styles.navItem}>
-          <Link className={styles.navContainer} href="">
+          <Link className={styles.navContainer} href="/staff">
             <h4 className={styles.link} role="heading">
               STAFF
             </h4>

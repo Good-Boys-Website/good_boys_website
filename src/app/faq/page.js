@@ -37,7 +37,7 @@ function FaqCard({ question, answer }) {
   );
 }
 
-export default function faq() {
+export default function Faq() {
   return (
     <div className={`${styles.page} fade-in`}>
       <h1 className={styles.header}>You have questions - we have answers.</h1>
