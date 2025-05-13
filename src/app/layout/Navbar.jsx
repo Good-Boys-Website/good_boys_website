@@ -99,7 +99,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className={styles.navItem}>
-          <Link className={styles.navContainer} href="">
+          <Link className={styles.navContainer} href="/faq">
             <h4 className={styles.link} role="heading">
               FAQs
             </h4>

@@ -129,6 +129,13 @@
       .question, .answer {
         width: 100%
       }
+      .answer:hover {
+        background-color: var(--background);
+      }
+      
+      .answer {
+        padding: 0rem;
+      }
       .buttonSection {
         margin: 0rem 1rem 0rem 1rem;
       }
