@@ -48,9 +48,9 @@ export default function About() {
           At Good Boys, our mission is simple yet heartfelt: we&apos;re all
           about making tails wag and fur shine! We strive to provide every dog
           with a beautiful groom in an environment that&apos;s as comfy as their
-          favorite napping spot. Stress? That&apos;s a word we don't understand
-          - our four- legged clients experience only low-stress pampering and
-          positive vibes.
+          favorite napping spot. Stress? That&apos;s a word we don&apos;t
+          understand - our four- legged clients experience only low-stress
+          pampering and positive vibes.
         </p>
         <p className={styles.copySection}>
           So, whether you&apos;re here to learn more about us, book an
