@@ -152,12 +152,16 @@
     display: block;
     flex-direction: column;
     text-align: center;
-    height: 60vh;
+    height: 80vh;
   }
   .navItem {
     color: var(--gbBlue);
     font-size: 22px;
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .link {
+    padding: 1rem;
   }
 
   @media (prefers-color-scheme: dark) {

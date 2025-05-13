@@ -265,7 +265,7 @@ export default function QuoteForm() {
         <textarea
           className={styles.formInputMessage}
           name="owner_message"
-          aria-label="ownerss_additional_information"
+          aria-label="owners_additional_information"
           value={formValues.owner_message}
           onChange={handleInputChange}
         />
