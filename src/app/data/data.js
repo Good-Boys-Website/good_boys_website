@@ -263,3 +263,44 @@ export const reviews = [
     name: "Justin W.",
   },
 ];
+
+export const faqs = [
+  {
+    id: 1,
+    question: "What do I need to bring to my first appointment at Good Boys?",
+    answer:
+      "For your first appointment you must bring you dogs rabies paperwork, NOT the tag, so we can verify the expiration date! If you'd like to bring your dogs' favorite treats along please feel free to do so!having whichever body part is being dyed maneuvered, and the confidence to garner attention from everyone on the block!",
+  },
+  {
+    id: 2,
+    question:
+      "Does Good Boys have a cancellation policy? What if I'm just a few minutes late?",
+    answer:
+      "Good Boys requires 48 hours notice for all cancellations. If you are running late we ask that you let us know ASAP to see if we will still be able to take you! If you are more than 15 minutes late and have not reached out, you will be charged as a no show.",
+  },
+  {
+    id: 3,
+    question:
+      "My dog struggles with grooming and has bit other groomers in the past- can you groom them?",
+    answer:
+      "At this time Good Boys does not accept aggressive dogs for the safety of our groomer, We are a small operation and a bite could put us out of work for a few days or months depending on the severity. We are more than happy to refer you to another groomer who specializes in handling aggressive or bitey dogs!",
+  },
+  {
+    id: 4,
+    question: "My dog has fleas- can you help?",
+    answer:
+      "To reduce the risk of fleas spreading from dog to dog, we do not accept pets that are known to have fleas. If we find fleas after the groom has started we may continue the groom in cases that aren't severe, but a fee will be added on top of the regular groom price.",
+  },
+  {
+    id: 5,
+    question: "What about ticks?",
+    answer:
+      "Good Boys will remove up to 5 ticks- if we find more than 5 we will refer you to a vet for further treatment.",
+  },
+  {
+    id: 6,
+    question: "Can color be added to any dog, any groom?",
+    answer:
+      "Color can be added on after an initial appointment where we get to know your pup! Not all dogs are candidates for color as it requires a the dog be comfortable with standing still, having whichever body part is being dyed maneuvered, and the confidence to garner attention from everyone on the block!",
+  },
+];

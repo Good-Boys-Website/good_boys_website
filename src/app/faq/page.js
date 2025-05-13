@@ -1,6 +1,18 @@
 "use client";
 
+import { faqs } from "@/app/data/data";
+
 import styles from "@/app/styling/faq.module.css";
+
+function FaqCard({ question, answer }) {
+  return (
+    <li className={styles.faq}>
+      <p className={styles.question}>{question}</p>
+      <div className={styles.divider}></div>
+      <p className={styles.answer}>{answer}</p>
+    </li>
+  );
+}
 
 export default function faq() {
   return (
@@ -9,6 +21,14 @@ export default function faq() {
       <h2 className={styles.subheader}>
         Below are some commonly asked questions by clients:
       </h2>
+      <ul data-scroll-section className={styles.faqSection}>
+        {faqs.map((faq) => (
+          <FaqCard key={faq.id} question={faq.question} answer={faq.answer} />
+        ))}
+      </ul>
+      <section className={styles.buttonSection}>
+        <button className={styles.button}>Book A Spa Day</button>
+      </section>
     </div>
   );
 }
