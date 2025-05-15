@@ -1,17 +1,10 @@
 .scroll {
   position: fixed;
   color: var(--background);
- 
-
-
-  
-
   margin-top: 24rem;
   margin-left: 78rem;
   z-index: 1000;
   cursor: pointer;
-  
-  
 }
 
 .arrow {
