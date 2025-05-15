@@ -199,17 +199,20 @@ export default function QuoteForm() {
             name="dog_breed"
             value={formValues.dog_breed}
             aria-label="dog_breed"
-            placeholder="Start typing your dog's breed"
+            placeholder="Type your dog's breed & select from the list"
             onChange={(e) => {
               const value = e.target.value;
               setFormValues((prevValues) => ({
                 ...prevValues,
-                dog_breed: e.target.value,
+                dog_breed: value,
               }));
 
               if (value.length > 0) {
                 const matches = dogBreeds.filter((breed) =>
-                  breed.toLowerCase().startsWith(value.toLowerCase())
+                  breed
+                    .toLowerCase()
+                    .split(" ")
+                    .some((word) => word.startsWith(value.toLowerCase()))
                 );
                 setFilteredBreeds(matches);
                 setShowSuggestions(true);
@@ -220,6 +223,9 @@ export default function QuoteForm() {
             onFocus={() => {
               if (formValues.dog_breed.length > 0) setShowSuggestions(true);
             }}
+            onBlur={() => {
+              setTimeout(() => setShowSuggestions(false), 150);
+            }}
             autoComplete="off"
           />
           {showSuggestions && filteredBreeds.length > 0 && (
@@ -227,7 +233,7 @@ export default function QuoteForm() {
               {filteredBreeds.map((breed, index) => (
                 <li
                   key={index}
-                  onClick={() => {
+                  onMouseDown={() => {
                     setFormValues((prev) => ({ ...prev, dog_breed: breed }));
                     setShowSuggestions(false);
                   }}
