@@ -17,8 +17,8 @@
 }
 
 .subheader {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--foreground);
+ font-family: "InstrumentSans", Arial, sans-serif;
+  color: var(--gbGrayText);
   font-size: 26px;
   font-weight: normal;
 }
@@ -82,8 +82,8 @@
   .position {
     color: var(--foreground);
   }
-  .subheader {
-    color: var(--gbGrayText);
+  .subheader, .stats {
+    color: #ccc7c5;;
   }
 }
 

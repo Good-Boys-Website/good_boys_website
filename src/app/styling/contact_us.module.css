@@ -1,0 +1,47 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 4rem 0rem 4rem;
+    min-height: 100vh;
+    color: var(--gbBlue);
+    line-height: 1.5;
+  }
+  
+  .header {
+    font-family: "InstrumentSans", Arial, sans-serif;
+    font-size: 68px;
+    line-height: 1.5;
+    width: 900px;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .subheader {
+     font-family: "InstrumentSans", Arial, sans-serif;
+  color: var(--gbGrayText);
+    font-size: 26px;
+    font-weight: normal;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+  }
+
+  .nameSection {
+    display: flex;
+    flex-direction: row;
+    width: 460px;
+  }
+
+  .nameField {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 1rem;
+  }
+  .nameField:last-child {
+    margin-right: 0rem;
+  }

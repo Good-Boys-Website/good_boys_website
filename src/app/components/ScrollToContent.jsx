@@ -15,20 +15,36 @@ export default function ScrollToContent() {
       document.querySelectorAll("[data-scroll-section]")
     );
 
-    const handleManualScroll = () => {
-      const scrollPosition = window.innerHeight + window.scrollY;
-      const documentHeight = document.body.offsetHeight;
+    const onScroll = () => {
+      if (isScrolling.current) return; // ⛔ prevent interference during auto-scroll
 
-      if (Math.abs(scrollPosition - documentHeight) < 80) {
-        setAtEnd(true);
-      } else {
-        setAtEnd(false);
+      const sections = sectionRefs.current;
+
+      let closestIndex = 0;
+      let closestOffset = Infinity;
+
+      for (let i = 0; i < sections.length; i++) {
+        const rect = sections[i].getBoundingClientRect();
+        const offset = Math.abs(rect.top);
+        if (offset < closestOffset) {
+          closestOffset = offset;
+          closestIndex = i;
+        }
       }
+
+      currentIndex.current = closestIndex;
+
+      const isNearBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 2;
+
+      setAtEnd(isNearBottom);
     };
 
-    window.addEventListener("scroll", handleManualScroll);
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+
     return () => {
-      window.removeEventListener("scroll", handleManualScroll);
+      window.removeEventListener("scroll", onScroll);
     };
   }, []);
 
@@ -38,7 +54,7 @@ export default function ScrollToContent() {
     const sections = sectionRefs.current;
 
     // If at end, scroll to top
-    if (currentIndex.current >= sections.length) {
+    if (atEnd) {
       isScrolling.current = true;
       window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -46,7 +62,7 @@ export default function ScrollToContent() {
         currentIndex.current = 0;
         setAtEnd(false);
         isScrolling.current = false;
-      }, 600); // allow scroll to complete
+      }, 800); // allow scroll & index update
       return;
     }
 
@@ -59,7 +75,7 @@ export default function ScrollToContent() {
         currentIndex.current += 1;
         setAtEnd(currentIndex.current >= sections.length);
         isScrolling.current = false;
-      }, 600);
+      }, 750);
     }
   };
 
@@ -69,7 +85,11 @@ export default function ScrollToContent() {
       className={styles.scroll}
       onClick={handleScroll}
     >
-      {atEnd ? <FaArrowUp /> : <FaArrowDown />}
+      {atEnd ? (
+        <FaArrowUp className={styles.arrow} />
+      ) : (
+        <FaArrowDown className={styles.arrow} />
+      )}
     </div>
   );
 }

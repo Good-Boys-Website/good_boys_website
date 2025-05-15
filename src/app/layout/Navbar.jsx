@@ -52,7 +52,9 @@ export default function Navbar() {
         <Link href="/staff">
           <p className={styles.link}>STAFF</p>
         </Link>
-        <p className={styles.link}>CONTACT US</p>
+        <Link href="/contact_us">
+          <p className={styles.link}>CONTACT US</p>
+        </Link>
         <button className={styles.buttonText}>BOOK HERE</button>
       </nav>
 
@@ -124,7 +126,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className={styles.navItem}>
-          <Link className={styles.navContainer} href="">
+          <Link className={styles.navContainer} href="/contact_us">
             <h4 className={styles.link} role="heading">
               CONTACT US
             </h4>

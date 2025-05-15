@@ -1,12 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import ScrollToContent from "../components/ScrollToContent";
 
 import styles from "@/app/styling/about.module.css";
 
 export default function About() {
   return (
     <div className={`${styles.page} fade-in`}>
+      <ScrollToContent />
       <section className={styles.leftSection}>
         <h1 className={styles.header}>Meet Nick & Arthur</h1>
         <h2 className={styles.subheader}>Two dog-lovers with a mission.</h2>
@@ -43,7 +45,9 @@ export default function About() {
           width={1600}
           height={2000}
         />
-        <h4 className={styles.copyHeader}>Our Mission</h4>
+        <h4 data-scroll-section className={styles.copyHeader}>
+          Our Mission
+        </h4>
         <p className={styles.copySection}>
           At Good Boys, our mission is simple yet heartfelt: we&apos;re all
           about making tails wag and fur shine! We strive to provide every dog

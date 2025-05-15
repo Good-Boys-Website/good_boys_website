@@ -10,8 +10,8 @@ import styles from "./footer.module.css";
 
 export default function Footer() {
   return (
-    <footer data-scroll-section className={`${styles.footer} fade-in`}>
-      <section className={styles.footerCtas}>
+    <footer className={`${styles.footer} fade-in`}>
+      <section data-scroll-section className={styles.footerCtas}>
         <div className={styles.leftContainer}>
           <Image
             className={styles.mascot}
@@ -33,7 +33,9 @@ export default function Footer() {
         </div>
         <div className={styles.buttonSection}>
           <p className={styles.footerButtonOne}>BOOK NOW</p>
-          <p className={styles.footerButton}>CONTACT US</p>
+          <Link href="/contact_us">
+            <p className={styles.footerButton}>CONTACT US</p>
+          </Link>
         </div>
       </section>
       <section className={styles.linkSection}>
