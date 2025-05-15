@@ -19,7 +19,7 @@ export default function ScrollToContent() {
       const scrollPosition = window.innerHeight + window.scrollY;
       const documentHeight = document.body.offsetHeight;
 
-      if (Math.abs(scrollPosition - documentHeight) < 80) {
+      if (Math.abs(scrollPosition - documentHeight) < 120) {
         setAtEnd(true);
       } else {
         setAtEnd(false);
@@ -69,7 +69,11 @@ export default function ScrollToContent() {
       className={styles.scroll}
       onClick={handleScroll}
     >
-      {atEnd ? <FaArrowUp /> : <FaArrowDown />}
+      {atEnd ? (
+        <FaArrowUp className={styles.arrow} />
+      ) : (
+        <FaArrowDown className={styles.arrow} />
+      )}
     </div>
   );
 }

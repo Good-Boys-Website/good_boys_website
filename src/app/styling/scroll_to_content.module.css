@@ -1,15 +1,24 @@
 .scroll {
   position: fixed;
   color: var(--background);
-  background-color: var(--gbBlue);
-  padding: 1rem;
-  padding-bottom: 0.5rem;
-  border-radius: 50px;
-  margin-top: 38rem;
-  margin-left: 84rem;
+ 
+
+
+  
+
+  margin-top: 24rem;
+  margin-left: 78rem;
   z-index: 1000;
   cursor: pointer;
-  font-size: 2rem;
+  
+  
+}
+
+.arrow {
+  border-radius: 50px;
+  font-size: 5rem;
+  padding: 1rem;
+  background-color: var(--gbBlue);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 

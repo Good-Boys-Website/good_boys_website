@@ -1,6 +1,7 @@
 import Image from "next/image";
 import QuoteForm from "./components/QuoteForm";
 import { reviews } from "./data/data";
+import ScrollToContent from "./components/ScrollToContent";
 
 import styles from "./page.module.css";
 
@@ -16,6 +17,7 @@ function ReviewCard({ review, name }) {
 export default function Home() {
   return (
     <div className={`${styles.page} fade-in`}>
+      <ScrollToContent />
       <main>
         <h1 className={styles.header}>
           Your dog called - They want a makeover.

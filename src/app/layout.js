@@ -2,7 +2,7 @@ import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
 import localFont from "next/font/local";
 
-import ScrollToContent from "./components/ScrollToContent";
+/*import ScrollToContent from "./components/ScrollToContent";*/
 
 import "./globals.css";
 
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${introRust.variable} ${instrumentSans.variable}`}>
-        <ScrollToContent />
+        {/*<ScrollToContent />*/}
         <Navbar />
         {children}
         <Footer />
