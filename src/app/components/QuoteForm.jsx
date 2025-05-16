@@ -3,6 +3,7 @@
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import React, { useState, useRef } from "react";
+import DogBreedSelect from "./DogBreedSelect";
 import { IoCloseOutline } from "react-icons/io5";
 import { dogBreeds, dogWeights, services } from "../data/data";
 
@@ -10,8 +11,6 @@ import styles from "@/app/styling/quote_form.module.css";
 
 export default function QuoteForm() {
   const formRef = useRef();
-  const [filteredBreeds, setFilteredBreeds] = useState([]);
-  const [showSuggestions, setShowSuggestions] = useState(false);
 
   const [messageStatus, setMessageStatus] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -191,60 +190,16 @@ export default function QuoteForm() {
         </select>
 
         <label className={styles.formLabel}>Dog breed*</label>
-        <div className={styles.autoComplete}>
-          <input
-            type="text"
-            className={styles.formInput}
-            id={styles.dogBreedInput}
-            name="dog_breed"
-            value={formValues.dog_breed}
-            aria-label="dog_breed"
-            placeholder="Type your dog's breed & select from the list"
-            onChange={(e) => {
-              const value = e.target.value;
-              setFormValues((prevValues) => ({
-                ...prevValues,
-                dog_breed: value,
-              }));
-
-              if (value.length > 0) {
-                const matches = dogBreeds.filter((breed) =>
-                  breed
-                    .toLowerCase()
-                    .split(" ")
-                    .some((word) => word.startsWith(value.toLowerCase()))
-                );
-                setFilteredBreeds(matches);
-                setShowSuggestions(true);
-              } else {
-                setShowSuggestions(false);
-              }
-            }}
-            onFocus={() => {
-              if (formValues.dog_breed.length > 0) setShowSuggestions(true);
-            }}
-            onBlur={() => {
-              setTimeout(() => setShowSuggestions(false), 150);
-            }}
-            autoComplete="off"
-          />
-          {showSuggestions && filteredBreeds.length > 0 && (
-            <ul className={styles.suggestionList}>
-              {filteredBreeds.map((breed, index) => (
-                <li
-                  key={index}
-                  onMouseDown={() => {
-                    setFormValues((prev) => ({ ...prev, dog_breed: breed }));
-                    setShowSuggestions(false);
-                  }}
-                  className={styles.suggestionItem}
-                >
-                  {breed}
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+        <DogBreedSelect
+          value={formValues.dog_breed}
+          onChange={(val) =>
+            setFormValues((prev) => ({
+              ...prev,
+              dog_breed: val,
+            }))
+          }
+          options={dogBreeds}
+        />
 
         <label className={styles.formLabel}>Weight*</label>
         <select
