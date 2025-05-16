@@ -3,7 +3,6 @@
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import React, { useState, useRef } from "react";
-import dynamic from "next/dynamic";
 import DogBreedSelect from "./DogBreedSelect";
 import { IoCloseOutline } from "react-icons/io5";
 import { dogBreeds, dogWeights, services } from "../data/data";
@@ -16,16 +15,6 @@ export default function QuoteForm() {
   const [messageStatus, setMessageStatus] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const dogBreedOptions = dogBreeds.map((breed) => ({
-    value: breed,
-    label: breed,
-  }));
-
-  const DogBreedSelect = dynamic(() => import("./DogBreedSelect"), {
-    ssr: false,
-    loading: () => <div className={styles.loading}>Loading…</div>,
-  });
 
   const closeModal = () => {
     setIsModalVisible(false);
@@ -209,7 +198,7 @@ export default function QuoteForm() {
               dog_breed: val,
             }))
           }
-          options={dogBreedOptions}
+          options={dogBreeds}
         />
 
         <label className={styles.formLabel}>Weight*</label>

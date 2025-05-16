@@ -21,27 +21,14 @@
 }
 .suggestionList{
   position: absolute;
-  margin-top: 3.5rem;
+  margin-top: 1rem;
   background-color: white;
   z-index: 1000;
   border-radius: 14px;
-  width: 360px;
+  width: 460px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow-y: auto;
   max-height: 378px;
-}
-
-.dogSelect {
-   border-radius: 5px;
-   border: 1px solid black;
-}
-
-.loading {
-  background-color: white;
-  border-radius: 5px;
-  font-size: 16px;
-  padding: .6rem;
-  border: 1px solid black;
 }
 
 .suggestionItem {
@@ -62,6 +49,10 @@
   background-color: var(--gbGrayButton);
 }
 
+.noMatches {
+  padding: 1rem;
+}
+
 .formLabel {
   padding: 1rem 1rem 0.5rem 0rem;
 }
@@ -76,10 +67,20 @@
   border-radius: 5px;
   margin-bottom: 0.5rem;
 }
+.dogBreedInputContainer {
+display: flex;
+  flex-direction: row;
+}
 
 #dogBreedInput {
   margin-bottom: 0rem;
   width: 100%;
+}
+.dogBreedButton {
+  font-size: 18px;
+  padding: .5rem 1rem .5rem 1rem;
+  margin-left: .5rem;
+  width: auto;
 }
 .formInputMessage {
   height: 120px;
@@ -168,7 +169,7 @@
 @media (prefers-color-scheme: dark) {
   .formInput,
   .formSelect,
-  .formInputMessage {
+  .formInputMessage{
     background-color: #252525;
     border: 1px solid #c4c2bf;
   }
