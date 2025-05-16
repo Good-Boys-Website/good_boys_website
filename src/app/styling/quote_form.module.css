@@ -31,6 +31,19 @@
   max-height: 378px;
 }
 
+.dogSelect {
+   border-radius: 5px;
+   border: 1px solid black;
+}
+
+.loading {
+  background-color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: .6rem;
+  border: 1px solid black;
+}
+
 .suggestionItem {
   color: var(--foreground);
   font-size: 18px;;
