@@ -68,7 +68,7 @@ export default function ContactUs() {
           We want to meet your pup.
           <br />
           <span className={styles.bottomCopySub}>
-            Treat them to a spa day. They're working hard, 9-5.
+            Treat them to a spa day. They&apos;re working hard, 9-5.
           </span>
         </p>
       </div>
