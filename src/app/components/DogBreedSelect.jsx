@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Combobox } from "@headlessui/react";
 
 import styles from "@/app/styling/quote_form.module.css";
@@ -8,13 +8,26 @@ import styles from "@/app/styling/quote_form.module.css";
 export default function DogBreedSelect({ value, onChange, options }) {
   const [query, setQuery] = useState("");
   const inputRef = useRef(null);
+  const [debouncedQuery, setDebouncedQuery] = useState("");
+
+  // Debounce effect (inlined, not a separate hook)
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedQuery(query);
+    }, 200); // delay in ms
+
+    return () => clearTimeout(handler); // cleanup on query change
+  }, [query]);
 
   const filteredOptions =
-    query === ""
+    debouncedQuery.trim() === ""
       ? options
-      : options.filter((breed) =>
-          breed.toLowerCase().includes(query.toLowerCase())
-        );
+      : options.filter((breed) => {
+          const breedLower = breed.toLowerCase();
+          const words = debouncedQuery.toLowerCase().trim().split(/\s+/);
+
+          return words.some((w) => breedLower.includes(w));
+        });
 
   const clearSelection = () => {
     onChange(""); // clears selected breed in parent
