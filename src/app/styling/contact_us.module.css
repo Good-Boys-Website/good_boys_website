@@ -116,6 +116,19 @@
   filter: contrast(60%);
 }
 
+@media (prefers-color-scheme: dark) {
+  .page,
+  .formButton {
+    color: var(--foreground);
+  }
+  .subheader {
+    color: #ccc7c5;
+  }
+  .formInputMessage::placeholder {
+    color: white;
+  }
+}
+
 @media (max-width: 1300px) {
   .formSection {
     margin: 0rem;
@@ -139,30 +152,36 @@
   }
 
   .bottom {
-  position:inherit;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  width: 100%;
-}
+    position: inherit;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
   .bottomCopy {
     display: flex;
     flex-direction: column;
     color: var(--gbBlue);
-  position: inherit;
-  font-size: 48px;
-  z-index: 1000;
-  margin-top: 0rem;
-  line-height: 1;
-  margin-bottom: 2rem;
-}
+    position: inherit;
+    font-size: 48px;
+    z-index: 1000;
+    margin-top: 0rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
 
-.bottomCopySub {
-  padding-top: 2rem;
-  font-size: 24px;
-}
+  .bottomCopySub {
+    padding-top: 2rem;
+    font-size: 24px;
+  }
 
-.contactPhoto {
-  filter: none;
-}
+  .contactPhoto {
+    filter: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .bottomCopy {
+      color: #ccc7c5;
+    }
+  }
 }
