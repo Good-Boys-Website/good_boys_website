@@ -172,6 +172,7 @@
 
   .heroPhoto {
     align-self: center;
+    border-radius: 0px;
   }
 
   .section {
