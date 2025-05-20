@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { staff } from "@/app/data/data";
-import ScrollToContent from "../components/ScrollToContent";
 
 import styles from "@/app/styling/staff.module.css";
 
@@ -20,8 +19,8 @@ function StaffCard({
         className={styles.staffPhoto}
         src={photo}
         alt="Photo of a Good Boys Dog Grooming staff member"
-        width={3024}
-        height={4032}
+        width={2082}
+        height={2777}
         priority
       />
       <div className={styles.info}>
@@ -38,7 +37,6 @@ function StaffCard({
 export default function Staff() {
   return (
     <div className={`${styles.page} fade-in`}>
-      <ScrollToContent />
       <h1 className={styles.header}>Meet our staff</h1>
       <h2 className={styles.subheader}>
         Get to know the wonderful Good Boys crew:

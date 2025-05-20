@@ -24,7 +24,7 @@
 }
 
 .faqPhoto {
-  width: 90vw;
+  width: 100%;
   height: auto;
   margin-top: 4rem;
   border-radius: 20px;
@@ -122,7 +122,7 @@
         width: 90vw;
       }
       .faqPhoto {
-width: 100%;
+
 border-radius: 0px;
 
       }

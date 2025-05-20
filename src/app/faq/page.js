@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { faqs } from "@/app/data/data";
-import ScrollToContent from "@/app/components/ScrollToContent";
 
 import styles from "@/app/styling/faq.module.css";
 
@@ -42,7 +41,6 @@ function FaqCard({ question, answer }) {
 export default function Faq() {
   return (
     <div className={`${styles.page} fade-in`}>
-      <ScrollToContent />
       <h1 className={styles.header}>You have questions - we have answers.</h1>
       <h2 className={styles.subheader}>
         Below are some commonly asked questions by clients:

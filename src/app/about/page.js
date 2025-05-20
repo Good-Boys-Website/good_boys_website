@@ -1,23 +1,21 @@
 "use client";
 
 import Image from "next/image";
-import ScrollToContent from "../components/ScrollToContent";
 
 import styles from "@/app/styling/about.module.css";
 
 export default function About() {
   return (
     <div className={`${styles.page} fade-in`}>
-      <ScrollToContent />
       <section className={styles.leftSection}>
         <h1 className={styles.header}>Meet Nick & Arthur</h1>
         <h2 className={styles.subheader}>Two dog-lovers with a mission.</h2>
         <Image
           className={styles.photoMobile}
-          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744681698/IMG_5455_gamb5j.jpg"
+          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747398710/gb_owners_c_crop_w_1400_h_1800_jxvarn.jpg"
           alt="photo of two dogs"
-          width={1600}
-          height={2000}
+          width={1400}
+          height={1600}
         />
         <h3 className={styles.copyHeader}>Who we are</h3>
         <p className={styles.copySection}>
@@ -67,10 +65,10 @@ export default function About() {
       <section className={styles.sectionRight}>
         <Image
           className={styles.photo}
-          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744681698/IMG_5455_gamb5j.jpg"
+          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747398710/gb_owners_c_crop_w_1400_h_1800_jxvarn.jpg"
           alt="photo of two dogs"
-          width={1600}
-          height={2000}
+          width={1400}
+          height={1600}
         />
         <Image
           className={styles.photo}
