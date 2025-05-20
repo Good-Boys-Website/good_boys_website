@@ -11,7 +11,7 @@ export default function ScrollToContent() {
   const isScrolling = useRef(false); // prevents double firing
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show the arrow when the user scrolls down 1000px
+  // Show the arrow when the user scrolls down 600px
   const toggleVisibility = () => {
     if (window.pageYOffset > 600) {
       setIsVisible(true);
@@ -54,7 +54,7 @@ export default function ScrollToContent() {
     onScroll();
 
     return () => {
-      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("scroll", toggleVisibility, onScroll);
     };
   }, []);
 
