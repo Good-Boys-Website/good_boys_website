@@ -22,7 +22,7 @@
 }
 
 .heroPhoto {
-  width: 90vw;
+  width: 100%;
   height: auto;
   border-radius: 8px;;
 }
@@ -172,7 +172,6 @@
 
   .heroPhoto {
     align-self: center;
-    width: 500px;
   }
 
   .section {

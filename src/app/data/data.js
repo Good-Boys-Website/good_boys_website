@@ -314,7 +314,7 @@ export const staff = [
     dog_topping: "Ketchup & onion",
     famous_dog: "Shadow, Homeward Bound",
     photo:
-      "https://res.cloudinary.com/do4shdwcc/image/upload/v1744681771/Nick_Profile_lb7kjf.jpg",
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1747401224/nick_petravich_groomer_staff_c_crop_w_2082_h_2777_du2qil.jpg",
   },
   {
     id: 2,
@@ -334,7 +334,7 @@ export const staff = [
     dog_topping: "Ketchup or Chili Cheese",
     famous_dog: "Perdita, 101 Dalmatians",
     photo:
-      "https://res.cloudinary.com/do4shdwcc/image/upload/v1744681839/IMG_5823_gqo3pw.jpg",
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1747401126/emma_biggs_bather_staff_c_crop_w_2082_h_2777_k9j3oc.jpg",
   },
   {
     id: 4,
@@ -344,6 +344,6 @@ export const staff = [
     dog_topping: "Chili",
     famous_dog: "Santa's Little Helper, The Simpsons",
     photo:
-      "https://res.cloudinary.com/do4shdwcc/image/upload/v1744681838/IMG_9629_m7so9n.jpg",
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1747401177/lo_mancini_bather_staff_c_crop_w_2082_h_2777_p2luto.jpg",
   },
 ];

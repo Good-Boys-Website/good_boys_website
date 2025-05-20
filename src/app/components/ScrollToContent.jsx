@@ -9,6 +9,16 @@ export default function ScrollToContent() {
   const [atEnd, setAtEnd] = useState(false);
   const currentIndex = useRef(0);
   const isScrolling = useRef(false); // prevents double firing
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Show the arrow when the user scrolls down 1000px
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 600) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
 
   useEffect(() => {
     sectionRefs.current = Array.from(
@@ -40,7 +50,7 @@ export default function ScrollToContent() {
       setAtEnd(isNearBottom);
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", toggleVisibility, onScroll);
     onScroll();
 
     return () => {
@@ -85,11 +95,12 @@ export default function ScrollToContent() {
       className={styles.scroll}
       onClick={handleScroll}
     >
-      {atEnd ? (
-        <FaArrowUp className={styles.arrow} />
-      ) : (
-        <FaArrowDown className={styles.arrow} />
-      )}
+      {isVisible &&
+        (atEnd ? (
+          <FaArrowUp className={styles.arrow} />
+        ) : (
+          <FaArrowDown className={styles.arrow} />
+        ))}
     </div>
   );
 }

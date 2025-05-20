@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { faqs } from "@/app/data/data";
-import ScrollToContent from "@/app/components/ScrollToContent";
 
 import styles from "@/app/styling/faq.module.css";
 
@@ -41,11 +41,18 @@ function FaqCard({ question, answer }) {
 export default function Faq() {
   return (
     <div className={`${styles.page} fade-in`}>
-      <ScrollToContent />
       <h1 className={styles.header}>You have questions - we have answers.</h1>
       <h2 className={styles.subheader}>
         Below are some commonly asked questions by clients:
       </h2>
+      <Image
+        className={styles.faqPhoto}
+        src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747398365/poodle_dog_groom_dye_c_crop_ar_16_9_mg9mss.jpg"
+        alt="Photo of a freshly groomed dog"
+        width={3024}
+        height={1701}
+        priority
+      />
       <ul data-scroll-section className={styles.faqSection}>
         {faqs.map((faq) => (
           <FaqCard key={faq.id} question={faq.question} answer={faq.answer} />
