@@ -23,8 +23,15 @@
   font-weight: normal;
 }
 
+.faqPhoto {
+  width: 90vw;
+  height: auto;
+  margin-top: 4rem;
+  border-radius: 20px;
+}
+
 .faqSection {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .faq {
@@ -114,10 +121,16 @@
         margin: 0rem 1rem 0rem 1rem;
         width: 90vw;
       }
+      .faqPhoto {
+width: 100%;
+border-radius: 0px;
+
+      }
       .divider {
         display: none;
       }
       .faqSection {
+        padding-top: 4rem;
         margin: 0rem 1rem 0rem 1rem;
       }
       .faq {
