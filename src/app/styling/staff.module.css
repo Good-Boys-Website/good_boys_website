@@ -17,7 +17,7 @@
 }
 
 .subheader {
- font-family: "InstrumentSans", Arial, sans-serif;
+  font-family: "InstrumentSans", Arial, sans-serif;
   color: var(--gbGrayText);
   font-size: 26px;
   font-weight: normal;
@@ -76,14 +76,28 @@
   font-size: 20px;
 }
 
+.bookButton {
+  display: none;
+}
+
+.staffCard:first-child {
+  .bookButton {
+    font-family: "IntroRust", Arial, sans-serif;
+    display: block;
+    margin-top: 2rem;
+    width: 360px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .header,
   .name,
   .position {
     color: var(--foreground);
   }
-  .subheader, .stats {
-    color: #ccc7c5;;
+  .subheader,
+  .stats {
+    color: #ccc7c5;
   }
 }
 
@@ -131,4 +145,9 @@
   .info {
     width: 90%;
   }
+ .staffCard:first-child {
+  .bookButton {
+    width: 100%;
+  }
+}
 }

@@ -29,6 +29,7 @@ function StaffCard({
         <p className={styles.stats}>Dog Breed: {dog_breed}</p>
         <p className={styles.stats}>Dog Topping: {dog_topping}</p>
         <p className={styles.stats}>Famous Dog: {famous_dog}</p>
+        <button className={styles.bookButton}>Book With Nick</button>
       </div>
     </li>
   );

@@ -101,7 +101,7 @@
   font-family: "InstrumentSans", Arial, sans-serif;
   font-size: 68px;
   z-index: 1000;
-  margin-top: 15rem;
+  margin-top: 12rem;
   line-height: 0.8;
 }
 
@@ -146,6 +146,8 @@
   width: 100%;
 }
   .bottomCopy {
+    display: flex;
+    flex-direction: column;
     color: var(--gbBlue);
   position: inherit;
   font-size: 48px;
@@ -156,7 +158,8 @@
 }
 
 .bottomCopySub {
-  font-size: 26px;
+  padding-top: 2rem;
+  font-size: 24px;
 }
 
 .contactPhoto {
