@@ -20,18 +20,21 @@ export default function ScrollToContent() {
     const handleScroll = () => {
       if (isScrolling.current) return;
 
-      // Show scroll arrow if user has scrolled 600px
-      const shouldBeVisible = window.scrollY > 600;
-      setIsVisible((prev) =>
-        prev !== shouldBeVisible ? shouldBeVisible : prev
-      );
+      // Visibility (scrollY > 600)
+      const scrollY = window.scrollY;
+      if (scrollY > 600 && !isVisible) {
+        setIsVisible(true);
+      } else if (scrollY <= 600 && isVisible) {
+        setIsVisible(false);
+      }
 
-      // Update section index
+      // Section proximity
+      const sections = sectionRefs.current;
       let closestIndex = 0;
       let closestOffset = Infinity;
 
-      for (let i = 0; i < sectionRefs.current.length; i++) {
-        const rect = sectionRefs.current[i].getBoundingClientRect();
+      for (let i = 0; i < sections.length; i++) {
+        const rect = sections[i].getBoundingClientRect();
         const offset = Math.abs(rect.top);
         if (offset < closestOffset) {
           closestOffset = offset;
@@ -41,9 +44,12 @@ export default function ScrollToContent() {
 
       currentIndex.current = closestIndex;
 
-      const isNearBottom =
-        window.innerHeight + window.scrollY >= document.body.offsetHeight - 2;
-      setAtEnd((prev) => (prev !== isNearBottom ? isNearBottom : prev));
+      // Bottom detection
+      const isAtBottom =
+        window.innerHeight + scrollY >= document.body.offsetHeight - 2;
+      if (isAtBottom !== atEnd) {
+        setAtEnd(isAtBottom);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -87,15 +93,14 @@ export default function ScrollToContent() {
   return (
     <div
       aria-label="Scroll to next content section"
-      className={styles.scroll}
+      className={`${styles.scroll} ${!isVisible ? styles.scrollHidden : ""}`}
       onClick={handleScrollClick}
     >
-      {isVisible &&
-        (atEnd ? (
-          <FaArrowUp className={styles.arrow} />
-        ) : (
-          <FaArrowDown className={styles.arrow} />
-        ))}
+      {atEnd ? (
+        <FaArrowUp className={styles.arrow} />
+      ) : (
+        <FaArrowDown className={styles.arrow} />
+      )}
     </div>
   );
 }
