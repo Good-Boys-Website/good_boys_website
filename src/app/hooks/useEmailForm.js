@@ -1,18 +1,15 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-export default function useEmailForm(
-  initialFormState,
-  validationFields,
-  serviceID,
-  templateID,
-  publicKey
-) {
+export default function useEmailForm(initialFormState, validationFields) {
   const formRef = useRef();
   const [formValues, setFormValues] = useState(initialFormState);
   const [validationError, setValidationError] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [messageStatus, setMessageStatus] = useState(null);
+
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 
   const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
@@ -34,7 +31,7 @@ export default function useEmailForm(
     setFormValues((prev) => ({ ...prev, [name]: value }));
   };
 
-  const sendEmail = (e, onSuccess) => {
+  const sendEmail = (e, templateID, onSuccess) => {
     e.preventDefault();
 
     const errors = validateAllFields();

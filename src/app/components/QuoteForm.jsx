@@ -13,7 +13,7 @@ export default function QuoteForm() {
 
   const closeModal = () => setIsModalVisible(false);
 
-  const quoteForm = {
+  const formInitialState = {
     owner_name: "",
     owner_email: "",
     service_type: "",
@@ -21,6 +21,15 @@ export default function QuoteForm() {
     dog_weight: "",
     owner_message: "",
   };
+
+  const validationFields = [
+    "owner_name",
+    "owner_email",
+    "service_type",
+    "dog_breed",
+    "dog_weight",
+    "owner_message",
+  ];
 
   const {
     formRef,
@@ -31,13 +40,7 @@ export default function QuoteForm() {
     isLoading,
     messageStatus,
     sendEmail,
-  } = useEmailForm(
-    quoteForm,
-    ["owner_name", "owner_email", "service_type", "dog_breed", "dog_weight"],
-    "service_rg1y33t",
-    "template_2qi2mil",
-    "TusOyxhFS7wpSxyo6"
-  );
+  } = useEmailForm(formInitialState, validationFields);
 
   return (
     <section className={styles.formContainer}>
@@ -45,7 +48,11 @@ export default function QuoteForm() {
       <form
         className={styles.form}
         ref={formRef}
-        onSubmit={(e) => sendEmail(e, () => setIsModalVisible(true))}
+        onSubmit={(e) =>
+          sendEmail(e, process.env.NEXT_PUBLIC_EMAILJS_REQUEST_QUOTE_ID, () =>
+            setIsModalVisible(true)
+          )
+        }
         encType="multipart/form-data"
         method="post"
       >

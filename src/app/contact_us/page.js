@@ -12,12 +12,19 @@ export default function ContactUs() {
 
   const closeModal = () => setIsModalVisible(false);
 
-  const contactForm = {
+  const formInitialState = {
     owner_first_name: "",
     owner_last_name: "",
     owner_email: "",
     owner_message: "",
   };
+
+  const validationFields = [
+    "owner_first_name",
+    "owner_last_name",
+    "owner_email",
+    "owner_message",
+  ];
 
   const {
     formRef,
@@ -27,13 +34,7 @@ export default function ContactUs() {
     isLoading,
     messageStatus,
     sendEmail,
-  } = useEmailForm(
-    contactForm,
-    ["owner_first_name", "owner_last_name", "owner_email", "owner_message"],
-    "service_rg1y33t",
-    "template_9v6sgii",
-    "TusOyxhFS7wpSxyo6"
-  );
+  } = useEmailForm(formInitialState, validationFields);
 
   return (
     <div className={`${styles.page} fade-in`}>
@@ -45,7 +46,11 @@ export default function ContactUs() {
         <form
           className={styles.form}
           ref={formRef}
-          onSubmit={(e) => sendEmail(e, () => setIsModalVisible(true))}
+          onSubmit={(e) =>
+            sendEmail(e, process.env.NEXT_PUBLIC_EMAILJS_CONTACT_FORM_ID, () =>
+              setIsModalVisible(true)
+            )
+          }
           encType="multipart/form-data"
           method="post"
         >
