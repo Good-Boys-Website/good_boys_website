@@ -38,6 +38,7 @@ export default function DogBreedSelect({ value, onChange, options }) {
   return (
     <div>
       <Combobox value={value} onChange={onChange}>
+        <input type="hidden" name="dog_breed" value={value} />
         <div className={styles.dogBreedInputContainer}>
           <Combobox.Input
             ref={inputRef}

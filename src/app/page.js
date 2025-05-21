@@ -31,6 +31,7 @@ export default function Home() {
           alt="Photo of a freshly groomed dog"
           width={2972}
           height={1699}
+          priority
         />
         <section data-scroll-section className={styles.section}>
           <div className={styles.groomCopyMobile}>
