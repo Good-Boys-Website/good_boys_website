@@ -11,91 +11,73 @@ export default function ScrollToContent() {
 
   const [atEnd, setAtEnd] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const hasMounted = useRef(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    hasMounted.current = true;
+    setMounted(true);
     sectionRefs.current = Array.from(
       document.querySelectorAll("[data-scroll-section]")
     );
 
-    const initialScrollY = window.scrollY;
-    setIsVisible(initialScrollY > 600);
-
     const handleScroll = () => {
-      if (isScrolling.current) return;
-
-      // Visibility (scrollY > 600)
       const scrollY = window.scrollY;
+
+      // Hide icon when near top
       setIsVisible(scrollY > 600);
 
-      // Section proximity
-      const sections = sectionRefs.current;
+      // Track section index
       let closestIndex = 0;
       let closestOffset = Infinity;
-
-      for (let i = 0; i < sections.length; i++) {
-        const rect = sections[i].getBoundingClientRect();
+      sectionRefs.current.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
         const offset = Math.abs(rect.top);
         if (offset < closestOffset) {
           closestOffset = offset;
-          closestIndex = i;
+          closestIndex = index;
         }
-      }
-
+      });
       currentIndex.current = closestIndex;
 
       // Bottom detection
       const isAtBottom =
-        window.innerHeight + scrollY >= document.body.offsetHeight - 2;
-      if (isAtBottom !== atEnd) {
-        setAtEnd(isAtBottom);
-      }
+        window.innerHeight + scrollY >= document.body.scrollHeight - 5;
+      setAtEnd(isAtBottom);
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // initial run
+    handleScroll();
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleScrollClick = () => {
-    if (isScrolling.current) return;
-
     const sections = sectionRefs.current;
 
     if (atEnd) {
+      // Scroll to top
       window.scrollTo({ top: 0, behavior: "smooth" });
-
-      setTimeout(() => {
-        currentIndex.current = 0;
-        setAtEnd(false);
-        isScrolling.current = false;
-      }, 750);
       return;
     }
 
-    const target = sections[currentIndex.current];
+    const nextIndex = currentIndex.current + 1;
+    const target = sections[nextIndex];
+
     if (target) {
       isScrolling.current = true;
       target.scrollIntoView({ behavior: "smooth", block: "start" });
 
       setTimeout(() => {
-        currentIndex.current += 1;
-        setAtEnd(currentIndex.current >= sections.length);
         isScrolling.current = false;
-      }, 750);
+      }, 700);
     }
   };
 
-  if (!hasMounted.current) return null;
+  if (!mounted || !isVisible) return null;
 
   return (
     <div
       aria-label="Scroll to next content section"
-      className={`${styles.scroll} ${!isVisible ? styles.scrollHidden : ""}`}
+      className={styles.scroll}
       onClick={handleScrollClick}
     >
       {atEnd ? (
