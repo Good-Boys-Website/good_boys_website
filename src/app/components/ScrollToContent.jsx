@@ -11,22 +11,23 @@ export default function ScrollToContent() {
 
   const [atEnd, setAtEnd] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const hasMounted = useRef(false);
 
   useEffect(() => {
+    hasMounted.current = true;
     sectionRefs.current = Array.from(
       document.querySelectorAll("[data-scroll-section]")
     );
+
+    const initialScrollY = window.scrollY;
+    setIsVisible(initialScrollY > 600);
 
     const handleScroll = () => {
       if (isScrolling.current) return;
 
       // Visibility (scrollY > 600)
       const scrollY = window.scrollY;
-      if (scrollY > 600 && !isVisible) {
-        setIsVisible(true);
-      } else if (scrollY <= 600 && isVisible) {
-        setIsVisible(false);
-      }
+      setIsVisible(scrollY > 600);
 
       // Section proximity
       const sections = sectionRefs.current;
@@ -66,14 +67,13 @@ export default function ScrollToContent() {
     const sections = sectionRefs.current;
 
     if (atEnd) {
-      isScrolling.current = true;
       window.scrollTo({ top: 0, behavior: "smooth" });
 
       setTimeout(() => {
         currentIndex.current = 0;
         setAtEnd(false);
         isScrolling.current = false;
-      }, 800);
+      }, 750);
       return;
     }
 
@@ -89,6 +89,8 @@ export default function ScrollToContent() {
       }, 750);
     }
   };
+
+  if (!hasMounted.current) return null;
 
   return (
     <div

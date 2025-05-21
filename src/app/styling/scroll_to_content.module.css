@@ -18,6 +18,8 @@
 .scrollHidden {
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.3s ease;
+
 }
 
 .arrow {
