@@ -1,57 +1,17 @@
 "use client";
 
-import emailjs from "@emailjs/browser";
-import Image from "next/image";
-import React, { useState, useRef } from "react";
+import useEmailForm from "../hooks/useEmailForm";
+import React, { useState } from "react";
+import MessageSentModal from "./MessageSentModal";
 import DogBreedSelect from "./DogBreedSelect";
-import { IoCloseOutline } from "react-icons/io5";
 import { dogBreeds, dogWeights, services } from "../data/data";
 
 import styles from "@/app/styling/quote_form.module.css";
 
 export default function QuoteForm() {
-  const formRef = useRef();
-
-  const [messageStatus, setMessageStatus] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const closeModal = () => {
-    setIsModalVisible(false);
-  };
-
-  function MessageSentModal() {
-    return (
-      <>
-        {isModalVisible && (
-          <div className={styles.modal}>
-            <div className={styles.modalContent}>
-              <Image
-                className={styles.mascot}
-                src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860707/Poodle_GoodBoys_va3ted.svg"
-                alt="good boys lopgo featuring an illsutarion of a dog with sunglasses"
-                width={90}
-                height={81}
-              />
-              <div className={styles.modalSection}>
-                <div className={styles.modalSectionTop}>
-                  <p className={styles.modalMessageHeader}>Message Sent!</p>
-                  <IoCloseOutline
-                    onClick={closeModal}
-                    className={styles.closeButton}
-                    aria-label="close modal button"
-                  />
-                </div>
-                <p className={styles.modalMessage}>
-                  We can't wait to meet your dog
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
-      </>
-    );
-  }
+  const closeModal = () => setIsModalVisible(false);
 
   const quoteForm = {
     owner_name: "",
@@ -62,83 +22,22 @@ export default function QuoteForm() {
     owner_message: "",
   };
 
-  const [formValues, setFormValues] = useState(quoteForm);
-
-  const inputValidationError = {
-    owner_name: false,
-    owner_email: false,
-    service_type: false,
-    dog_breed: false,
-    dog_weight: false,
-  };
-
-  const [validationError, setValidationError] = useState(inputValidationError);
-
-  const validateAllFields = () => {
-    const errors = {};
-    Object.entries(formValues).forEach(([field, value]) => {
-      if (field === "owner_email") {
-        errors[field] = !isValidEmail(value);
-      } else {
-        errors[field] = value.trim() === "";
-      }
-    });
-    setValidationError(errors);
-    return errors;
-  };
-
-  // allow the user to change the value of a form field
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues({
-      ...formValues,
-      [name]: value,
-    });
-  };
-
-  //valid email check looks for an '@' and a '.'
-  const isValidEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    const errors = validateAllFields();
-    const isValid = Object.values(errors).every((error) => !error);
-
-    if (!isValid) {
-      console.log("Form validation failed:", validationError);
-      return;
-    }
-
-    setIsLoading(true);
-
-    emailjs
-      .sendForm(
-        "service_rg1y33t", //email services service ID from emailjs gmail sync
-        "template_2qi2mil", //template ID from created emailjs template
-        formRef.current,
-        "TusOyxhFS7wpSxyo6" //emailjs public key
-      )
-      .then(
-        () => {
-          console.log("MESSAGE SENT!");
-          setMessageStatus("success");
-          setIsLoading(false);
-          setValidationError(inputValidationError);
-          formRef.current.reset();
-          setFormValues(quoteForm);
-          setIsModalVisible(true);
-        },
-        (error) => {
-          console.log("MESSAGE FAILED", error.text);
-          setMessageStatus("error");
-          setIsLoading(false);
-        }
-      );
-  };
+  const {
+    formRef,
+    formValues,
+    setFormValues,
+    handleInputChange,
+    validationError,
+    isLoading,
+    messageStatus,
+    sendEmail,
+  } = useEmailForm(
+    quoteForm,
+    ["owner_name", "owner_email", "service_type", "dog_breed", "dog_weight"],
+    "service_rg1y33t",
+    "template_2qi2mil",
+    "TusOyxhFS7wpSxyo6"
+  );
 
   return (
     <section className={styles.formContainer}>
@@ -146,7 +45,7 @@ export default function QuoteForm() {
       <form
         className={styles.form}
         ref={formRef}
-        onSubmit={sendEmail}
+        onSubmit={(e) => sendEmail(e, () => setIsModalVisible(true))}
         encType="multipart/form-data"
         method="post"
       >
@@ -268,7 +167,10 @@ export default function QuoteForm() {
           </p>
         )}
       </form>
-      <MessageSentModal />
+      <MessageSentModal
+        isModalVisible={isModalVisible}
+        closeModal={closeModal}
+      />
     </section>
   );
 }
