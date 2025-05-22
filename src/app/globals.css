@@ -12,7 +12,11 @@
   --gbGrayText: #828282;
 
   --background: #f8f3f1;
-  --foreground:black;
+  --foreground: black;
+
+  --darkModeBlack: #252525;
+  --darkModeGray: #ccc7c5;
+  --darkModeSuggestionList: #2b2a2a;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,19 +1,19 @@
 .page {
+  font-family: "InstrumentSans", Arial, sans-serif;
+  color: var(--gbBlue);
   display: flex;
   flex-direction: column;
   margin: 0rem 4rem 0rem 4rem;
   min-height: 100vh;
-  color: var(--gbBlue);
   line-height: 1.5;
-  font-family: "InstrumentSans", Arial, sans-serif;
 }
 
 .header {
   font-size: 68px;
   line-height: 1.5;
-  width: 900px;
   padding-top: 2rem;
   margin-bottom: 2rem;
+  width: 900px;
 }
 
 .subheader {
@@ -38,8 +38,7 @@
 .staffPhoto {
   width: 580px;
   height: auto;
-  margin-left: 4rem;
-  margin-right: 6rem;
+  margin: 0rem 6rem 0rem 4rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -47,8 +46,7 @@
 .staffCard:nth-child(odd) {
   flex-direction: row-reverse;
   .staffPhoto {
-    margin-left: 8rem;
-    margin-right: 4rem;
+    margin: 0rem 4rem 0rem 8rem;
   }
 }
 
@@ -70,10 +68,10 @@
 }
 
 .stats {
-  color: var(--gbGrayText);
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  color: var(--gbGrayText);
   font-size: 20px;
+  font-weight: normal;
 }
 
 .bookButton {
@@ -92,12 +90,13 @@
 @media (prefers-color-scheme: dark) {
   .header,
   .name,
-  .position {
+  .position,
+  .bookButton {
     color: var(--foreground);
   }
   .subheader,
   .stats {
-    color: #ccc7c5;
+    color: var(--darkModeGray);
   }
 }
 
@@ -106,24 +105,29 @@
   .page {
     margin: 0rem;
   }
+  .staffPhoto,
+  .staffCard,
+  .staffSection {
+    width: 100%;
+  }
+  .header,
+  .subheader,
+  .info {
+    width: 90%;
+  }
   .header {
     font-size: 48px;
-    width: 90vw;
     margin: 0rem 1rem 2rem 1rem;
   }
   .subheader {
     margin: 0rem 1rem 0rem 1rem;
-    width: 90vw;
   }
   .staffSection {
     margin: 0rem;
-    width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 4rem 0rem 4rem 0rem;
   }
   .staffCard {
     flex-direction: column;
-    width: 100%;
     padding-bottom: 8rem;
   }
   .staffCard:last-child {
@@ -131,23 +135,18 @@
   }
   .staffPhoto {
     margin: 0rem;
-    width: 100%;
     border-radius: 0px;
     margin-bottom: 2rem;
   }
   .staffCard:nth-child(odd) {
     flex-direction: column;
     .staffPhoto {
-      margin: 0rem;
-      margin-bottom: 2rem;
+      margin: 0rem 0rem 2rem 0rem;
     }
   }
-  .info {
-    width: 90%;
+  .staffCard:first-child {
+    .bookButton {
+      width: 100%;
+    }
   }
- .staffCard:first-child {
-  .bookButton {
-    width: 100%;
-  }
-}
 }
