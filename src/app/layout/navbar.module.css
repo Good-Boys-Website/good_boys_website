@@ -154,6 +154,7 @@
     flex-direction: column;
     text-align: center;
     height: 80vh;
+    z-index: 1000;
   }
   .navItem {
     color: var(--gbBlue);
