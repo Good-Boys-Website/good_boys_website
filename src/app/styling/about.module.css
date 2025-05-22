@@ -1,10 +1,10 @@
 .page {
+  color: var(--gbBlue);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0rem 4rem 8rem 4rem;
   min-height: 100vh;
-  color: var(--gbBlue);
   line-height: 1.5;
 }
 
@@ -16,10 +16,10 @@
 .header {
   font-family: "InstrumentSans", Arial, sans-serif;
   font-size: 68px;
-  line-height: 1.5;
-  width: 620px;
   padding-top: 2rem;
   margin-bottom: 2rem;
+  line-height: 1.5;
+  width: 620px;
 }
 
 .subheader {
@@ -37,8 +37,8 @@
 
 .copySection {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
   color: var(--gbGrayText);
+  font-weight: normal;
   padding-top: 2rem;
 }
 
@@ -53,9 +53,9 @@
 }
 
 .photo {
-  margin-top: 2rem;
   width: 500px;
   height: auto;
+  margin-top: 2rem;
   border-radius: 8px;
 }
 
@@ -64,15 +64,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .page {
+  .page,
+  .button {
     color: var(--foreground);
   }
   .subheader,
   .copySection {
-    color: #ccc7c5;
-  }
-  .button {
-    color: var(--foreground);
+    color: var(--darkModeGray);
   }
 }
 
@@ -82,35 +80,34 @@
     margin: 0rem 1rem 4rem 1rem;
     flex-direction: column;
   }
-
   .leftSection {
     margin: 0rem 0rem 0rem rem;
+  }
+  .leftSection,
+  .photoMobile,
+  .button {
     width: 100%;
+  }
+  .header,
+  .subheader,
+  .copySection {
+    width: 90%;
   }
   .header {
     font-size: 48px;
-    width: 100vw;
-  }
-  .subheader {
-    width: 90vw;
-  }
-  .copySection {
-    width: 90%;
   }
   .copyHeader {
     padding-top: 2rem;
   }
   .photoMobile {
     display: block;
-    margin-top: 4rem;
-    width: 100%;
     height: auto;
+    margin-top: 4rem;
   }
   .photo {
     display: none;
   }
   .button {
     margin-top: 4rem;
-    width: 100%;
   }
 }
