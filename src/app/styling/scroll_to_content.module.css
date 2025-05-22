@@ -1,46 +1,28 @@
 .scroll {
   position: fixed;
   color: var(--background);
-  /*margin-top: 24rem;
-  margin-left: 78rem;*/
-   right: 2rem;
+  right: 2rem;
   bottom: 2rem;
   z-index: 999;
   cursor: pointer;
-
-    /* Prevent janky repaints */
-  /*transform: translate3d(0, 0, 0);
-  will-change: transform, opacity;*/
-
-  /* Optional: Fade in/out smoothly */
- 
   opacity: 0;
-   transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
-
-/*.scrollHidden {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-
-}*/
 
 .visible {
   opacity: 1;
-  
   pointer-events: auto;
 }
 
 .hidden {
   opacity: 0;
- 
   pointer-events: none;
 }
 
 .arrow {
-  border-radius: 50px;
   font-size: 5rem;
   padding: 1rem;
+  border-radius: 50px;
   background-color: var(--gbBlue);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -53,19 +35,16 @@
 
 @media (max-width: 1300px) {
   .scroll {
-    padding: 0.5rem;
-    padding-bottom: 0.15rem;
-    /*margin-top: 36rem;
-    margin-left: 19rem;*/
-    right: .5rem;
+    right: 0.5rem;
     bottom: 1rem;
+    padding: 0.5rem 0.5rem 0.15rem 0.5rem;
   }
 
   .arrow {
-  border-radius: 50px;
-  font-size: 4rem;
-  padding: 1rem;
-  background-color: var(--gbBlue);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+    font-size: 4rem;
+    padding: 1rem;
+    border-radius: 50px;
+    background-color: var(--gbBlue);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
 }

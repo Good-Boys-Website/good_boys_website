@@ -72,8 +72,6 @@ export default function ScrollToContent() {
     }
   };
 
-  /*if (!mounted || !isVisible) return null;*/
-
   return (
     <div
       aria-label="Scroll to next content section"
