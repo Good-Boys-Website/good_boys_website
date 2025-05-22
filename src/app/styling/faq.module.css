@@ -1,19 +1,19 @@
 .page {
+  color: var(--gbBlue);
   display: flex;
   flex-direction: column;
   margin: 0rem 4rem 0rem 4rem;
   min-height: 100vh;
-  color: var(--gbBlue);
   line-height: 1.5;
 }
 
 .header {
   font-family: "InstrumentSans", Arial, sans-serif;
   font-size: 68px;
-  line-height: 1.5;
-  width: 900px;
   padding-top: 2rem;
   margin-bottom: 2rem;
+  line-height: 1.5;
+  width: 900px;
 }
 
 .subheader {
@@ -80,31 +80,28 @@
 .buttonSection {
   display: flex;
   justify-content: center;
-  padding-top: 4rem;
-  padding-bottom: 12rem;
+  padding: 4rem 0rem 12rem 0rem;
 }
 
 .button {
-  background-color: var(--gbBlue);
   color: var(--background);
   font-family: "IntroRust", Arial, sans-serif;
-  width: 460px;
   align-self: center;
+  background-color: var(--gbBlue);
+  width: 460px;
 }
 
 @media (prefers-color-scheme: dark) {
-  .page {
+  .page,
+  .button {
     color: var(--foreground);
   }
   .subheader,
   .answer {
-    color: #ccc7c5;
+    color: var(--darkModeGray);
   }
   .answer:hover {
-    background-color: #474444;
-  }
-  .button {
-    color: var(--foreground);
+    background-color: var(--darkModeBlack);
   }
 }
 
@@ -113,14 +110,20 @@
   .page {
     margin: 0rem;
   }
+  .question,
+  .answer {
+    width: 100%;
+  }
+  .header,
+  .subheader {
+    width: 90%;
+  }
   .header {
     font-size: 48px;
-    width: 90vw;
     margin: 0rem 1rem 2rem 1rem;
   }
   .subheader {
     margin: 0rem 1rem 0rem 1rem;
-    width: 90vw;
   }
   .faqPhoto {
     border-radius: 0px;
@@ -139,31 +142,24 @@
     padding-top: 2rem;
     border-top: 1px solid var(--foreground);
   }
-
   .faq:first-child {
     .question {
-    border-top: none;
-    padding-top: 0rem;
-  }
-}
-  .question,
-  .answer {
-    width: 100%;
+      border-top: none;
+      padding-top: 0rem;
+    }
   }
   .answer:hover {
     background-color: var(--background);
   }
-
   .answer {
     padding: 0rem;
   }
   .buttonSection {
     margin: 0rem 1rem 0rem 1rem;
   }
-
   @media (prefers-color-scheme: dark) {
     .question {
-      border-top: 1px solid #ccc7c5;
+      border-top: 1px solid var(--darkModeGray);
     }
   }
 }
