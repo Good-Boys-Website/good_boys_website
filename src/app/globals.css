@@ -16,6 +16,7 @@
 
   --darkModeBlack: #474444;
   --darkModeGray: #ccc7c5;
+  --darkModeSuggestionList: #2b2a2a;
 }
 
 @media (prefers-color-scheme: dark) {
