@@ -129,6 +129,9 @@
   .formButton {
     color: var(--foreground);
   }
+  .formInput, .formInputMessage {
+    background-color: #252525;
+  }
   .subheader {
     color: #ccc7c5;
   }

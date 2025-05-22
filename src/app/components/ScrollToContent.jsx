@@ -72,12 +72,14 @@ export default function ScrollToContent() {
     }
   };
 
-  if (!mounted || !isVisible) return null;
+  /*if (!mounted || !isVisible) return null;*/
 
   return (
     <div
       aria-label="Scroll to next content section"
-      className={styles.scroll}
+      className={`${styles.scroll} ${
+        isVisible ? styles.visible : styles.hidden
+      }`}
       onClick={handleScrollClick}
     >
       {atEnd ? (
