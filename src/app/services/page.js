@@ -15,7 +15,7 @@ export default function Services() {
           height={1325}
           priority
         />
-        <h1 className={styles.header}>Let's get to grooming.</h1>
+        <h1 className={styles.header}>Let&apos;s get to grooming.</h1>
         <h2 className={styles.subHeader}>
           Book your appointment with Good Boys below.
         </h2>
@@ -82,7 +82,7 @@ export default function Services() {
             />
             <p className={styles.mainText}>Give us a review</p>
             <p className={styles.subText}>
-              If you think we're neat, let us know!
+              If you think we&apos;re neat, let us know!
             </p>
             <div className={styles.priceSection}>
               <p className={styles.priceReferral}>
