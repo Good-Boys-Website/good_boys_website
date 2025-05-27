@@ -5,6 +5,7 @@
   min-height: 100vh;
   line-height: 1.5;
 }
+
 .formSection {
   display: flex;
   flex-direction: column;

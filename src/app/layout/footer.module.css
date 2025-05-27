@@ -7,10 +7,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 0rem 3rem 2rem 3rem;
   border-bottom: 1px solid white;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-bottom: 2rem;
 }
 
 .leftContainer {
@@ -31,12 +29,17 @@
   margin-left: 2rem;
 }
 
-.contact {
+.contact,
+.contactAddress {
+  color: var(--background);
   font-size: 22px;
   font-weight: normal;
-  color: white;
   margin: 1rem;
   text-decoration: underline;
+}
+
+.contactAddress {
+  text-decoration: none;
 }
 
 .buttonSection {
@@ -45,23 +48,22 @@
 
 .footerButtonOne,
 .footerButton {
-  text-align: center;
   font-family: "IntroRust", Arial, sans-serif;
   color: var(--foreground);
   font-weight: bold;
   font-size: 18px;
-  background-color: var(--background);
+  text-align: center;
   padding: 1rem 1.4rem 1rem 1.4rem;
   margin-left: 1rem;
   border-radius: 8px;
   width: 180px;
+  background-color: var(--background);
   cursor: pointer;
 }
 
 .footerButtonOne {
   color: var(--background);
   background-color: var(--gbRed);
- 
 }
 
 .linkSection {
@@ -76,34 +78,41 @@
 }
 
 .icon {
-  color: white;
+  color: var(--background);
   font-size: 24px;
   margin: 0rem 1rem 0rem 1rem;
 }
 
 .links {
   display: flex;
+  flex-wrap: wrap;
   margin-right: 3rem;
   width: 600px;
-  flex-wrap: wrap;
 }
 
 .link {
-  color: white;
+  color: var(--background);
   font-weight: normal;
   margin: 0rem 4.2rem 2rem 4.2rem;
 }
 
 .copyright {
+  color: var(--background);
   font-size: 16px;
   font-weight: normal;
-  color: white;
   text-align: center;
   padding: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
   .footerButtonOne {
+    color: var(--foreground);
+  }
+  .contact,
+  .contactAddress,
+  .icon,
+  .link,
+  .copyright {
     color: var(--foreground);
   }
 }
@@ -136,8 +145,7 @@
   .footerButtonOne,
   .footerButton {
     text-align: center;
-    margin-left: 0rem;
-    margin-bottom: 2rem;
+    margin: 0rem 0rem 2rem 0rem;
     width: 100%;
   }
   .linkSection {
@@ -147,8 +155,7 @@
   .iconSection {
     align-self: center;
     margin-left: 0rem;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding: 2rem 0rem 2rem 0rem;
   }
 
   .links {
@@ -159,7 +166,6 @@
   }
 
   .link {
-    margin: 1rem;
-    margin-top: 0rem;
+    margin: 0rem 1rem 1rem 1rem;
   }
 }

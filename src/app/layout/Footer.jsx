@@ -21,6 +21,9 @@ export default function Footer() {
             height={81}
           />
           <div className={styles.contacts}>
+            <p className={styles.contactAddress}>
+              1615 W Montrose Ave, Chicago, IL 60613
+            </p>
             <p className={styles.contact}>
               <a href="tel:+1-312-735-4214">(312) 735-4214</a>
             </p>
@@ -32,7 +35,9 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.buttonSection}>
-          <p className={styles.footerButtonOne}>BOOK NOW</p>
+          <Link href="/services">
+            <p className={styles.footerButtonOne}>BOOK NOW</p>
+          </Link>
           <Link href="/contact_us">
             <p className={styles.footerButton}>CONTACT US</p>
           </Link>
@@ -54,7 +59,9 @@ export default function Footer() {
           <Link href="/">
             <p className={styles.link}>HOME</p>
           </Link>
-          <p className={styles.link}>SERVICES</p>
+          <Link href="/services">
+            <p className={styles.link}>SERVICES</p>
+          </Link>
           <Link href="/faq">
             <p className={styles.link}>FAQ</p>
           </Link>

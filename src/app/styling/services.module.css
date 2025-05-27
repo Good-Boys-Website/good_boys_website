@@ -1,0 +1,238 @@
+.page {
+    font-family: "InstrumentSans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: var(--gbBlue);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+.bannerSection {
+     position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  width: 100%; 
+}
+
+.header, .subHeader {
+  position: absolute;
+  font-size: 68px;
+  color: white;
+  text-align: center;
+  align-self: center;
+  line-height: 0.8;
+  z-index: 1000;
+}
+
+.subHeader {
+  font-size: 26px;
+  margin-top: 10rem;
+}
+
+
+
+.servicesBanner {
+      display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bookingContainer {
+    height: 100vh;
+}
+
+.mainPage {
+      display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0rem 4rem 4rem 4rem;
+}
+
+.sectionHeader {
+    font-family: "InstrumentSans", Arial, sans-serif;
+    font-size: 42px;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+.firstTimeSection {
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+}
+
+.firstTimePhoto, .referralPhoto {
+    width: 636px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.mainText {
+    color: var(--foreground);
+    font-weight: normal;
+    font-size: 22px;
+    padding-bottom: .5rem;
+}
+
+.subText {
+    color: var(--gbGrayText);
+    font-weight: normal;
+     padding-bottom: .5rem;
+}
+
+.priceSection {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.price, .priceReferral {
+    color: var(--foreground);
+    font-weight: 800; 
+}
+
+.amount {
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+.nextService {
+    font-weight: normal;
+}
+
+.servicesButton {
+     font-family: "IntroRust", Arial, sans-serif;
+    color: var(--foreground);
+    background-color: var(--gbGrayButton);
+    margin-right: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.servicesButton:hover {
+    color: var(--background);
+    background-color: var(--gbBlue);
+}
+
+.hoursLocationSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 4rem 8rem 4rem;
+}
+
+.map {
+     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.dayTime {
+    display: flex;
+    justify-content: space-between;
+    width: 636px;
+    border-bottom: 1px solid var(--gbGrayButton);
+}
+
+.day, .time {
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .sectionHeader, .dayTime {
+        color: var(--foreground);
+    }
+    .subText {
+        color: var(--darkModeGray);
+    }
+    .servicesButton {
+        color: var(--background)
+    }
+    .servicesButton:hover {
+    
+        color: var(--foreground);
+        background-color: var(--gbGrayText);
+    }
+}
+
+/* mobile styling */
+@media (max-width: 1300px) {
+    .bannerSection {
+        flex-direction: column;
+    }
+    .header, .subHeader {
+        color: var(--gbBlue);
+  position: inherit;
+  font-size: 48px;
+   line-height: 1.5;
+   text-align: start;
+   z-index: 999;
+   margin: 0rem 1rem 0rem 1rem;
+}
+.header {
+    margin-top: 2rem;
+}
+
+.subHeader {
+  font-size: 24px;
+  margin-top: 2rem;
+}
+.sectionHeader {
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.mainPage {
+    flex-direction: column;
+    margin: 0rem;
+}
+.firstTimeSection {
+    margin-right: 0rem;
+}
+.firstTimePhoto, .referralPhoto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 0px;
+}
+.mainText, .subText, .priceSection {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.referralSection {
+    margin-bottom: 4rem;
+}
+.buttonSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     margin-left: 1rem;
+    margin-right: 1rem;
+}
+.servicesButton {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.hoursLocationSection {
+    flex-direction: column;
+    margin: 0rem 1rem 8rem 1rem;
+}
+.map {
+    width: 100%;
+    margin-bottom: 6rem;
+}
+.dayTime {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--gbGrayButton);
+}
+@media (prefers-color-scheme: dark) {
+    .header, .subHeader {
+        color: var(--foreground);
+    }
+}
+}
+
