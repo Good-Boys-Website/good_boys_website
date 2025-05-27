@@ -51,7 +51,7 @@ export default function Services() {
           </div>
         </section>
         <div>
-          <section>
+          <section className={styles.referralSection}>
             <Image
               className={styles.referralPhoto}
               alt="image of Good Boys referral program"
@@ -71,7 +71,7 @@ export default function Services() {
               </p>
             </div>
           </section>
-          <section>
+          <section className={styles.reviewSection}>
             <Image
               className={styles.referralPhoto}
               alt="image of a freshly groomed dog"
@@ -90,7 +90,7 @@ export default function Services() {
                 <span className={styles.nextService}> your next service</span>
               </p>
             </div>
-            <div>
+            <div className={styles.buttonSection}>
               <a
                 href="http://yelp.com/biz/good-boys-dog-grooming-chicago#reviews"
                 target="_blank"
