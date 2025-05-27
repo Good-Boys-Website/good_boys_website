@@ -140,3 +140,20 @@
     padding-top: .5rem;
 }
 
+@media (prefers-color-scheme: dark) {
+    .sectionHeader, .dayTime {
+        color: var(--foreground);
+    }
+    .subText {
+        color: var(--darkModeGray);
+    }
+    .servicesButton {
+        color: var(--background)
+    }
+    .servicesButton:hover {
+    
+        color: var(--foreground);
+        background-color: var(--gbGrayText);
+    }
+}
+
