@@ -21,6 +21,9 @@ export default function Footer() {
             height={81}
           />
           <div className={styles.contacts}>
+            <p className={styles.contactAddress}>
+              1615 W Montrose Ave, Chicago, IL 60613
+            </p>
             <p className={styles.contact}>
               <a href="tel:+1-312-735-4214">(312) 735-4214</a>
             </p>
