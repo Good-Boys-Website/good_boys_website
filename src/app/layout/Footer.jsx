@@ -35,7 +35,9 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.buttonSection}>
-          <p className={styles.footerButtonOne}>BOOK NOW</p>
+          <Link href="/services">
+            <p className={styles.footerButtonOne}>BOOK NOW</p>
+          </Link>
           <Link href="/contact_us">
             <p className={styles.footerButton}>CONTACT US</p>
           </Link>
@@ -57,7 +59,9 @@ export default function Footer() {
           <Link href="/">
             <p className={styles.link}>HOME</p>
           </Link>
-          <p className={styles.link}>SERVICES</p>
+          <Link href="/services">
+            <p className={styles.link}>SERVICES</p>
+          </Link>
           <Link href="/faq">
             <p className={styles.link}>FAQ</p>
           </Link>

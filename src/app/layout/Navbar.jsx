@@ -24,7 +24,9 @@ export default function Navbar() {
         <Link href="/">
           <p className={styles.link}>HOME</p>
         </Link>
-        <p className={styles.link}>SERVICES</p>
+        <Link href="/services">
+          <p className={styles.link}>SERVICES</p>
+        </Link>
         <Link href="/faq">
           <p className={styles.link}>FAQ</p>
         </Link>
@@ -55,7 +57,9 @@ export default function Navbar() {
         <Link href="/contact_us">
           <p className={styles.link}>CONTACT US</p>
         </Link>
-        <button className={styles.buttonText}>BOOK HERE</button>
+        <Link href="/services">
+          <button className={styles.buttonText}>BOOK HERE</button>
+        </Link>
       </nav>
 
       <nav className={`${styles.mobileNav} fade-in`}>
@@ -98,7 +102,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className={styles.navItem}>
-          <Link className={styles.navContainer} href="">
+          <Link className={styles.navContainer} href="/services">
             <h4 className={styles.link} role="heading">
               SERVICES
             </h4>
