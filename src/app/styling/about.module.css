@@ -9,6 +9,8 @@
 }
 
 .leftSection {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 8rem;
   width: 560px;
 }
@@ -77,11 +79,12 @@
 /* mobile styling */
 @media (max-width: 1300px) {
   .page {
-    margin: 0rem 1rem 4rem 1rem;
+    margin: 0rem 0rem 4rem 0rem;
     flex-direction: column;
   }
   .leftSection {
-    margin: 0rem 0rem 0rem rem;
+    padding-bottom: 0rem;
+    margin: 0rem;
   }
   .leftSection,
   .photoMobile,
@@ -90,8 +93,9 @@
   }
   .header,
   .subheader,
-  .copySection {
+  .copySection, .copyHeader, .button {
     width: 90%;
+    margin: 0rem 1rem 0rem 1rem;
   }
   .header {
     font-size: 48px;
@@ -102,7 +106,7 @@
   .photoMobile {
     display: block;
     height: auto;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .photo {
     display: none;

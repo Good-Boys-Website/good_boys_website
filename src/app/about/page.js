@@ -10,6 +10,7 @@ export default function About() {
       <section className={styles.leftSection}>
         <h1 className={styles.header}>Meet Nick & Arthur</h1>
         <h2 className={styles.subheader}>Two dog-lovers with a mission.</h2>
+
         <Image
           className={styles.photoMobile}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747398710/gb_owners_c_crop_w_1400_h_1800_jxvarn.jpg"
@@ -17,6 +18,7 @@ export default function About() {
           width={1400}
           height={1600}
         />
+
         <h3 className={styles.copyHeader}>Who we are</h3>
         <p className={styles.copySection}>
           In 2018, fate (and a shared love for dogs) brought Arthur and Nick
@@ -36,6 +38,7 @@ export default function About() {
           his days crunching data as a full-time data analyst. He takes the lead
           in managing the admin and financial aspects of our furry venture.
         </p>
+
         <Image
           className={styles.photoMobile}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744681698/IMG_5455_gamb5j.jpg"
@@ -43,6 +46,7 @@ export default function About() {
           width={1600}
           height={2000}
         />
+
         <h4 data-scroll-section className={styles.copyHeader}>
           Our Mission
         </h4>
