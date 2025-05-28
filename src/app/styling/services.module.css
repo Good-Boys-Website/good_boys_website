@@ -159,8 +159,11 @@
 
 /* mobile styling */
 @media (max-width: 1300px) {
+    .page {
+        margin-bottom: 8rem;
+    }
     .bannerSection {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .header, .subHeader {
         color: var(--gbBlue);
@@ -176,12 +179,15 @@
 }
 
 .subHeader {
+    color: var(--gbGrayText);
   font-size: 24px;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .sectionHeader {
     padding-top: 2rem;
     padding-left: 1rem;
+    margin-bottom: 2rem;
 }
 .mainPage {
     flex-direction: column;
@@ -202,7 +208,7 @@
 }
 
 .referralSection {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 .buttonSection {
     display: flex;
@@ -230,8 +236,11 @@
     border-bottom: 1px solid var(--gbGrayButton);
 }
 @media (prefers-color-scheme: dark) {
-    .header, .subHeader {
+    .header {
         color: var(--foreground);
+    }
+    .subHeader {
+        color: var(--darkModeGray)
     }
 }
 }
