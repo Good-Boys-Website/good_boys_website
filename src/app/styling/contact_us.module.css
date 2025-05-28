@@ -47,6 +47,10 @@
   line-height: 1.5;
 }
 
+.header {
+  margin-bottom: 0rem;
+}
+
 .headerHours {
   margin: 0rem 4rem 4rem 4rem;
 }
@@ -150,6 +154,10 @@
   margin-top: 2rem;
 }
 
+.subHeader {
+  margin-top: 0rem;
+}
+
 .subHeaderForm {
   font-family: "InstrumentSans", Arial, sans-serif;
   color: var(--gbGrayText);
@@ -168,6 +176,7 @@
   .page,
   .headerHours,
   .dayTime,
+  .headerForm,
   .formButton,
   .formInputMessage::placeholder {
     color: var(--foreground);
@@ -176,7 +185,7 @@
   .formInputMessage {
     background-color: var(--darkModeBlack);
   }
-  .subheader {
+  .subHeaderForm {
     color: var(--darkModeGray);
   }
 }
@@ -253,8 +262,11 @@
     filter: none;
   }
   @media (prefers-color-scheme: dark) {
-    .bottomCopy {
-      color: var(--darkModeGray);
-    }
+   .header {
+    color: var(--foreground);
+   }
+   .subHeader {
+    color: var(--darkModeGray);
+   }
   }
 }
