@@ -5,6 +5,7 @@ import Image from "next/image";
 import { faqs } from "@/app/data/data";
 
 import styles from "@/app/styling/faq.module.css";
+import Link from "next/link";
 
 function FaqCard({ question, answer }) {
   const ref = useRef();
@@ -59,7 +60,9 @@ export default function Faq() {
         ))}
       </ul>
       <section data-scroll-section className={styles.buttonSection}>
-        <button className={styles.button}>Book A Spa Day</button>
+        <Link href="/services">
+          <button className={styles.button}>Book A Spa Day</button>
+        </Link>
       </section>
     </div>
   );

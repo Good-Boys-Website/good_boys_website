@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "@/app/styling/about.module.css";
 
@@ -64,7 +65,9 @@ export default function About() {
           things canine, we&apos;re thrilled to have you join us on this
           tail-wagging adventure. Welcome to the Good Boys family!
         </p>
-        <button className={styles.button}>Book Now</button>
+        <Link href="/services">
+          <button className={styles.button}>Book Now</button>
+        </Link>
       </section>
       <section className={styles.sectionRight}>
         <Image

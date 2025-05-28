@@ -1,6 +1,7 @@
 "use clinet";
 
 import Image from "next/image";
+import Link from "next/link";
 import { staff } from "@/app/data/data";
 
 import styles from "@/app/styling/staff.module.css";
@@ -29,7 +30,9 @@ function StaffCard({
         <p className={styles.stats}>Dog Breed: {dog_breed}</p>
         <p className={styles.stats}>Dog Topping: {dog_topping}</p>
         <p className={styles.stats}>Famous Dog: {famous_dog}</p>
-        <button className={styles.bookButton}>Book With Nick</button>
+        <Link href="/services">
+          <button className={styles.bookButton}>Book With Nick</button>
+        </Link>
       </div>
     </li>
   );
