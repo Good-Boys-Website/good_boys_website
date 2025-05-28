@@ -15,7 +15,7 @@ export default function Services() {
           height={1325}
           priority
         />
-        <div>
+        <div className={styles.bannerCopy}>
           <h1 className={styles.header}>Let&apos;s get to grooming.</h1>
           <h2 className={styles.subHeader}>
             Book your appointment with Good Boys below.

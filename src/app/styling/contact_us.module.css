@@ -6,19 +6,47 @@
   line-height: 1.5;
 }
 
+.hoursLocationSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 4rem 8rem 4rem;
+}
+
+.map {
+     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.dayTime {
+    display: flex;
+    justify-content: space-between;
+    width: 636px;
+    border-bottom: 1px solid var(--gbGrayButton);
+}
+
+.day, .time {
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
 .formSection {
   display: flex;
   flex-direction: column;
   margin: 0rem 4rem 0rem 4rem;
 }
 
-.header {
+.header, .headerHours {
   font-family: "InstrumentSans", Arial, sans-serif;
   font-size: 68px;
   padding-top: 2rem;
   margin-bottom: 2rem;
-  text-align: center;
   line-height: 1.5;
+}
+
+.headerHours {
+   margin: 0rem 4rem 4rem 4rem;
 }
 
 .subheader {
@@ -26,7 +54,6 @@
   color: var(--gbGrayText);
   font-size: 26px;
   font-weight: normal;
-  text-align: center;
   margin-bottom: 4rem;
 }
 
@@ -125,6 +152,8 @@
 
 @media (prefers-color-scheme: dark) {
   .page,
+  .headerHours,
+  .dayTime,
   .formButton,
   .formInputMessage::placeholder {
     color: var(--foreground);
@@ -146,10 +175,24 @@
   .subheader {
     width: 90%;
   }
-  .header {
+  .header, .headerHours {
     font-size: 48px;
     margin: 0rem 1rem 2rem 1rem;
   }
+  .hoursLocationSection {
+    flex-direction: column;
+    margin: 0rem 1rem 8rem 1rem;
+}
+.map {
+    width: 100%;
+    margin-bottom: 6rem;
+}
+.dayTime {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--gbGrayButton);
+}
   .subheader {
     margin: 0rem 1rem 2rem 1rem;
   }
