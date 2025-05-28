@@ -4,6 +4,7 @@ import { reviews } from "./data/data";
 import ScrollToContent from "./components/ScrollToContent";
 
 import styles from "./page.module.css";
+import Link from "next/link";
 
 function ReviewCard({ review, name }) {
   return (
@@ -100,7 +101,9 @@ export default function Home() {
                 bandana. How cute is that?
               </li>
             </ul>
-            <button className={styles.spaDayButton}>Book A Spa Day</button>
+            <Link href="/services">
+              <button className={styles.spaDayButton}>Book A Spa Day</button>
+            </Link>
           </div>
           <Image
             className={styles.spaDogThree}
