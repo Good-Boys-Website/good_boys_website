@@ -38,6 +38,21 @@ export default function ContactUs() {
 
   return (
     <div className={`${styles.page} fade-in`}>
+      <div className={styles.banner}>
+        <Image
+          className={styles.contactPhoto}
+          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747399420/small_dog_groom_terrier_c_crop_ar_4_3_ghsxip_c_crop_ar_16_9_ascpma.jpg"
+          alt=""
+          width={3004}
+          height={1690}
+        />
+        <div className={styles.bannerCopy}>
+          <p className={styles.header}>We want to meet your pup.</p>
+          <p className={styles.subHeader}>
+            Treat them to a spa day. They&apos;re working hard, 9-5.
+          </p>
+        </div>
+      </div>
       <p className={styles.headerHours}>Hours & Location</p>
       <section className={styles.hoursLocationSection}>
         <iframe
@@ -81,8 +96,8 @@ export default function ContactUs() {
         </section>
       </section>
       <section className={styles.formSection}>
-        <h1 className={styles.header}>Send us a message.</h1>
-        <h2 className={styles.subheader}>
+        <h1 className={styles.headerForm}>Send us a message.</h1>
+        <h2 className={styles.subHeaderForm}>
           We&apos;ll try our best to respond within 24 hours.
         </h2>
         <form
@@ -176,22 +191,6 @@ export default function ContactUs() {
           closeModal={closeModal}
         />
       </section>
-      <div className={styles.bottom}>
-        <Image
-          className={styles.contactPhoto}
-          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747399420/small_dog_groom_terrier_c_crop_ar_4_3_ghsxip_c_crop_ar_16_9_ascpma.jpg"
-          alt=""
-          width={3004}
-          height={1690}
-        />
-        <p className={styles.bottomCopy}>
-          We want to meet your pup.
-          <br />
-          <span className={styles.bottomCopySub}>
-            Treat them to a spa day. They&apos;re working hard, 9-5.
-          </span>
-        </p>
-      </div>
     </div>
   );
 }

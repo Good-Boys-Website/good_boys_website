@@ -7,37 +7,39 @@
 }
 
 .hoursLocationSection {
-    display: flex;
-    justify-content: space-between;
-    margin: 0rem 4rem 8rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 4rem 8rem 4rem;
 }
 
 .map {
-     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .dayTime {
-    display: flex;
-    justify-content: space-between;
-    width: 636px;
-    border-bottom: 1px solid var(--gbGrayButton);
+  display: flex;
+  justify-content: space-between;
+  width: 636px;
+  border-bottom: 1px solid var(--gbGrayButton);
 }
 
-.day, .time {
-    font-size: 20px;
-    font-weight: normal;
-    padding-bottom: .5rem;
-    padding-top: .5rem;
+.day,
+.time {
+  font-size: 20px;
+  font-weight: normal;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .formSection {
   display: flex;
   flex-direction: column;
-  margin: 0rem 4rem 0rem 4rem;
+  margin: 0rem 4rem 8rem 4rem;
 }
 
-.header, .headerHours {
+.header,
+.headerHours {
   font-family: "InstrumentSans", Arial, sans-serif;
   font-size: 68px;
   padding-top: 2rem;
@@ -46,15 +48,7 @@
 }
 
 .headerHours {
-   margin: 0rem 4rem 4rem 4rem;
-}
-
-.subheader {
-  font-family: "InstrumentSans", Arial, sans-serif;
-  color: var(--gbGrayText);
-  font-size: 26px;
-  font-weight: normal;
-  margin-bottom: 4rem;
+  margin: 0rem 4rem 4rem 4rem;
 }
 
 .form {
@@ -120,28 +114,48 @@
   font-weight: normal;
 }
 
-.bottom {
-  position: relative;
+.banner {
+   position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 4rem;
   width: 100%;
 }
 
-.bottomCopy {
+.bannerCopy {
+   display: flex;
+  flex-direction: column;
   position: absolute;
-  font-family: "InstrumentSans", Arial, sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  line-height: 0.8;
+}
+
+.header,
+.subHeader,
+.headerForm {
   font-size: 68px;
   color: white;
-  text-align: center;
-  align-self: center;
-  margin-top: 12rem;
-  line-height: 0.8;
   z-index: 1000;
 }
 
-.bottomCopySub {
-  font-size: 26px;
+.headerForm {
+  font-family: "InstrumentSans", Arial, sans-serif;
+  color: var(--gbBlue);
 }
+
+.subHeader, .subHeaderForm {
+  font-size: 26px;
+  margin-top: 2rem;
+}
+
+.subHeaderForm {
+  font-family: "InstrumentSans", Arial, sans-serif;
+  color: var(--gbGrayText);
+  margin-bottom: 4rem;
+}
+
 
 .contactPhoto {
   display: block;
@@ -168,60 +182,72 @@
 }
 
 @media (max-width: 1300px) {
+  .banner {
+    flex-direction: column-reverse;
+    margin-bottom: 0rem;
+  }
+    .bannerCopy {
+    position: inherit;
+  }
+    .header,
+  .subHeader {
+    color: var(--gbBlue);
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: start;
+    z-index: 999;
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  .header {
+    margin-top: 2rem;
+  }
+
+  .subHeader {
+    color: var(--gbGrayText);
+    font-size: 24px;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
   .formSection {
     margin: 0rem;
   }
   .header,
-  .subheader {
+  .subHeaderForm {
     width: 90%;
   }
-  .header, .headerHours {
+  .subHeaderForm {
+    margin: 0rem 1rem 2rem 1rem;
+  }
+  .header,
+  .headerHours,
+  .headerForm {
     font-size: 48px;
     margin: 0rem 1rem 2rem 1rem;
   }
   .hoursLocationSection {
     flex-direction: column;
-    margin: 0rem 1rem 8rem 1rem;
-}
-.map {
+    margin: 0rem 1rem 4rem 1rem;
+  }
+  .map {
     width: 100%;
     margin-bottom: 6rem;
-}
-.dayTime {
+  }
+  .dayTime {
     display: flex;
     justify-content: space-between;
     width: 100%;
     border-bottom: 1px solid var(--gbGrayButton);
-}
-  .subheader {
-    margin: 0rem 1rem 2rem 1rem;
   }
+  .formSection {
+    margin-bottom: 8rem;
+  }
+ 
   .form {
     width: 90%;
     margin-bottom: 4rem;
   }
   .nameSection {
     flex-direction: column;
-  }
-  .bottom {
-    position: inherit;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    width: 100%;
-  }
-  .bottomCopy {
-    color: var(--gbBlue);
-    position: inherit;
-    display: flex;
-    flex-direction: column;
-    font-size: 48px;
-    margin: 0rem 1rem 2rem 1rem;
-    line-height: 1;
-  }
-  .bottomCopySub {
-    font-size: 24px;
-    padding-top: 2rem;
   }
   .contactPhoto {
     filter: none;
