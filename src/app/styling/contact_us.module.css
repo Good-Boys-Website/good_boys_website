@@ -1,9 +1,56 @@
 .page {
+  font-family: "InstrumentSans", Arial, sans-serif;
+  color: var(--gbBlue);
   display: flex;
   flex-direction: column;
-  color: var(--gbBlue);
   min-height: 100vh;
   line-height: 1.5;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.contactPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: contrast(60%);
+}
+
+.bannerCopy {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  line-height: 0.8;
+}
+
+.header {
+  line-height: 1.5;
+}
+
+.header,
+.subHeader {
+  font-size: 68px;
+  color: white;
+  z-index: 1000;
+}
+
+.subHeader {
+  font-size: 26px;
+}
+
+.headerHours {
+  font-size: 68px;
+  padding-top: 2rem;
+  margin: 0rem 4rem 4rem 4rem;
 }
 
 .hoursLocationSection {
@@ -28,8 +75,7 @@
 .time {
   font-size: 20px;
   font-weight: normal;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
 .formSection {
@@ -38,21 +84,16 @@
   margin: 0rem 4rem 8rem 4rem;
 }
 
-.header,
-.headerHours {
-  font-family: "InstrumentSans", Arial, sans-serif;
+.headerForm {
   font-size: 68px;
-  padding-top: 2rem;
-  margin-bottom: 2rem;
-  line-height: 1.5;
+  text-align: center;
 }
 
-.header {
-  margin-bottom: 0rem;
-}
-
-.headerHours {
-  margin: 0rem 4rem 4rem 4rem;
+.subHeaderForm {
+  font-size: 26px;
+  color: var(--gbGrayText);
+  text-align: center;
+  margin: 2rem 0rem 4rem 0rem;
 }
 
 .form {
@@ -61,6 +102,24 @@
   align-self: center;
   margin-bottom: 8rem;
   width: 600px;
+}
+
+.nameSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.nameField {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 1rem;
+  width: 100%;
+}
+
+.nameField:last-child {
+  margin-right: 0rem;
 }
 
 .formLabel {
@@ -82,6 +141,10 @@
   height: 120px;
 }
 
+.requiredMessage {
+  margin-bottom: 2rem;
+}
+
 .formButton {
   font-family: "IntroRust", Arial, sans-serif;
   color: var(--background);
@@ -92,84 +155,8 @@
   cursor: pointer;
 }
 
-.nameSection {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.nameField {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 1rem;
-  width: 100%;
-}
-
-.nameField:last-child {
-  margin-right: 0rem;
-}
-
-.requiredMessage {
-  margin-bottom: 2rem;
-}
-
 .validateMessage {
   font-weight: normal;
-}
-
-.banner {
-   position: relative;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 4rem;
-  width: 100%;
-}
-
-.bannerCopy {
-   display: flex;
-  flex-direction: column;
-  position: absolute;
-  text-align: center;
-  justify-content: center;
-  align-self: center;
-  line-height: 0.8;
-}
-
-.header,
-.subHeader,
-.headerForm {
-  font-size: 68px;
-  color: white;
-  z-index: 1000;
-}
-
-.headerForm {
-  font-family: "InstrumentSans", Arial, sans-serif;
-  color: var(--gbBlue);
-}
-
-.subHeader, .subHeaderForm {
-  font-size: 26px;
-  margin-top: 2rem;
-}
-
-.subHeader {
-  margin-top: 0rem;
-}
-
-.subHeaderForm {
-  font-family: "InstrumentSans", Arial, sans-serif;
-  color: var(--gbGrayText);
-  margin-bottom: 4rem;
-}
-
-
-.contactPhoto {
-  display: block;
-  width: 100%;
-  height: auto;
-  filter: contrast(60%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -195,10 +182,10 @@
     flex-direction: column-reverse;
     margin-bottom: 0rem;
   }
-    .bannerCopy {
+  .bannerCopy {
     position: inherit;
   }
-    .header,
+  .header,
   .subHeader {
     color: var(--gbBlue);
     font-size: 48px;
@@ -210,7 +197,6 @@
   .header {
     margin-top: 2rem;
   }
-
   .subHeader {
     color: var(--gbGrayText);
     font-size: 24px;
@@ -220,11 +206,18 @@
   .formSection {
     margin: 0rem;
   }
+  .dayTime,
+  .map {
+    width: 100%;
+  }
+
   .header,
-  .subHeaderForm {
+  .subHeaderForm,
+  .form {
     width: 90%;
   }
   .subHeaderForm {
+    text-align: left;
     margin: 0rem 1rem 2rem 1rem;
   }
   .header,
@@ -233,26 +226,25 @@
     font-size: 48px;
     margin: 0rem 1rem 2rem 1rem;
   }
+  .headerForm {
+    text-align: left;
+  }
   .hoursLocationSection {
     flex-direction: column;
     margin: 0rem 1rem 4rem 1rem;
   }
   .map {
-    width: 100%;
     margin-bottom: 6rem;
   }
   .dayTime {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     border-bottom: 1px solid var(--gbGrayButton);
   }
   .formSection {
     margin-bottom: 8rem;
   }
- 
   .form {
-    width: 90%;
     margin-bottom: 4rem;
   }
   .nameSection {
@@ -262,11 +254,11 @@
     filter: none;
   }
   @media (prefers-color-scheme: dark) {
-   .header {
-    color: var(--foreground);
-   }
-   .subHeader {
-    color: var(--darkModeGray);
-   }
+    .header {
+      color: var(--foreground);
+    }
+    .subHeader {
+      color: var(--darkModeGray);
+    }
   }
 }
