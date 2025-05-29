@@ -89,9 +89,9 @@
 }
 
 .spaDayButton {
-  color: var(--foreground);
-  font-family: "IntroRust", Arial, sans-serif;
-  background-color: var(--gbGrayButton);
+   font-family: "IntroRust", Arial, sans-serif;
+  color: var(--background);
+  background-color: var(--gbBlue);
   width: 460px;
 }
 

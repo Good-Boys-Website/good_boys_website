@@ -11,7 +11,7 @@ import styles from "./footer.module.css";
 export default function Footer() {
   return (
     <footer className={`${styles.footer} fade-in`}>
-      <section data-scroll-section className={styles.footerCtas}>
+      <section className={styles.footerCtas}>
         <div className={styles.leftContainer}>
           <Image
             className={styles.mascot}
@@ -43,7 +43,7 @@ export default function Footer() {
           </Link>
         </div>
       </section>
-      <section className={styles.linkSection}>
+      <section data-scroll-section className={styles.linkSection}>
         <div className={styles.iconSection}>
           <a href="https://www.facebook.com/gboysdoggrooming" target="_blank">
             <FaFacebook className={styles.icon} />

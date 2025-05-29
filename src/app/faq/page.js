@@ -60,7 +60,7 @@ export default function Faq() {
         ))}
       </ul>
       <section data-scroll-section className={styles.buttonSection}>
-        <Link href="/services">
+        <Link href="/services" className={styles.buttonLink}>
           <button className={styles.button}>Book A Spa Day</button>
         </Link>
       </section>

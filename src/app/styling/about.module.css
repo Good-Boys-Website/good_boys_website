@@ -44,9 +44,16 @@
   padding-top: 2rem;
 }
 
+.buttonLink {
+  align-self: center;
+}
+
 .button {
+  color: var(--background);
   font-family: "IntroRust", Arial, sans-serif;
   margin-top: 4rem;
+  background-color: var(--gbBlue);
+  width: 460px;
 }
 
 .sectionRight {
@@ -88,6 +95,7 @@
   }
   .leftSection,
   .photoMobile,
+  .buttonLink,
   .button {
     width: 100%;
   }

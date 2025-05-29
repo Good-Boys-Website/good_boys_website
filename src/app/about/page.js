@@ -65,7 +65,7 @@ export default function About() {
           things canine, we&apos;re thrilled to have you join us on this
           tail-wagging adventure. Welcome to the Good Boys family!
         </p>
-        <Link href="/services">
+        <Link href="/services" className={styles.buttonLink}>
           <button className={styles.button}>Book Now</button>
         </Link>
       </section>

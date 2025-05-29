@@ -111,7 +111,9 @@
     margin: 0rem;
   }
   .question,
-  .answer {
+  .answer,
+  .buttonLink,
+  .button {
     width: 100%;
   }
   .header,
