@@ -6,7 +6,7 @@ import { lazy } from "react";
 export default function Services() {
   return (
     <main className={`${styles.page} fade-in`}>
-      <section className={styles.bannerSection}>
+      <header className={styles.bannerSection}>
         <Image
           className={styles.servicesBanner}
           alt="Photo of a freshly groomed dog"
@@ -16,12 +16,12 @@ export default function Services() {
           priority
         />
         <div className={styles.bannerCopy}>
-          <h1 className={styles.header}>Let&apos;s get to grooming.</h1>
+          <p className={styles.header}>Let&apos;s get to grooming.</p>
           <p className={styles.subHeader}>
             Book your appointment with Good Boys below.
           </p>
         </div>
-      </section>
+      </header>
       <div className={styles.bookingContainer}>
         <iframe
           src="https://booking.moego.pet/ol/GoodBoysDogGrooming/book?utm_medium=embed"
@@ -32,7 +32,7 @@ export default function Services() {
           scrolling="yes"
         ></iframe>
       </div>
-      <h2 className={styles.sectionHeader}>Promos & Discounts</h2>
+      <h1 className={styles.sectionHeader}>Promos & Discounts</h1>
       <article className={styles.mainPage}>
         <section className={styles.firstTimeSection}>
           <Image
