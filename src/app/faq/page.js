@@ -41,11 +41,11 @@ function FaqCard({ question, answer }) {
 
 export default function Faq() {
   return (
-    <div className={`${styles.page} fade-in`}>
+    <main className={`${styles.page} fade-in`}>
       <h1 className={styles.header}>You have questions - we have answers.</h1>
-      <h2 className={styles.subheader}>
+      <p className={styles.subheader}>
         Below are some commonly asked questions by clients:
-      </h2>
+      </p>
       <Image
         className={styles.faqPhoto}
         src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747398365/poodle_dog_groom_dye_c_crop_ar_16_9_mg9mss.jpg"
@@ -64,6 +64,6 @@ export default function Faq() {
           <button className={styles.button}>Book A Spa Day</button>
         </Link>
       </section>
-    </div>
+    </main>
   );
 }
