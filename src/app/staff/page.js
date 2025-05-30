@@ -30,8 +30,13 @@ function StaffCard({
         <p className={styles.stats}>Dog Breed: {dog_breed}</p>
         <p className={styles.stats}>Dog Topping: {dog_topping}</p>
         <p className={styles.stats}>Famous Dog: {famous_dog}</p>
-        <Link href="/services">
-          <button className={styles.bookButton}>Book With Nick</button>
+        <Link
+          href="/services"
+          className={styles.bookButton}
+          role="button"
+          aria-label="Book an appointment with Nick"
+        >
+          Book With Nick
         </Link>
       </div>
     </li>
@@ -40,11 +45,11 @@ function StaffCard({
 
 export default function Staff() {
   return (
-    <div className={`${styles.page} fade-in`}>
+    <main className={`${styles.page} fade-in`}>
       <h1 className={styles.header}>Meet our staff</h1>
-      <h2 className={styles.subheader}>
+      <p className={styles.subheader}>
         Get to know the wonderful Good Boys crew:
-      </h2>
+      </p>
       <ul className={styles.staffSection}>
         {staff.map((member) => (
           <StaffCard
@@ -58,6 +63,6 @@ export default function Staff() {
           />
         ))}
       </ul>
-    </div>
+    </main>
   );
 }
