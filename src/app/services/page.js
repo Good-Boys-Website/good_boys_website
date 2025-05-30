@@ -5,8 +5,8 @@ import { lazy } from "react";
 
 export default function Services() {
   return (
-    <div className={`${styles.page} fade-in`}>
-      <section className={styles.bannerSection}>
+    <main className={`${styles.page} fade-in`}>
+      <header className={styles.bannerSection}>
         <Image
           className={styles.servicesBanner}
           alt="Photo of a freshly groomed dog"
@@ -16,12 +16,12 @@ export default function Services() {
           priority
         />
         <div className={styles.bannerCopy}>
-          <h1 className={styles.header}>Let&apos;s get to grooming.</h1>
-          <h2 className={styles.subHeader}>
+          <p className={styles.header}>Let&apos;s get to grooming.</p>
+          <p className={styles.subHeader}>
             Book your appointment with Good Boys below.
-          </h2>
+          </p>
         </div>
-      </section>
+      </header>
       <div className={styles.bookingContainer}>
         <iframe
           src="https://booking.moego.pet/ol/GoodBoysDogGrooming/book?utm_medium=embed"
@@ -32,7 +32,7 @@ export default function Services() {
           scrolling="yes"
         ></iframe>
       </div>
-      <p className={styles.sectionHeader}>Promos & Discounts</p>
+      <h1 className={styles.sectionHeader}>Promos & Discounts</h1>
       <article className={styles.mainPage}>
         <section className={styles.firstTimeSection}>
           <Image
@@ -109,48 +109,6 @@ export default function Services() {
           </section>
         </div>
       </article>
-      {/*<p className={styles.sectionHeader}>Hours & Location</p>
-      <section className={styles.hoursLocationSection}>
-        <iframe
-          className={styles.map}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.81010869888!2d-87.66988339999999!3d41.96141360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3deb616229b%3A0x6bdd1adc563f0f8b!2sGood%20Boys%20Dog%20Grooming!5e0!3m2!1sen!2sus!4v1748359123042!5m2!1sen!2sus"
-          width="600"
-          height="450"
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <section>
-          <div className={styles.dayTime}>
-            <p className={styles.day}>Tuesday</p>
-            <p className={styles.time}>8:30 AM - 4:30 PM</p>
-          </div>
-          <div className={styles.dayTime}>
-            <p className={styles.day}>Wednesday</p>
-            <p className={styles.time}>8:30 AM - 4:30 PM</p>
-          </div>
-          <div className={styles.dayTime}>
-            <p className={styles.day}>Thursday</p>
-            <p className={styles.time}>8:30 AM - 4:30 PM</p>
-          </div>
-          <div className={styles.dayTime}>
-            <p className={styles.day}>Friday</p>
-            <p className={styles.time}>8:30 AM - 4:30 PM</p>
-          </div>
-          <div className={styles.dayTime}>
-            <p className={styles.day}>Saturday</p>
-            <p className={styles.time}>8:30 AM - 4:30 PM</p>
-          </div>
-          <div className={styles.dayTime}>
-            <p className={styles.day}>Sunday</p>
-            <p className={styles.time}>Closed</p>
-          </div>
-          <div className={styles.dayTime}>
-            <p className={styles.day}>Monday</p>
-            <p className={styles.time}>Closed</p>
-          </div>
-        </section>
-      </section>*/}
-    </div>
+    </main>
   );
 }

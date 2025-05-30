@@ -126,6 +126,9 @@
   .subText {
     color: var(--darkModeGray);
   }
+  .sectionHeader {
+    color: var(--foreground)
+  }
   .servicesButton {
     color: var(--background);
   }

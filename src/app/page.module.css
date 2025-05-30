@@ -10,7 +10,7 @@
   font-family: "IntroRust", Arial, sans-serif;
   font-size: 68px;
   line-height: 1.5;
-  padding-top: 2rem;
+  padding: 2rem 0rem 2rem 0rem;
   width: 900px;
 }
 
@@ -18,7 +18,7 @@
   font-family: "InstrumentSans", Arial, sans-serif;
   color: var(--gbGrayText);
   font-size: 36px;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .heroPhoto {
@@ -89,9 +89,9 @@
 }
 
 .spaDayButton {
-  color: var(--foreground);
-  font-family: "IntroRust", Arial, sans-serif;
-  background-color: var(--gbGrayButton);
+   font-family: "IntroRust", Arial, sans-serif;
+  color: var(--background);
+  background-color: var(--gbBlue);
   width: 460px;
 }
 

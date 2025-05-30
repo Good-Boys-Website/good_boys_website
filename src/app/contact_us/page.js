@@ -37,8 +37,8 @@ export default function ContactUs() {
   } = useEmailForm(formInitialState, validationFields);
 
   return (
-    <div className={`${styles.page} fade-in`}>
-      <div className={styles.banner}>
+    <main className={`${styles.page} fade-in`}>
+      <header className={styles.banner}>
         <Image
           className={styles.contactPhoto}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747399420/small_dog_groom_terrier_c_crop_ar_4_3_ghsxip_c_crop_ar_16_9_ascpma.jpg"
@@ -52,9 +52,9 @@ export default function ContactUs() {
             Treat them to a spa day. They&apos;re working hard, 9-5.
           </p>
         </div>
-      </div>
-      <p className={styles.headerHours}>Hours & Location</p>
-      <section className={styles.hoursLocationSection}>
+      </header>
+      <h1 className={styles.headerHours}>Hours & Location</h1>
+      <article className={styles.hoursLocationSection}>
         <iframe
           className={styles.map}
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.81010869888!2d-87.66988339999999!3d41.96141360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3deb616229b%3A0x6bdd1adc563f0f8b!2sGood%20Boys%20Dog%20Grooming!5e0!3m2!1sen!2sus!4v1748359123042!5m2!1sen!2sus"
@@ -63,6 +63,7 @@ export default function ContactUs() {
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          title="Map showing the location of Good Boys Dog Grooming in Chicago"
         ></iframe>
         <section>
           <div className={styles.dayTime}>
@@ -94,12 +95,12 @@ export default function ContactUs() {
             <p className={styles.time}>Closed</p>
           </div>
         </section>
-      </section>
-      <section className={styles.formSection}>
-        <h1 className={styles.headerForm}>Send us a message.</h1>
-        <h2 className={styles.subHeaderForm}>
+      </article>
+      <article className={styles.formSection}>
+        <h2 className={styles.headerForm}>Send us a message.</h2>
+        <p className={styles.subHeaderForm}>
           We&apos;ll try our best to respond within 24 hours.
-        </h2>
+        </p>
         <form
           className={styles.form}
           ref={formRef}
@@ -190,7 +191,7 @@ export default function ContactUs() {
           isModalVisible={isModalVisible}
           closeModal={closeModal}
         />
-      </section>
-    </div>
+      </article>
+    </main>
   );
 }

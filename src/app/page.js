@@ -17,15 +17,13 @@ function ReviewCard({ review, name }) {
 
 export default function Home() {
   return (
-    <div className={`${styles.page} fade-in`}>
+    <main className={`${styles.page} fade-in`}>
       <ScrollToContent />
-      <main>
+      <article>
         <h1 className={styles.header}>
           Your dog called - They want a makeover.
         </h1>
-        <h2 className={styles.subHeader}>
-          Book today for the ultimate spa day.
-        </h2>
+        <p className={styles.subHeader}>Book today for the ultimate spa day.</p>
         <Image
           className={styles.heroPhoto}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744333722/resized_b08phu.jpg"
@@ -36,9 +34,9 @@ export default function Home() {
         />
         <section data-scroll-section className={styles.section}>
           <div className={styles.groomCopyMobile}>
-            <h3 className={styles.sectionHeader}>
+            <h2 className={styles.sectionHeader}>
               Best-in-class grooms for Chicago dogs.
-            </h3>
+            </h2>
             <p className={styles.copy}>
               Good boys prioritizes stress-free grooming by operating at a small
               scale. Its simple: dogs get stressed out, just like us. We want to
@@ -62,9 +60,9 @@ export default function Home() {
             height={4032}
           />
           <div className={styles.groomCopy}>
-            <h3 className={styles.sectionHeader}>
+            <h2 className={styles.sectionHeader}>
               Best-in-class grooms for Chicago dogs.
-            </h3>
+            </h2>
             <p className={styles.copy}>
               Good boys prioritizes stress-free grooming by operating at a small
               scale. Its simple: dogs get stressed out, just like us. We want to
@@ -117,9 +115,9 @@ export default function Home() {
           <QuoteForm />
         </section>
         <section data-scroll-section className={styles.reviewsSection}>
-          <h1 className={styles.reviewsHeader}>
+          <h2 className={styles.reviewsHeader}>
             See what our clients are saying about us.
-          </h1>
+          </h2>
           <ul className={styles.reviewsContainer}>
             {reviews.map((review) => (
               <ReviewCard
@@ -130,7 +128,7 @@ export default function Home() {
             ))}
           </ul>
         </section>
-      </main>
-    </div>
+      </article>
+    </main>
   );
 }

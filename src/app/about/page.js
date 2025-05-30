@@ -7,10 +7,10 @@ import styles from "@/app/styling/about.module.css";
 
 export default function About() {
   return (
-    <div className={`${styles.page} fade-in`}>
-      <section className={styles.leftSection}>
+    <main className={`${styles.page} fade-in`}>
+      <article className={styles.leftSection}>
         <h1 className={styles.header}>Meet Nick & Arthur</h1>
-        <h2 className={styles.subheader}>Two dog-lovers with a mission.</h2>
+        <p className={styles.subheader}>Two dog-lovers with a mission.</p>
 
         <Image
           className={styles.photoMobile}
@@ -20,7 +20,7 @@ export default function About() {
           height={1600}
         />
 
-        <h3 className={styles.copyHeader}>Who we are</h3>
+        <h2 className={styles.copyHeader}>Who we are</h2>
         <p className={styles.copySection}>
           In 2018, fate (and a shared love for dogs) brought Arthur and Nick
           together in Chicago. Fast forward to 2020, and they embarked on a
@@ -48,9 +48,9 @@ export default function About() {
           height={2000}
         />
 
-        <h4 data-scroll-section className={styles.copyHeader}>
+        <h3 data-scroll-section className={styles.copyHeader}>
           Our Mission
-        </h4>
+        </h3>
         <p className={styles.copySection}>
           At Good Boys, our mission is simple yet heartfelt: we&apos;re all
           about making tails wag and fur shine! We strive to provide every dog
@@ -65,11 +65,11 @@ export default function About() {
           things canine, we&apos;re thrilled to have you join us on this
           tail-wagging adventure. Welcome to the Good Boys family!
         </p>
-        <Link href="/services">
+        <Link href="/services" className={styles.buttonLink}>
           <button className={styles.button}>Book Now</button>
         </Link>
-      </section>
-      <section className={styles.sectionRight}>
+      </article>
+      <article className={styles.sectionRight}>
         <Image
           className={styles.photo}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747398710/gb_owners_c_crop_w_1400_h_1800_jxvarn.jpg"
@@ -84,7 +84,7 @@ export default function About() {
           width={1600}
           height={2000}
         />
-      </section>
-    </div>
+      </article>
+    </main>
   );
 }
