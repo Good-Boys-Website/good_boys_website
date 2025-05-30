@@ -1,4 +1,5 @@
 .scroll {
+  all: unset;
   position: fixed;
   color: var(--background);
   right: 2rem;

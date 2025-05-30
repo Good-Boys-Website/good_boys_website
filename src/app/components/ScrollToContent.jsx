@@ -73,7 +73,8 @@ export default function ScrollToContent() {
   };
 
   return (
-    <div
+    <button
+      type="button"
       aria-label="Scroll to next content section"
       className={`${styles.scroll} ${
         isVisible ? styles.visible : styles.hidden
@@ -85,6 +86,6 @@ export default function ScrollToContent() {
       ) : (
         <FaArrowDown className={styles.arrow} />
       )}
-    </div>
+    </button>
   );
 }

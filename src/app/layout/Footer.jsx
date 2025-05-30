@@ -45,11 +45,16 @@ export default function Footer() {
       </section>
       <section data-scroll-section className={styles.linkSection}>
         <div className={styles.iconSection}>
-          <a href="https://www.facebook.com/gboysdoggrooming" target="_blank">
+          <a
+            href="https://www.facebook.com/gboysdoggrooming"
+            aria-label="icon which links to the Good Boys Dog Grooming Facebook page."
+            target="_blank"
+          >
             <FaFacebook className={styles.icon} />
           </a>
           <a
             href="https://www.instagram.com/gbdoggrooming/?hl=en"
+            aria-label="icon which links to the Good Boys Dog Grooming Instagram page."
             target="_blank"
           >
             <FaInstagram className={styles.icon} />
