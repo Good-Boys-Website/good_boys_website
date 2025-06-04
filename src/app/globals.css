@@ -59,14 +59,29 @@ ul {
 }
 
 button {
-  color: var(--background);
-  font-weight: bold;
+  font-family: "IntroRust", Arial, sans-serif;
+  color: var(--foreground);
   font-size: 18px;
-  background-color: var(--gbBlue);
+  background-color: var(--gbGrayButton);
   padding: 1rem 1.4rem 1rem 1.4rem;
   border-radius: 8px;
   width: 180px;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  color: var(--background);
+  background-color: var(--gbBlue);
+}
+
+@media (prefers-color-scheme: dark) {
+    button {
+    color: var(--background);
+  }
+  button:hover {
+    color: var(--foreground);
+  }
 }
 
 @keyframes fadeIn {

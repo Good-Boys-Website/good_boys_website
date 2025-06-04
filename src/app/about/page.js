@@ -76,6 +76,7 @@ export default function About() {
           alt="photo of two dogs"
           width={1400}
           height={1600}
+          priority
         />
         <Image
           className={styles.photo}

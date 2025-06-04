@@ -1,4 +1,5 @@
 .footer {
+  font-family: "InstrumentSans", Arial, sans-serif;
   background-color: var(--gbBlue);
 }
 
@@ -33,7 +34,7 @@
 .contactAddress {
   color: var(--background);
   font-size: 22px;
-  font-weight: normal;
+  font-weight: 400;
   margin: 1rem;
   text-decoration: underline;
 }
@@ -73,7 +74,6 @@
 
 .iconSection {
   margin-left: 3rem;
-  padding-bottom: 10rem;
 }
 
 .icon {
@@ -91,16 +91,8 @@
 
 .link {
   color: var(--background);
-  font-weight: normal;
+  font-weight: 400;
   margin: 0rem 4.2rem 2rem 4.2rem;
-}
-
-.copyright {
-  color: var(--background);
-  font-size: 16px;
-  font-weight: normal;
-  text-align: center;
-  padding: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {

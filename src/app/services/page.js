@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import styles from "@/app/styling/services.module.css";
-import { lazy } from "react";
 
 export default function Services() {
   return (
@@ -15,6 +14,14 @@ export default function Services() {
           height={1325}
           priority
         />
+        <Image
+          className={styles.servicesBannerMobile}
+          alt="Photo of a freshly groomed dog"
+          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1748572953/IMG_4624_fmukgy.jpg"
+          width={3024}
+          height={4032}
+          priority
+        />
         <div className={styles.bannerCopy}>
           <p className={styles.header}>Let&apos;s get to grooming.</p>
           <p className={styles.subHeader}>
@@ -22,16 +29,26 @@ export default function Services() {
           </p>
         </div>
       </header>
-      <div className={styles.bookingContainer}>
-        <iframe
-          src="https://booking.moego.pet/ol/GoodBoysDogGrooming/book?utm_medium=embed"
-          width="100%"
-          height="100%"
-          frameBorder="0"
-          title="Online booking"
-          scrolling="yes"
-        ></iframe>
-      </div>
+      <section className={styles.bookingSection}>
+        <div className={styles.bookingButtons}>
+          <p className={styles.buttonDescription}>Booked before? Click here</p>
+          <a
+            href="https://booking.moego.pet/ol/GoodBoysDogGrooming/book"
+            target="_blank"
+          >
+            <button className={styles.bookingButton}>Existing</button>
+          </a>
+        </div>
+        <div className={styles.bookingButtons}>
+          <p className={styles.buttonDescription}>New client? click here</p>
+          <a
+            href="https://form.moego.pet/go/form?formId=531fada1d9c04b85995a109b44359401"
+            target="_blank"
+          >
+            <button className={styles.bookingButton}>New</button>
+          </a>
+        </div>
+      </section>
       <h1 className={styles.sectionHeader}>Promos & Discounts</h1>
       <article className={styles.mainPage}>
         <section className={styles.firstTimeSection}>

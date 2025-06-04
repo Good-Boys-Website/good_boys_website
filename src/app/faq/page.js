@@ -54,6 +54,14 @@ export default function Faq() {
         height={1701}
         priority
       />
+      <Image
+        className={styles.faqPhotoMobile}
+        src="https://res.cloudinary.com/do4shdwcc/image/upload/v1748573185/IMG_8215_puazk7.jpg"
+        alt="Photo of a freshly groomed dog"
+        width={2988}
+        height={3388}
+        priority
+      />
       <ul data-scroll-section className={styles.faqSection}>
         {faqs.map((faq) => (
           <FaqCard key={faq.id} question={faq.question} answer={faq.answer} />

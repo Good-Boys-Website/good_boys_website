@@ -32,6 +32,14 @@ export default function Home() {
           height={1699}
           priority
         />
+        <Image
+          className={styles.heroPhotoMobile}
+          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1748634985/IMG_0713_gtz66d.jpg"
+          alt="Photo of a freshly groomed dog"
+          width={3024}
+          height={4032}
+          priority
+        />
         <section data-scroll-section className={styles.section}>
           <div className={styles.groomCopyMobile}>
             <h2 className={styles.sectionHeader}>

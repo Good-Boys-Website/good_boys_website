@@ -1,4 +1,5 @@
 .page {
+   font-family: "InstrumentSans", Arial, sans-serif;
   color: var(--gbBlue);
   display: flex;
   flex-direction: row;
@@ -16,7 +17,6 @@
 }
 
 .header {
-  font-family: "InstrumentSans", Arial, sans-serif;
   font-size: 68px;
   padding-top: 2rem;
   margin-bottom: 2rem;
@@ -25,10 +25,9 @@
 }
 
 .subheader {
-  font-family: "InstrumentSans", Arial, sans-serif;
+  font-weight: 600;
   color: var(--gbGrayText);
   font-size: 26px;
-  font-weight: normal;
 }
 
 .copyHeader {
@@ -38,9 +37,8 @@
 }
 
 .copySection {
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--gbGrayText);
-  font-weight: normal;
+  font-weight: 400;
   padding-top: 2rem;
 }
 
@@ -49,10 +47,7 @@
 }
 
 .button {
-  color: var(--background);
-  font-family: "IntroRust", Arial, sans-serif;
   margin-top: 4rem;
-  background-color: var(--gbBlue);
   width: 460px;
 }
 
@@ -73,8 +68,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .page,
-  .button {
+  .page {
     color: var(--foreground);
   }
   .subheader,
@@ -119,7 +113,16 @@
   .photo {
     display: none;
   }
+  .buttonLink {
+     margin: 4rem 0rem 4rem 0rem;
+  }
   .button {
-    margin-top: 4rem;
+    color: var(--background);
+    background-color: var(--gbBlue);
+  }
+  @media (prefers-color-scheme: dark) {
+    .button {
+      color: var(--foreground);
+    }
   }
 }

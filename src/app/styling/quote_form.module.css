@@ -99,12 +99,19 @@
 
 .formButton {
   font-family: "IntroRust", Arial, sans-serif;
-  color: var(--background);
+  color: var(--foreground);
+  font-size: 18px;
+  background-color: var(--gbGrayButton);
   padding: 1rem 1.4rem 1rem 1.4rem;
   border: none;
   border-radius: 8px;
-  background-color: var(--gbBlue);
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.formButton:hover {
+  color: var(--background);
+  background-color: var(--gbBlue);
 }
 
 .requiredMessage {
@@ -193,12 +200,17 @@
   .suggestionItem:hover {
     background-color: var(--gbGrayText);
   }
-  .formButton,
   .dogBreedButton {
     border: none;
     color: var(--foreground);
   }
   #dogBreedInput::placeholder {
+    color: var(--foreground);
+  }
+  .formButton {
+    color: var(--background);
+  }
+  .formButton:hover {
     color: var(--foreground);
   }
   .modal {
@@ -228,6 +240,10 @@
   .dogBreedButton {
     font-size: 24px;
   }
+  .formButton {
+    color: var(--background);
+    background-color: var(--gbBlue);
+  }
   .modalContent {
     flex-direction: column;
     padding: 1rem;
@@ -242,5 +258,10 @@
   .modalMessage {
     font-size: 21px;
     margin-bottom: 0.5rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .formButton {
+      color: var(--foreground);
+    }
   }
 }
