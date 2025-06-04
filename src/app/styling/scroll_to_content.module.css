@@ -10,6 +10,10 @@
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
+.scroll:hover {
+  background-color: none;
+}
+
 .visible {
   opacity: 1;
   pointer-events: auto;
@@ -31,6 +35,9 @@
 @media (prefers-color-scheme: dark) {
   .scroll {
     color: var(--foreground);
+  }
+  .scroll:hover {
+    background-color: none;
   }
 }
 

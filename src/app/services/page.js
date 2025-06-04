@@ -58,6 +58,7 @@ export default function Services() {
             src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747399674/small_dog_groom_c_crop_ar_1_1_n5br6k.jpg"
             width={3024}
             height={3024}
+            loading="lazy"
           />
           <p className={styles.mainText}>First Time Clients</p>
           <p className={styles.subText}>
