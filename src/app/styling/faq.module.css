@@ -30,6 +30,10 @@
   border-radius: 20px;
 }
 
+.faqPhotoMobile {
+  display: none;
+}
+
 .faqSection {
   padding-top: 6rem;
 }
@@ -128,7 +132,13 @@
     margin: 0rem 1rem 0rem 1rem;
   }
   .faqPhoto {
-    border-radius: 0px;
+    display: none;
+  }
+  .faqPhotoMobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
   }
   .divider {
     display: none;

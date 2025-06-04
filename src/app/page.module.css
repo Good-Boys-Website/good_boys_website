@@ -27,6 +27,10 @@
   border-radius: 8px;
 }
 
+.heroPhotoMobile {
+  display: none;
+}
+
 .section {
   display: flex;
   justify-content: space-between;
@@ -89,7 +93,7 @@
 }
 
 .spaDayButton {
-   font-family: "IntroRust", Arial, sans-serif;
+  font-family: "IntroRust", Arial, sans-serif;
   color: var(--background);
   background-color: var(--gbBlue);
   width: 460px;
@@ -174,8 +178,14 @@
   }
 
   .heroPhoto {
+    display: none;
+  }
+
+  .heroPhotoMobile {
+    display: block;
     align-self: center;
-    border-radius: 0px;
+    width: 100%;
+    height: auto;
   }
 
   .section {

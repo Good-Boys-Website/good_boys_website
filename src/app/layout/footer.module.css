@@ -73,7 +73,6 @@
 
 .iconSection {
   margin-left: 3rem;
-  padding-bottom: 10rem;
 }
 
 .icon {
@@ -93,14 +92,6 @@
   color: var(--background);
   font-weight: normal;
   margin: 0rem 4.2rem 2rem 4.2rem;
-}
-
-.copyright {
-  color: var(--background);
-  font-size: 16px;
-  font-weight: normal;
-  text-align: center;
-  padding: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -78,7 +78,6 @@ export default function Footer() {
           </Link>
         </div>
       </section>
-      <p className={styles.copyright}>copyright Marf Inc. 2025</p>
     </footer>
   );
 }

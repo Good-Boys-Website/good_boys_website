@@ -43,8 +43,35 @@
   height: auto;
 }
 
-.bookingContainer {
-  height: 100vh;
+.servicesBannerMobile {
+  display: none;
+}
+
+.bookingSection {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bookingButtons {
+  margin: 2rem 0rem 4rem 0rem;
+}
+
+.buttonDescription {
+  font-size: 20px;
+  padding-bottom: 1rem;
+}
+
+.bookingButton {
+  font-family: "IntroRust", Arial, sans-serif;
+  color: var(--foreground);
+  background-color: var(--gbGrayButton);
+  width: 300px;
+  transition: 0.2s ease-in-out;
+}
+
+.bookingButton:hover {
+  color: var(--background);
+  background-color: var(--gbBlue);
 }
 
 .mainPage {
@@ -121,13 +148,12 @@
   background-color: var(--gbBlue);
 }
 
-
 @media (prefers-color-scheme: dark) {
   .subText {
     color: var(--darkModeGray);
   }
   .sectionHeader {
-    color: var(--foreground)
+    color: var(--foreground);
   }
   .servicesButton {
     color: var(--background);
@@ -143,8 +169,23 @@
   .page {
     margin-bottom: 8rem;
   }
+  .servicesBannerMobile,
+  .bookingSection,
+  .bookingButton,
+  .firstTimePhoto,
+  .referralPhoto,
+  .servicesButton {
+    width: 100%;
+  }
   .bannerSection {
     flex-direction: column-reverse;
+  }
+  .servicesBanner {
+    display: none;
+  }
+  .servicesBannerMobile {
+    display: block;
+    height: auto;
   }
   .bannerCopy {
     position: inherit;
@@ -161,12 +202,23 @@
   .header {
     margin-top: 2rem;
   }
-
   .subHeader {
     color: var(--gbGrayText);
     font-size: 24px;
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  .bookingSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bookingButtons:first-child {
+    margin-bottom: 0rem;
+  }
+  .bookingButtons {
+    margin-right: 0rem;
+    width: 90%;
   }
   .sectionHeader {
     padding-top: 2rem;
@@ -182,7 +234,6 @@
   }
   .firstTimePhoto,
   .referralPhoto {
-    width: 100%;
     height: auto;
     margin-bottom: 2rem;
     border-radius: 0px;
@@ -205,7 +256,6 @@
     margin-right: 1rem;
   }
   .servicesButton {
-    width: 100%;
     margin-bottom: 2rem;
   }
   @media (prefers-color-scheme: dark) {
