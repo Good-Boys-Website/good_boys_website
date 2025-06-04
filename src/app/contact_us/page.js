@@ -42,9 +42,16 @@ export default function ContactUs() {
         <Image
           className={styles.contactPhoto}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747399420/small_dog_groom_terrier_c_crop_ar_4_3_ghsxip_c_crop_ar_16_9_ascpma.jpg"
-          alt=""
+          alt="Picture of a freshly groomed dog"
           width={3004}
           height={1690}
+        />
+        <Image
+          className={styles.contactPhotoMobile}
+          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1748573016/IMG_5031_ggwzn8.jpg"
+          alt="Picture of a freshly groomed dog"
+          width={3024}
+          height={4032}
         />
         <div className={styles.bannerCopy}>
           <p className={styles.header}>We want to meet your pup.</p>

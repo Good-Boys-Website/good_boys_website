@@ -314,7 +314,7 @@ export const staff = [
     dog_topping: "Ketchup & onion",
     famous_dog: "Shadow, Homeward Bound",
     photo:
-      "https://res.cloudinary.com/do4shdwcc/image/upload/v1747401224/nick_petravich_groomer_staff_c_crop_w_2082_h_2777_du2qil.jpg",
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1748561942/nick_petravich_groomer_staff_c_crop_ar_1_1_rvjh6i.jpg",
   },
   {
     id: 2,
@@ -324,7 +324,7 @@ export const staff = [
     dog_topping: "Chicago style",
     famous_dog: "Winn-Dixie, Because of Winn- Dixie",
     photo:
-      "https://res.cloudinary.com/do4shdwcc/image/upload/v1744681758/Arthur_Profile_uhbxmw.jpg",
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1748561941/arthur_petravich_staff_c_crop_ar_1_1_wn2fpd.jpg",
   },
   {
     id: 3,
@@ -334,7 +334,7 @@ export const staff = [
     dog_topping: "Ketchup or Chili Cheese",
     famous_dog: "Perdita, 101 Dalmatians",
     photo:
-      "https://res.cloudinary.com/do4shdwcc/image/upload/v1747401126/emma_biggs_bather_staff_c_crop_w_2082_h_2777_k9j3oc.jpg",
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1748561942/emma_biggs_bather_staff_c_pad_b_gen_fill_ar_1_1_h7apdm.jpg",
   },
   {
     id: 4,
@@ -344,6 +344,6 @@ export const staff = [
     dog_topping: "Chili",
     famous_dog: "Santa's Little Helper, The Simpsons",
     photo:
-      "https://res.cloudinary.com/do4shdwcc/image/upload/v1747401177/lo_mancini_bather_staff_c_crop_w_2082_h_2777_p2luto.jpg",
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1748561942/lo_mancini_bather_staff_c_pad_b_gen_fill_ar_1_1_jddekn.jpg",
   },
 ];

@@ -104,14 +104,14 @@
 
 .mainText {
   color: var(--foreground);
-  font-weight: normal;
+  font-weight: 600;
   font-size: 22px;
   padding-bottom: 0.5rem;
 }
 
 .subText {
   color: var(--gbGrayText);
-  font-weight: normal;
+  font-weight: 600;
   padding-bottom: 0.5rem;
 }
 
@@ -128,11 +128,11 @@
 
 .amount {
   text-decoration: line-through;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .nextService {
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .servicesButton {

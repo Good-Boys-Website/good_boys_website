@@ -47,9 +47,7 @@ export default function Staff() {
   return (
     <main className={`${styles.page} fade-in`}>
       <h1 className={styles.header}>Meet our staff</h1>
-      <p className={styles.subheader}>
-        Get to know the wonderful Good Boys crew:
-      </p>
+      <p className={styles.subheader}>Get to know the Good Boys crew.</p>
       <ul className={styles.staffSection}>
         {staff.map((member) => (
           <StaffCard

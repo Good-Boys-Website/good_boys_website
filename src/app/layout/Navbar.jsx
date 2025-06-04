@@ -34,22 +34,26 @@ export default function Navbar() {
           <p className={styles.link}>ABOUT</p>
         </Link>
         <div className={styles.navLogoContainer}>
-          <Image
-            className={styles.navLogo}
-            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860689/Logo_Extraction_4_kfuxzj.png"
-            alt="Good Boys Premium Dog Grooming"
-            width={1563}
-            height={1563}
-            priority
-          />
-          <Image
-            className={styles.navLogoDark}
-            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1746153393/GB_Logo_-_Dark_Mode_3_uhzref.png"
-            alt="Good Boys Premium Dog Grooming"
-            width={1563}
-            height={1563}
-            loading="lazy"
-          />
+          <Link href="/" aria-label="Go to homepage">
+            <Image
+              className={styles.navLogo}
+              src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860689/Logo_Extraction_4_kfuxzj.png"
+              alt="Good Boys Premium Dog Grooming"
+              width={1563}
+              height={1563}
+              priority
+            />
+          </Link>
+          <Link href="/" aria-label="Go to homepage">
+            <Image
+              className={styles.navLogoDark}
+              src="https://res.cloudinary.com/do4shdwcc/image/upload/v1746153393/GB_Logo_-_Dark_Mode_3_uhzref.png"
+              alt="Good Boys Premium Dog Grooming"
+              width={1563}
+              height={1563}
+              loading="lazy"
+            />
+          </Link>
         </div>
         <Link href="/staff">
           <p className={styles.link}>STAFF</p>
@@ -63,21 +67,25 @@ export default function Navbar() {
       </nav>
 
       <nav className={`${styles.mobileNav} fade-in`}>
-        <Image
-          className={styles.navLogoMobile}
-          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860689/Logo_Extraction_4_kfuxzj.png"
-          alt="Good Boys Premium Dog Grooming"
-          width={1563}
-          height={1563}
-        />
-        <Image
-          className={styles.navLogoMobileDark}
-          src="https://res.cloudinary.com/do4shdwcc/image/upload/v1746153393/GB_Logo_-_Dark_Mode_3_uhzref.png"
-          alt="Good Boys Premium Dog Grooming"
-          width={1563}
-          height={1563}
-          loading="lazy"
-        />
+        <Link href="/" aria-label="Go to homepage">
+          <Image
+            className={styles.navLogoMobile}
+            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1743860689/Logo_Extraction_4_kfuxzj.png"
+            alt="Good Boys Premium Dog Grooming"
+            width={1563}
+            height={1563}
+          />
+        </Link>
+        <Link href="/" aria-label="Go to homepage">
+          <Image
+            className={styles.navLogoMobileDark}
+            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1746153393/GB_Logo_-_Dark_Mode_3_uhzref.png"
+            alt="Good Boys Premium Dog Grooming"
+            width={1563}
+            height={1563}
+            loading="lazy"
+          />
+        </Link>
 
         {/*hamburger menu*/}
         <div id={styles.hamMenuContainer} onClick={toggleMenu}>

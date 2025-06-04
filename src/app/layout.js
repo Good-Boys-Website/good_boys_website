@@ -12,6 +12,11 @@ const instrumentSans = localFont({
   src: [
     {
       path: ".//fonts/InstrumentSans.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: ".//fonts/InstrumentSans.ttf",
       weight: "600",
       style: "normal",
     },

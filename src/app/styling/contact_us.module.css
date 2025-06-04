@@ -22,6 +22,10 @@
   filter: contrast(60%);
 }
 
+.contactPhotoMobile {
+  display: none;
+}
+
 .bannerCopy {
   display: flex;
   flex-direction: column;
@@ -74,7 +78,7 @@
 .day,
 .time {
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 600;
   padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
@@ -185,6 +189,14 @@
   .bannerCopy {
     position: inherit;
   }
+    .contactPhoto {
+    display: none;
+  }
+  .contactPhotoMobile {
+      display: block;
+  width: 100%;
+  height: auto;
+  }
   .header,
   .subHeader {
     color: var(--gbBlue);
@@ -249,9 +261,6 @@
   }
   .nameSection {
     flex-direction: column;
-  }
-  .contactPhoto {
-    filter: none;
   }
   @media (prefers-color-scheme: dark) {
     .header {
