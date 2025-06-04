@@ -9,7 +9,6 @@
 }
 
 .header {
-  
   font-size: 68px;
   padding-top: 2rem;
   margin-bottom: 2rem;
@@ -87,18 +86,14 @@
 }
 
 .button {
-  color: var(--background);
-  font-family: "IntroRust", Arial, sans-serif;
-  align-self: center;
-  background-color: var(--gbBlue);
   width: 460px;
 }
 
 @media (prefers-color-scheme: dark) {
-  .page,
-  .button {
+  .page {
     color: var(--foreground);
   }
+
   .subheader,
   .answer {
     color: var(--darkModeGray);
@@ -168,9 +163,16 @@
   .buttonSection {
     margin: 0rem 1rem 0rem 1rem;
   }
+  .button {
+    color: var(--background);
+    background-color: var(--gbBlue);
+  }
   @media (prefers-color-scheme: dark) {
     .question {
       border-top: 1px solid var(--darkModeGray);
+    }
+    .button {
+      color: var(--foreground);
     }
   }
 }

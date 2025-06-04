@@ -77,15 +77,21 @@
 .staffCard:first-child {
   .bookButton {
     font-family: "IntroRust", Arial, sans-serif;
+    color: var(--foreground);
     font-size: 18px;
-    text-align: center;
-    color: var(--background);
     display: block;
+    text-align: center;
     padding: 1rem 1.4rem 1rem 1.4rem;
     margin-top: 2rem;
+    background-color: var(--gbGrayButton);
     border-radius: 8px;
-    background-color: var(--gbBlue);
     width: 360px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  .bookButton:hover {
+    color: var(--background);
+    background-color: var(--gbBlue);
   }
 }
 
@@ -97,6 +103,9 @@
   }
   .staffCard:first-child {
     .bookButton {
+      color: var(--background);
+    }
+    .bookButton:hover {
       color: var(--foreground);
     }
   }
@@ -153,7 +162,16 @@
   }
   .staffCard:first-child {
     .bookButton {
+      color: var(--background);
+      background-color: var(--gbBlue);
       width: 100%;
     }
+  }
+  @media (prefers-color-scheme: dark) {
+      .staffCard:first-child {
+    .bookButton {
+      color: var(--foreground);
+    }
+  }
   }
 }

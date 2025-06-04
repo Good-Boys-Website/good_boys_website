@@ -62,16 +62,7 @@
 }
 
 .bookingButton {
-  font-family: "IntroRust", Arial, sans-serif;
-  color: var(--foreground);
-  background-color: var(--gbGrayButton);
   width: 300px;
-  transition: 0.2s ease-in-out;
-}
-
-.bookingButton:hover {
-  color: var(--background);
-  background-color: var(--gbBlue);
 }
 
 .mainPage {
@@ -136,17 +127,10 @@
 }
 
 .servicesButton {
-  font-family: "IntroRust", Arial, sans-serif;
-  color: var(--foreground);
-  background-color: var(--gbGrayButton);
   margin-right: 1rem;
-  transition: 0.2s ease-in-out;
 }
 
-.servicesButton:hover {
-  color: var(--background);
-  background-color: var(--gbBlue);
-}
+
 
 @media (prefers-color-scheme: dark) {
   .subText {
@@ -155,12 +139,8 @@
   .sectionHeader {
     color: var(--foreground);
   }
-  .servicesButton {
-    color: var(--background);
-  }
-  .servicesButton:hover {
-    color: var(--foreground);
-    background-color: var(--gbGrayText);
+  .buttonDescription {
+    color: var(--darkModeGray);
   }
 }
 
@@ -264,6 +244,11 @@
     }
     .subHeader {
       color: var(--darkModeGray);
+    }
+    .bookingButton,
+    .servicesButton {
+      color: var(--foreground);
+      background-color: var(--gbBlue);
     }
   }
 }

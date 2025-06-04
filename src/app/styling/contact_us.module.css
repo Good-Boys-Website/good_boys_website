@@ -151,12 +151,19 @@
 
 .formButton {
   font-family: "IntroRust", Arial, sans-serif;
-  color: var(--background);
+  color: var(--foreground);
+  font-size: 18px;
+  background-color: var(--gbGrayButton);
   padding: 1rem 1.4rem 1rem 1.4rem;
-  border: none;
   border-radius: 8px;
-  background-color: var(--gbBlue);
+  border: none;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.formButton:hover {
+  color: var(--background);
+  background-color: var(--gbBlue);
 }
 
 .validateMessage {
@@ -168,8 +175,13 @@
   .headerHours,
   .dayTime,
   .headerForm,
-  .formButton,
   .formInputMessage::placeholder {
+    color: var(--foreground);
+  }
+  .formButton {
+    color: var(--background);
+  }
+  .formButton:hover {
     color: var(--foreground);
   }
   .formInput,
@@ -189,13 +201,13 @@
   .bannerCopy {
     position: inherit;
   }
-    .contactPhoto {
+  .contactPhoto {
     display: none;
   }
   .contactPhotoMobile {
-      display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
   }
   .header,
   .subHeader {
@@ -262,12 +274,19 @@
   .nameSection {
     flex-direction: column;
   }
+  .formButton {
+    color: var(--background);
+    background-color: var(--gbBlue);
+  }
   @media (prefers-color-scheme: dark) {
     .header {
       color: var(--foreground);
     }
     .subHeader {
       color: var(--darkModeGray);
+    }
+    .formButton {
+      color: var(--foreground);
     }
   }
 }

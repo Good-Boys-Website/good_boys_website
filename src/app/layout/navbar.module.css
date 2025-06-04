@@ -37,7 +37,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .nav, .buttonText {
+  .nav {
     color: var(--foreground);
   }
   .navLogo {
@@ -177,8 +177,9 @@
       display: block;
       width: 220px;
       height: auto;
-      margin-left: 1rem;
+      margin-right: 3rem;
     }
+
     .menuButtonBurger, .menuButtonBurger::before,
     .menuButtonBurger::after  {
       background-color: var(--foreground);

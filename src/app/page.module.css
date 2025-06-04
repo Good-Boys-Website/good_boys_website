@@ -1,4 +1,5 @@
 .page {
+  font-family: "InstrumentSans", Arial, sans-serif;
   color: var(--gbBlue);
   display: flex;
   flex-direction: column;
@@ -15,7 +16,6 @@
 }
 
 .subHeader {
-  font-family: "InstrumentSans", Arial, sans-serif;
   color: var(--gbGrayText);
   font-size: 36px;
   margin-bottom: 4rem;
@@ -54,7 +54,6 @@
 
 .sectionHeader,
 .sectionHeaderTwo {
-  font-family: "InstrumentSans", Arial, sans-serif;
   font-size: 42px;
   font-weight: 800;
   margin-bottom: 2rem;
@@ -73,8 +72,7 @@
 
 .copyHeader {
   font-size: 24px;
-  font-family: "InstrumentSans", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
@@ -82,7 +80,7 @@
 .copyBody {
   color: var(--gbGrayText);
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.5;
   width: 340px;
 }
@@ -93,9 +91,6 @@
 }
 
 .spaDayButton {
-  font-family: "IntroRust", Arial, sans-serif;
-  color: var(--background);
-  background-color: var(--gbBlue);
   width: 460px;
 }
 
@@ -104,7 +99,6 @@
 }
 
 .reviewsHeader {
-  font-family: "InstrumentSans", Arial, sans-serif;
   font-size: 50px;
   font-weight: 800;
   flex-wrap: wrap;
@@ -144,12 +138,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .page,
-  .spaDayButton {
+  .page {
     color: var(--foreground);
-  }
-  .spaDayButton {
-    background-color: var(--gbBlue);
   }
   .review {
     background-color: var(--darkModeBlack);
@@ -247,6 +237,8 @@
   }
 
   .spaDayButton {
+    color: var(--background);
+    background-color: var(--gbBlue);
     margin-bottom: 4rem;
   }
 
@@ -267,5 +259,10 @@
 
   .review {
     margin-bottom: 1rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .spaDayButton {
+      color: var(--foreground);
+    }
   }
 }
