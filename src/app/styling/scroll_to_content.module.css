@@ -11,7 +11,7 @@
 }
 
 .scroll:hover {
-  background-color: none;
+  background-color: transparent;
 }
 
 .visible {
@@ -37,7 +37,7 @@
     color: var(--foreground);
   }
   .scroll:hover {
-    background-color: none;
+    background-color: transparent;
   }
 }
 
