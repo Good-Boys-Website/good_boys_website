@@ -115,6 +115,10 @@
   }
   .header {
     font-size: 48px;
+    padding-bottom: 2rem;
+  }
+  .subheader {
+    padding-bottom: 2rem;
   }
   .copyHeader {
     padding-top: 2rem;

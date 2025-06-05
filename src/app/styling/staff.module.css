@@ -25,7 +25,7 @@
 .staffSection {
   display: flex;
   flex-direction: column;
-  padding: 8rem 0rem 8rem 0rem;
+  padding: 4rem 0rem 8rem 0rem;
 }
 
 .staffCard {
