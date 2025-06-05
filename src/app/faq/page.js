@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import useVisibilityObserver from "../hooks/useVisibilityObserver";
 import Image from "next/image";
 import { faqs } from "@/app/data/data";
 
@@ -8,31 +8,13 @@ import styles from "@/app/styling/faq.module.css";
 import Link from "next/link";
 
 function FaqCard({ question, answer }) {
-  const ref = useRef();
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
-      },
-      {
-        root: null,
-        threshold: 0.6,
-      }
-    );
-
-    if (ref.current) observer.observe(ref.current);
-    return () => {
-      if (ref.current) observer.unobserve(ref.current);
-    };
-  }, []);
+  const [faqRef, faqRefVisible] = useVisibilityObserver(0.6);
 
   return (
-    <li ref={ref} className={styles.faq}>
+    <li ref={faqRef} className={styles.faq}>
       <p className={styles.question}>{question}</p>
       <div className={styles.divider}></div>
-      <p className={`${styles.answer} ${isVisible ? styles.visible : ""}`}>
+      <p className={`${styles.answer} ${faqRefVisible ? styles.visible : ""}`}>
         {answer}
       </p>
     </li>
@@ -62,7 +44,7 @@ export default function Faq() {
         height={3388}
         priority
       />
-      <ul data-scroll-section className={styles.faqSection}>
+      <ul className={styles.faqSection}>
         {faqs.map((faq) => (
           <FaqCard key={faq.id} question={faq.question} answer={faq.answer} />
         ))}

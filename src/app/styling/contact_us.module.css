@@ -218,14 +218,11 @@
     z-index: 999;
     margin: 0rem 1rem 0rem 1rem;
   }
-  .header {
-    margin-top: 2rem;
-  }
   .subHeader {
     color: var(--gbGrayText);
     font-size: 24px;
     margin-top: 0rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   .formSection {
     margin: 0rem;
@@ -248,14 +245,14 @@
   .headerHours,
   .headerForm {
     font-size: 48px;
-    margin: 0rem 1rem 2rem 1rem;
+    margin: 2rem 1rem 2rem 1rem;
   }
   .headerForm {
     text-align: left;
   }
   .hoursLocationSection {
     flex-direction: column;
-    margin: 0rem 1rem 4rem 1rem;
+    margin: 0rem 1rem 2rem 1rem;
   }
   .map {
     margin-bottom: 6rem;
