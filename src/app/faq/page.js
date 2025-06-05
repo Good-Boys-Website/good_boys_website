@@ -62,7 +62,7 @@ export default function Faq() {
         height={3388}
         priority
       />
-      <ul data-scroll-section className={styles.faqSection}>
+      <ul className={styles.faqSection}>
         {faqs.map((faq) => (
           <FaqCard key={faq.id} question={faq.question} answer={faq.answer} />
         ))}

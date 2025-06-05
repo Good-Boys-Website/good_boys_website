@@ -1,5 +1,5 @@
 .page {
-   font-family: "InstrumentSans", Arial, sans-serif;
+  font-family: "InstrumentSans", Arial, sans-serif;
   color: var(--gbBlue);
   display: flex;
   flex-direction: row;
@@ -61,6 +61,18 @@
   height: auto;
   margin-top: 2rem;
   border-radius: 8px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.4s ease-out, transform 0.8s ease-out;
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 1.5s ease-in, transform 1s ease-in;
+  pointer-events: auto;
 }
 
 .photoMobile {
@@ -95,7 +107,9 @@
   }
   .header,
   .subheader,
-  .copySection, .copyHeader, .button {
+  .copySection,
+  .copyHeader,
+  .button {
     width: 90%;
     margin: 0rem 1rem 0rem 1rem;
   }
@@ -109,12 +123,25 @@
     display: block;
     height: auto;
     margin-top: 2rem;
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.4s ease-out, transform 0.8s ease-out;
+    pointer-events: none;
   }
+
+  .visibleMobile {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 1.5s ease-in, transform 1s ease-in;
+    pointer-events: auto;
+  }
+
   .photo {
     display: none;
   }
   .buttonLink {
-     margin: 4rem 0rem 4rem 0rem;
+    margin: 4rem 0rem 4rem 0rem;
   }
   .button {
     color: var(--background);

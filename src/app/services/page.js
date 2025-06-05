@@ -50,7 +50,7 @@ export default function Services() {
         </div>
       </section>
       <h1 className={styles.sectionHeader}>Promos & Discounts</h1>
-      <article className={styles.mainPage}>
+      <article data-scroll-section className={styles.mainPage}>
         <section className={styles.firstTimeSection}>
           <Image
             className={styles.firstTimePhoto}

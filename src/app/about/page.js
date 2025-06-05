@@ -1,11 +1,17 @@
 "use client";
 
+import useVisibilityObserver from "../hooks/useVisibilityObserver";
 import Image from "next/image";
 import Link from "next/link";
 
 import styles from "@/app/styling/about.module.css";
 
 export default function About() {
+  const [photo1Ref, photo1Visible] = useVisibilityObserver();
+  const [photo2Ref, photo2Visible] = useVisibilityObserver();
+  const [photoMobile1Ref, photoMobile1Visible] = useVisibilityObserver();
+  const [photoMobile2Ref, photoMobile2Visible] = useVisibilityObserver();
+
   return (
     <main className={`${styles.page} fade-in`}>
       <article className={styles.leftSection}>
@@ -13,7 +19,10 @@ export default function About() {
         <p className={styles.subheader}>Two dog-lovers with a mission.</p>
 
         <Image
-          className={styles.photoMobile}
+          ref={photoMobile1Ref}
+          className={`${styles.photoMobile} ${
+            photoMobile1Visible ? styles.visibleMobile : ""
+          }`}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747398710/gb_owners_c_crop_w_1400_h_1800_jxvarn.jpg"
           alt="photo of two dogs"
           width={1400}
@@ -41,7 +50,10 @@ export default function About() {
         </p>
 
         <Image
-          className={styles.photoMobile}
+          ref={photoMobile2Ref}
+          className={`${styles.photoMobile} ${
+            photoMobile2Visible ? styles.visibleMobile : ""
+          }`}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744681698/IMG_5455_gamb5j.jpg"
           alt="photo of two dogs"
           width={1600}
@@ -71,7 +83,8 @@ export default function About() {
       </article>
       <article className={styles.sectionRight}>
         <Image
-          className={styles.photo}
+          ref={photo1Ref}
+          className={`${styles.photo} ${photo1Visible ? styles.visible : ""}`}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1747398710/gb_owners_c_crop_w_1400_h_1800_jxvarn.jpg"
           alt="photo of two dogs"
           width={1400}
@@ -79,7 +92,8 @@ export default function About() {
           priority
         />
         <Image
-          className={styles.photo}
+          ref={photo2Ref}
+          className={`${styles.photo} ${photo2Visible ? styles.visible : ""}`}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744681698/IMG_5455_gamb5j.jpg"
           alt="photo of two dogs"
           width={1600}
