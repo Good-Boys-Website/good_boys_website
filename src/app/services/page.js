@@ -30,7 +30,9 @@ export default function Services() {
         </div>
       </header>
       <article>
-        <h1 className={styles.bookingHeader}>Old or new, we want to see you</h1>
+        <h1 className={styles.bookingHeader}>
+          Old or new, we want to see you.
+        </h1>
         <section className={styles.bookingSection}>
           <div className={styles.bookingButtons}>
             <a
