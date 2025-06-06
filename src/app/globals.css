@@ -44,6 +44,13 @@ main {
   flex-direction: column;
 }
 
+@media (min-width: 1600px) {
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -115,3 +122,4 @@ button:hover {
     color-scheme: dark;
   }
 }
+

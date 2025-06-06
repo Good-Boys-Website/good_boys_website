@@ -55,6 +55,7 @@
 
 .name {
   font-size: 42px;
+   font-weight: 600;
 }
 
 .position {
@@ -174,4 +175,15 @@
     }
   }
   }
+}
+
+@media (min-width: 1600px) {
+.header,
+.subheader {
+  margin-left: 28rem;
+}
+.staffSection {
+  align-self: center;
+  width: 1600px;
+}
 }

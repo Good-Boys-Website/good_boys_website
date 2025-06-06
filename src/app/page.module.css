@@ -55,7 +55,7 @@
 .sectionHeader,
 .sectionHeaderTwo {
   font-size: 42px;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 2rem;
   width: 340px;
 }
@@ -100,7 +100,7 @@
 
 .reviewsHeader {
   font-size: 50px;
-  font-weight: 800;
+  font-weight: 600;
   flex-wrap: wrap;
   margin-bottom: 4rem;
   width: 720px;
@@ -264,4 +264,13 @@
       color: var(--foreground);
     }
   }
+}
+
+@media (min-width: 1600px) {
+
+.section,
+.reviewsSection {
+  align-self: center;
+  width: 1600px;
+}
 }
