@@ -139,7 +139,8 @@
   .subText {
     color: var(--darkModeGray);
   }
-  .sectionHeader {
+  .sectionHeader,
+  .bookingHeader {
     color: var(--foreground);
   }
   .buttonDescription {
@@ -191,16 +192,22 @@
     margin-top: 2rem;
     margin-bottom: 4rem;
   }
+  .bookingHeader {
+ text-align: start;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
   .bookingSection {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .bookingButtons:first-child {
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
   }
   .bookingButtons {
     margin-right: 0rem;
+    margin-left: 0rem;
     width: 90%;
   }
   .sectionHeader {
