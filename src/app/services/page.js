@@ -29,27 +29,32 @@ export default function Services() {
           </p>
         </div>
       </header>
-      <section className={styles.bookingSection}>
-        <div className={styles.bookingButtons}>
-          <p className={styles.buttonDescription}>Booked before? Click here</p>
-          <a
-            href="https://booking.moego.pet/ol/GoodBoysDogGrooming/book"
-            target="_blank"
-          >
-            <button className={styles.bookingButton}>Existing</button>
-          </a>
-        </div>
-        <div className={styles.bookingButtons}>
-          <p className={styles.buttonDescription}>New client? click here</p>
-          <a
-            href="https://form.moego.pet/go/form?formId=531fada1d9c04b85995a109b44359401"
-            target="_blank"
-          >
-            <button className={styles.bookingButton}>New</button>
-          </a>
-        </div>
-      </section>
-      <h1 className={styles.sectionHeader}>Promos & Discounts</h1>
+      <article>
+        <h1 className={styles.bookingHeader}>Old or new, we want to see you</h1>
+        <section className={styles.bookingSection}>
+          <div className={styles.bookingButtons}>
+            <a
+              href="https://booking.moego.pet/ol/GoodBoysDogGrooming/book"
+              target="_blank"
+            >
+              <button className={styles.bookingButton}>
+                I&apos;ve been here before
+              </button>
+            </a>
+          </div>
+          <div className={styles.bookingButtons}>
+            <a
+              href="https://form.moego.pet/go/form?formId=531fada1d9c04b85995a109b44359401"
+              target="_blank"
+            >
+              <button className={styles.bookingButton}>
+                I&apos;m a new client
+              </button>
+            </a>
+          </div>
+        </section>
+        <h1 className={styles.sectionHeader}>Promos & Discounts</h1>
+      </article>
       <article data-scroll-section className={styles.mainPage}>
         <section className={styles.firstTimeSection}>
           <Image

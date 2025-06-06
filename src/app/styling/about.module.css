@@ -157,3 +157,14 @@
     }
   }
 }
+
+@media (min-width: 1600px) {
+.page {
+  justify-content: space-evenly;
+}
+.section,
+.reviewsSection {
+  align-self: center;
+  width: 1600px;
+}
+}

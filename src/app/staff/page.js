@@ -46,21 +46,23 @@ function StaffCard({
 export default function Staff() {
   return (
     <main className={`${styles.page} fade-in`}>
-      <h1 className={styles.header}>Meet our staff</h1>
-      <p className={styles.subheader}>Get to know the Good Boys crew.</p>
-      <ul className={styles.staffSection}>
-        {staff.map((member) => (
-          <StaffCard
-            key={member.id}
-            photo={member.photo}
-            name={member.name}
-            position={member.position}
-            dog_breed={member.dog_breed}
-            dog_topping={member.dog_topping}
-            famous_dog={member.famous_dog}
-          />
-        ))}
-      </ul>
+      <article>
+        <h1 className={styles.header}>Meet our staff</h1>
+        <p className={styles.subheader}>Get to know the Good Boys crew.</p>
+        <ul className={styles.staffSection}>
+          {staff.map((member) => (
+            <StaffCard
+              key={member.id}
+              photo={member.photo}
+              name={member.name}
+              position={member.position}
+              dog_breed={member.dog_breed}
+              dog_topping={member.dog_topping}
+              famous_dog={member.famous_dog}
+            />
+          ))}
+        </ul>
+      </article>
     </main>
   );
 }

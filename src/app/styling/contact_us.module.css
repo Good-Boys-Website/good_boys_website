@@ -53,6 +53,7 @@
 
 .headerHours {
   font-size: 68px;
+   font-weight: 600;
   padding-top: 2rem;
   margin: 0rem 4rem 4rem 4rem;
 }
@@ -90,6 +91,7 @@
 
 .headerForm {
   font-size: 68px;
+   font-weight: 600;
   text-align: center;
 }
 
@@ -286,4 +288,15 @@
       color: var(--foreground);
     }
   }
+}
+
+@media (min-width: 1600px) {
+  .headerHours {
+    margin-left: 28rem;
+  }
+.hoursLocationSection {
+  align-self: center;
+  flex-direction: row;
+  width: 1600px;
+}
 }
