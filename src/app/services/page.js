@@ -1,14 +1,30 @@
 import Image from "next/image";
 
 import { serviceMenu } from "../data/data";
+import { serviceMenuTwo } from "../data/data";
 import styles from "@/app/styling/services.module.css";
 
-function ServiceMenuCard({ name, size, price }) {
+function ServiceMenuCard({ name, options }) {
   return (
-    <li>
-      <p>{name}</p>
-      <p>{size}</p>
-      <p>{price}</p>
+    <li className={styles.serviceCard}>
+      <p className={styles.serviceName}>{name}</p>
+      <div className={styles.sizeAndPrice}>
+        {options?.map((option, index) => (
+          <div className={styles.option} key={index}>
+            <p className={styles.size}>{option.size}</p>
+            <p className={styles.servicePrice}>{option.price}</p>
+          </div>
+        ))}
+      </div>
+    </li>
+  );
+}
+
+function ServiceMenuTwoCard({ name, price }) {
+  return (
+    <li className={styles.serviceCardTwo}>
+      <p className={styles.serviceNameTwo}>{name}</p>
+      <p className={styles.servicePrice}>{price}</p>
     </li>
   );
 }
@@ -42,20 +58,29 @@ export default function Services() {
       </header>
       <article>
         <section>
-          <ul>
+          <h1 className={styles.sectionHeader}>Services</h1>
+          <ul className={styles.serviceMenu}>
             {serviceMenu.map((service) => (
               <ServiceMenuCard
                 key={service.id}
                 name={service.name}
-                size={service.size}
-                price={service.price}
+                options={service.options}
+              />
+            ))}
+          </ul>
+          <ul className={styles.serviceMenuTwo}>
+            {serviceMenuTwo.map((serviceTwo) => (
+              <ServiceMenuTwoCard
+                key={serviceTwo.id}
+                name={serviceTwo.name}
+                price={serviceTwo.price}
               />
             ))}
           </ul>
         </section>
-        <h1 className={styles.bookingHeader}>
+        <h2 className={styles.bookingHeader}>
           Old or new, we want to see you.
-        </h1>
+        </h2>
         <section className={styles.bookingSection}>
           <div className={styles.bookingButtons}>
             <a
@@ -78,7 +103,7 @@ export default function Services() {
             </a>
           </div>
         </section>
-        <h1 className={styles.sectionHeader}>Promos & Discounts</h1>
+        <h3 className={styles.sectionHeader}>Promos & Discounts</h3>
       </article>
       <article data-scroll-section className={styles.mainPage}>
         <section className={styles.firstTimeSection}>

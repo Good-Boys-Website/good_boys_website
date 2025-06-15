@@ -352,61 +352,84 @@ export const serviceMenu = [
   {
     id: 1,
     name: "Standard Groom",
-    size: ["Small", "Medium", "Large", "Extra Large"],
-    price: ["$105+", "$135+", "$175+", "$250+"],
+    options: [
+      { size: "Small", price: "$105+" },
+      { size: "Medium", price: "$135+" },
+      { size: "Large", price: "175+" },
+      { size: "Extra Large", price: "$250+" },
+    ],
   },
   {
     id: 2,
     name: "Specialty Groom",
-    size: ["Small", "Medium", "Large", "Extra Large"],
-    price: ["$120+", "$165+", "$205+", "$280+"],
+    options: [
+      { size: "Small", price: "$120+" },
+      { size: "Medium", price: "$165+" },
+      { size: "Large", price: "205+" },
+      { size: "Extra Large", price: "$280+" },
+    ],
   },
   {
     id: 3,
     name: "Specialty Groom + Color",
-    size: ["Small", "Medium", "Large", "Extra Large"],
-    price: ["$150+", "$195+", "$235+", "$310+"],
+    options: [
+      { size: "Small", price: "$150+" },
+      { size: "Medium", price: "$195+" },
+      { size: "Large", price: "235+" },
+      { size: "Extra Large", price: "$310+" },
+    ],
   },
   {
     id: 4,
     name: "Short Hair Bath",
-    size: ["Small", "Medium", "Large", "Extra Large"],
-    price: ["$58+", "$80+", "$90+", "$100+"],
+    options: [
+      { size: "Small", price: "$58+" },
+      { size: "Medium", price: "$80+" },
+      { size: "Large", price: "90+" },
+      { size: "Extra Large", price: "$100+" },
+    ],
   },
   {
     id: 5,
     name: "Long Hair Bath",
-    size: ["Small", "Medium", "Large", "Extra Large"],
-    price: ["$70+", "$95+", "$125+", "$210+"],
+    options: [
+      { size: "Small", price: "$70+" },
+      { size: "Medium", price: "$95+" },
+      { size: "Large", price: "125+" },
+      { size: "Extra Large", price: "$210+" },
+    ],
   },
   {
     id: 6,
     name: "Face, Feet, Sanitary Trim",
-    size: ["Small", "Medium", "Large", "Extra Large"],
-    price: ["$10", "$15", "$20", "$25"],
+    options: [
+      { size: "Small", price: "$10" },
+      { size: "Medium", price: "$15" },
+      { size: "Large", price: "20" },
+      { size: "Extra Large", price: "$25" },
+    ],
   },
+];
+
+export const serviceMenuTwo = [
   {
-    id: 7,
+    id: 1,
     name: "Anal Gland Expression",
-    size: "N/A",
     price: "$15",
   },
   {
-    id: 8,
+    id: 2,
     name: "Toothbrushing",
-    size: "N/A",
     price: "$8 (free for your first visit)",
   },
   {
-    id: 9,
+    id: 3,
     name: "Nail Trim",
-    size: "N/A",
     price: "$20",
   },
   {
-    id: 10,
+    id: 4,
     name: "Nail File",
-    size: "N/A",
     price: "$25",
   },
 ];

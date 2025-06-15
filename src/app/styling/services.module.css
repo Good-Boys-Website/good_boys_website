@@ -47,9 +47,66 @@
   display: none;
 }
 
+.serviceMenu,
+.serviceMenuTwo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0rem 4rem 0rem 4rem;
+}
+
+.serviceCard {
+  background-color: #f1ecec;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 8px;
+}
+
+.serviceCardTwo {
+  background-color: #f1ecec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  width: 534px;
+}
+
+.serviceName,
+.serviceNameTwo {
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.serviceNameTwo {
+  padding-bottom: 0rem;
+}
+
+.sizeAndPrice {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  border-bottom: 1px solid var(--gbGrayButton);
+}
+
+.size,
+.servicePrice {
+  font-weight: 400;
+}
+
 .bookingSection {
   display: flex;
- justify-content: center;
+  justify-content: center;
 }
 
 .bookingButtons {
@@ -79,7 +136,7 @@
 }
 
 .bookingHeader {
- text-align: center;
+  text-align: center;
   padding-left: 0rem;
 }
 
@@ -132,8 +189,6 @@
 .servicesButton {
   margin-right: 1rem;
 }
-
-
 
 @media (prefers-color-scheme: dark) {
   .subText {
@@ -193,10 +248,10 @@
     margin-bottom: 4rem;
   }
   .bookingHeader {
- text-align: start;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
-}
+    text-align: start;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
   .bookingSection {
     display: flex;
     flex-direction: column;
@@ -264,11 +319,11 @@
 }
 
 @media (min-width: 1600px) {
-.sectionHeader {
-  margin-left: 24rem;
-}
-.mainPage {
-  align-self: center;
-  width: 1600px;
-}
+  .sectionHeader {
+    margin-left: 24rem;
+  }
+  .mainPage {
+    align-self: center;
+    width: 1600px;
+  }
 }
