@@ -228,7 +228,8 @@
   .bookingButton,
   .firstTimePhoto,
   .referralPhoto,
-  .servicesButton {
+  .servicesButton,
+  .sizeAndPrice {
     width: 100%;
   }
   .bannerSection {
@@ -261,6 +262,16 @@
     font-size: 24px;
     margin-top: 2rem;
     margin-bottom: 4rem;
+  }
+  .serviceMenu,
+  .serviceMenuTwo {
+    flex-direction: column;
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  .serviceCardTwo {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
   .bookingHeader {
     text-align: start;
