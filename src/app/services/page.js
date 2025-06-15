@@ -1,12 +1,22 @@
+"use client";
+
 import Image from "next/image";
 
 import { serviceMenu } from "../data/data";
 import { serviceMenuTwo } from "../data/data";
+import useVisibilityObserver from "../hooks/useVisibilityObserver";
 import styles from "@/app/styling/services.module.css";
 
 function ServiceMenuCard({ name, options }) {
+  const [serviceRef, serviceRefVisible] = useVisibilityObserver(0.6);
+
   return (
-    <li className={styles.serviceCard}>
+    <li
+      ref={serviceRef}
+      className={`${styles.serviceCard} ${
+        serviceRefVisible ? styles.visible : ""
+      }`}
+    >
       <p className={styles.serviceName}>{name}</p>
       <div className={styles.sizeAndPrice}>
         {options?.map((option, index) => (
@@ -21,8 +31,14 @@ function ServiceMenuCard({ name, options }) {
 }
 
 function ServiceMenuTwoCard({ name, price }) {
+  const [serviceRef, serviceRefVisible] = useVisibilityObserver(0.6);
   return (
-    <li className={styles.serviceCardTwo}>
+    <li
+      ref={serviceRef}
+      className={`${styles.serviceCardTwo} ${
+        serviceRefVisible ? styles.visible : ""
+      }`}
+    >
       <p className={styles.serviceNameTwo}>{name}</p>
       <p className={styles.servicePrice}>{price}</p>
     </li>
