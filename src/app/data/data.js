@@ -355,7 +355,7 @@ export const serviceMenu = [
     options: [
       { size: "Small", price: "$105+" },
       { size: "Medium", price: "$135+" },
-      { size: "Large", price: "175+" },
+      { size: "Large", price: "$175+" },
       { size: "Extra Large", price: "$250+" },
     ],
   },
@@ -365,7 +365,7 @@ export const serviceMenu = [
     options: [
       { size: "Small", price: "$120+" },
       { size: "Medium", price: "$165+" },
-      { size: "Large", price: "205+" },
+      { size: "Large", price: "$205+" },
       { size: "Extra Large", price: "$280+" },
     ],
   },
@@ -375,7 +375,7 @@ export const serviceMenu = [
     options: [
       { size: "Small", price: "$150+" },
       { size: "Medium", price: "$195+" },
-      { size: "Large", price: "235+" },
+      { size: "Large", price: "$235+" },
       { size: "Extra Large", price: "$310+" },
     ],
   },
@@ -385,7 +385,7 @@ export const serviceMenu = [
     options: [
       { size: "Small", price: "$58+" },
       { size: "Medium", price: "$80+" },
-      { size: "Large", price: "90+" },
+      { size: "Large", price: "$90+" },
       { size: "Extra Large", price: "$100+" },
     ],
   },
@@ -395,7 +395,7 @@ export const serviceMenu = [
     options: [
       { size: "Small", price: "$70+" },
       { size: "Medium", price: "$95+" },
-      { size: "Large", price: "125+" },
+      { size: "Large", price: "$125+" },
       { size: "Extra Large", price: "$210+" },
     ],
   },
@@ -405,7 +405,7 @@ export const serviceMenu = [
     options: [
       { size: "Small", price: "$10" },
       { size: "Medium", price: "$15" },
-      { size: "Large", price: "20" },
+      { size: "Large", price: "$20" },
       { size: "Extra Large", price: "$25" },
     ],
   },
