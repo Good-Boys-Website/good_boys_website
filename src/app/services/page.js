@@ -1,6 +1,49 @@
+"use client";
+
 import Image from "next/image";
 
+import { serviceMenu } from "../data/data";
+import { serviceMenuTwo } from "../data/data";
+import useVisibilityObserver from "../hooks/useVisibilityObserver";
 import styles from "@/app/styling/services.module.css";
+
+function ServiceMenuCard({ name, options }) {
+  const [serviceRef, serviceRefVisible] = useVisibilityObserver(0.6);
+
+  return (
+    <li
+      ref={serviceRef}
+      className={`${styles.serviceCard} ${
+        serviceRefVisible ? styles.visible : ""
+      }`}
+    >
+      <p className={styles.serviceName}>{name}</p>
+      <div className={styles.sizeAndPrice}>
+        {options?.map((option, index) => (
+          <div className={styles.option} key={index}>
+            <p className={styles.size}>{option.size}</p>
+            <p className={styles.servicePrice}>{option.price}</p>
+          </div>
+        ))}
+      </div>
+    </li>
+  );
+}
+
+function ServiceMenuTwoCard({ name, price }) {
+  const [serviceRef, serviceRefVisible] = useVisibilityObserver(0.6);
+  return (
+    <li
+      ref={serviceRef}
+      className={`${styles.serviceCardTwo} ${
+        serviceRefVisible ? styles.visible : ""
+      }`}
+    >
+      <p className={styles.serviceNameTwo}>{name}</p>
+      <p className={styles.servicePrice}>{price}</p>
+    </li>
+  );
+}
 
 export default function Services() {
   return (
@@ -30,9 +73,30 @@ export default function Services() {
         </div>
       </header>
       <article>
-        <h1 className={styles.bookingHeader}>
+        <h1 className={styles.sectionHeader}>Services</h1>
+        <section className={styles.serviceSection}>
+          <ul className={styles.serviceMenu}>
+            {serviceMenu.map((service) => (
+              <ServiceMenuCard
+                key={service.id}
+                name={service.name}
+                options={service.options}
+              />
+            ))}
+          </ul>
+          <ul className={styles.serviceMenuTwo}>
+            {serviceMenuTwo.map((serviceTwo) => (
+              <ServiceMenuTwoCard
+                key={serviceTwo.id}
+                name={serviceTwo.name}
+                price={serviceTwo.price}
+              />
+            ))}
+          </ul>
+        </section>
+        <h2 className={styles.bookingHeader}>
           Old or new, we want to see you.
-        </h1>
+        </h2>
         <section className={styles.bookingSection}>
           <div className={styles.bookingButtons}>
             <a
@@ -55,7 +119,7 @@ export default function Services() {
             </a>
           </div>
         </section>
-        <h1 className={styles.sectionHeader}>Promos & Discounts</h1>
+        <h3 className={styles.sectionHeader}>Promos & Discounts</h3>
       </article>
       <article data-scroll-section className={styles.mainPage}>
         <section className={styles.firstTimeSection}>

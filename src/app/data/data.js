@@ -347,3 +347,89 @@ export const staff = [
       "https://res.cloudinary.com/do4shdwcc/image/upload/v1748561942/lo_mancini_bather_staff_c_pad_b_gen_fill_ar_1_1_jddekn.jpg",
   },
 ];
+
+export const serviceMenu = [
+  {
+    id: 1,
+    name: "Standard Groom",
+    options: [
+      { size: "Small", price: "$105+" },
+      { size: "Medium", price: "$135+" },
+      { size: "Large", price: "175+" },
+      { size: "Extra Large", price: "$250+" },
+    ],
+  },
+  {
+    id: 2,
+    name: "Specialty Groom",
+    options: [
+      { size: "Small", price: "$120+" },
+      { size: "Medium", price: "$165+" },
+      { size: "Large", price: "205+" },
+      { size: "Extra Large", price: "$280+" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Specialty Groom + Color",
+    options: [
+      { size: "Small", price: "$150+" },
+      { size: "Medium", price: "$195+" },
+      { size: "Large", price: "235+" },
+      { size: "Extra Large", price: "$310+" },
+    ],
+  },
+  {
+    id: 4,
+    name: "Short Hair Bath",
+    options: [
+      { size: "Small", price: "$58+" },
+      { size: "Medium", price: "$80+" },
+      { size: "Large", price: "90+" },
+      { size: "Extra Large", price: "$100+" },
+    ],
+  },
+  {
+    id: 5,
+    name: "Long Hair Bath",
+    options: [
+      { size: "Small", price: "$70+" },
+      { size: "Medium", price: "$95+" },
+      { size: "Large", price: "125+" },
+      { size: "Extra Large", price: "$210+" },
+    ],
+  },
+  {
+    id: 6,
+    name: "Face, Feet, Sanitary Trim",
+    options: [
+      { size: "Small", price: "$10" },
+      { size: "Medium", price: "$15" },
+      { size: "Large", price: "20" },
+      { size: "Extra Large", price: "$25" },
+    ],
+  },
+];
+
+export const serviceMenuTwo = [
+  {
+    id: 1,
+    name: "Anal Gland Expression",
+    price: "$15",
+  },
+  {
+    id: 2,
+    name: "Toothbrushing",
+    price: "$8 (free for your first visit)",
+  },
+  {
+    id: 3,
+    name: "Nail Trim",
+    price: "$20",
+  },
+  {
+    id: 4,
+    name: "Nail File",
+    price: "$25",
+  },
+];
