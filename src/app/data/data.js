@@ -347,3 +347,66 @@ export const staff = [
       "https://res.cloudinary.com/do4shdwcc/image/upload/v1748561942/lo_mancini_bather_staff_c_pad_b_gen_fill_ar_1_1_jddekn.jpg",
   },
 ];
+
+export const serviceMenu = [
+  {
+    id: 1,
+    name: "Standard Groom",
+    size: ["Small", "Medium", "Large", "Extra Large"],
+    Price: ["$105+", "$135+", "$175+", "$250+"],
+  },
+  {
+    id: 2,
+    name: "Specialty Groom",
+    size: ["Small", "Medium", "Large", "Extra Large"],
+    Price: ["$120+", "$165+", "$205+", "$280+"],
+  },
+  {
+    id: 3,
+    name: "Specialty Groom + Color",
+    size: ["Small", "Medium", "Large", "Extra Large"],
+    Price: ["$150+", "$195+", "$235+", "$310+"],
+  },
+  {
+    id: 4,
+    name: "Short Hair Bath",
+    size: ["Small", "Medium", "Large", "Extra Large"],
+    Price: ["$58+", "$80+", "$90+", "$100+"],
+  },
+  {
+    id: 5,
+    name: "Long Hair Bath",
+    size: ["Small", "Medium", "Large", "Extra Large"],
+    Price: ["$70+", "$95+", "$125+", "$210+"],
+  },
+  {
+    id: 6,
+    name: "Face, Feet, Sanitary Trim",
+    size: ["Small", "Medium", "Large", "Extra Large"],
+    Price: ["$10", "$15", "$20", "$25"],
+  },
+  {
+    id: 7,
+    name: "Anal Gland Expression",
+    size: "N/A",
+    Price: "$15",
+  },
+  {
+    id: 8,
+    name: "Toothbrushing",
+    size: "N/A",
+    Price: "$8 (free for your first visit)",
+  },
+  {
+    id: 9,
+    name: "Nail Trim",
+    size: "N/A",
+    Price: "$20",
+  },
+  {
+    id: 10,
+    name: "Nail File",
+    size: "N/A",
+    Price: "$25",
+  },
+];
