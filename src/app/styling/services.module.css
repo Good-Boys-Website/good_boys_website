@@ -216,6 +216,10 @@
   .buttonDescription {
     color: var(--darkModeGray);
   }
+  .serviceCard, .serviceCardTwo {
+    color: var(--foreground);
+    background-color: var(--darkModeBlack);
+  }
 }
 
 /* mobile styling */
@@ -348,7 +352,7 @@
   .sectionHeader {
     margin-left: 24rem;
   }
-  .mainPage {
+  .mainPage, .serviceSection {
     align-self: center;
     width: 1600px;
   }

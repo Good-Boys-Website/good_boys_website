@@ -73,8 +73,8 @@ export default function Services() {
         </div>
       </header>
       <article>
-        <section>
-          <h1 className={styles.sectionHeader}>Services</h1>
+        <h1 className={styles.sectionHeader}>Services</h1>
+        <section className={styles.serviceSection}>
           <ul className={styles.serviceMenu}>
             {serviceMenu.map((service) => (
               <ServiceMenuCard
