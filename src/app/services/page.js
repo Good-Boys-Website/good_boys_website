@@ -1,6 +1,17 @@
 import Image from "next/image";
 
+import { serviceMenu } from "../data/data";
 import styles from "@/app/styling/services.module.css";
+
+function ServiceMenuCard({ name, size, price }) {
+  return (
+    <li>
+      <p>{name}</p>
+      <p>{size}</p>
+      <p>{price}</p>
+    </li>
+  );
+}
 
 export default function Services() {
   return (
@@ -30,6 +41,18 @@ export default function Services() {
         </div>
       </header>
       <article>
+        <section>
+          <ul>
+            {serviceMenu.map((service) => (
+              <ServiceMenuCard
+                key={service.id}
+                name={service.name}
+                size={service.size}
+                price={service.price}
+              />
+            ))}
+          </ul>
+        </section>
         <h1 className={styles.bookingHeader}>
           Old or new, we want to see you.
         </h1>
