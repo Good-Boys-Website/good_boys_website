@@ -72,6 +72,27 @@ export default function Services() {
           </p>
         </div>
       </header>
+      <h2 className={styles.bookingHeader}>Old or new, we want to see you.</h2>
+      <section className={styles.bookingSection}>
+        <div className={styles.bookingButtons}>
+          <a
+            href="https://booking.moego.pet/ol/GoodBoysDogGrooming/book"
+            target="_blank"
+          >
+            <button className={styles.bookingButton}>Book now</button>
+          </a>
+        </div>
+        <div className={styles.bookingButtons}>
+          <a
+            href="https://form.moego.pet/go/form?formId=531fada1d9c04b85995a109b44359401"
+            target="_blank"
+          >
+            <button className={styles.bookingButton}>
+              I&apos;m a new client
+            </button>
+          </a>
+        </div>
+      </section>
       <article>
         <h1 className={styles.sectionHeader}>Services</h1>
         <section className={styles.serviceSection}>
@@ -93,31 +114,6 @@ export default function Services() {
               />
             ))}
           </ul>
-        </section>
-        <h2 className={styles.bookingHeader}>
-          Old or new, we want to see you.
-        </h2>
-        <section className={styles.bookingSection}>
-          <div className={styles.bookingButtons}>
-            <a
-              href="https://booking.moego.pet/ol/GoodBoysDogGrooming/book"
-              target="_blank"
-            >
-              <button className={styles.bookingButton}>
-                I&apos;ve been here before
-              </button>
-            </a>
-          </div>
-          <div className={styles.bookingButtons}>
-            <a
-              href="https://form.moego.pet/go/form?formId=531fada1d9c04b85995a109b44359401"
-              target="_blank"
-            >
-              <button className={styles.bookingButton}>
-                I&apos;m a new client
-              </button>
-            </a>
-          </div>
         </section>
         <h3 className={styles.sectionHeader}>Promos & Discounts</h3>
       </article>
