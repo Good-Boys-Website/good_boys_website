@@ -314,7 +314,7 @@ export const staff = [
     dog_topping: "Ketchup & onion",
     famous_dog: "Shadow, Homeward Bound",
     photo:
-      "https://res.cloudinary.com/do4shdwcc/image/upload/v1748561942/nick_petravich_groomer_staff_c_crop_ar_1_1_rvjh6i.jpg",
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1749170805/nick_petravich_groomer_staff_c_crop_w_2777_h_2777_x_0_y_0_wbnlef.jpg",
   },
   {
     id: 2,
@@ -324,7 +324,7 @@ export const staff = [
     dog_topping: "Chicago style",
     famous_dog: "Winn-Dixie, Because of Winn- Dixie",
     photo:
-      "https://res.cloudinary.com/do4shdwcc/image/upload/v1748561941/arthur_petravich_staff_c_crop_ar_1_1_wn2fpd.jpg",
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1749170804/arthur_petravich_staff_c_crop_w_2777_h_2777_x_0_y_0_ttgjbc.jpg",
   },
   {
     id: 3,
