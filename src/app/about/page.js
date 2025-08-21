@@ -45,7 +45,7 @@ export default function About() {
         </p>
         <p className={styles.copySection}>
           Arthur, the numbers whiz, holds a BA in Business Analytics and spends
-          his days crunching data as a full-time data analyst. He takes the lead
+          his days crunching data as a full-time analyst. He takes the lead
           in managing the admin and financial aspects of our furry venture.
         </p>
 
