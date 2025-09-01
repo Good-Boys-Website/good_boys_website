@@ -21,7 +21,7 @@ export default function Home() {
       <ScrollToContent />
       <article>
         <h1 className={styles.header}>
-          Hello! Your dog called - They want a makeover.
+          Your dog called - They want a makeover.
         </h1>
         <p className={styles.subHeader}>Book today for the ultimate spa day.</p>
         <Image
