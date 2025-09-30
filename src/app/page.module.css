@@ -264,6 +264,7 @@
   @media (prefers-color-scheme: dark) {
     .spaDayButton {
       color: var(--foreground);
+      background-color: #ca5c3d;;
     }
   }
 }

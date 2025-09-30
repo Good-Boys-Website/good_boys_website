@@ -265,6 +265,7 @@
   @media (prefers-color-scheme: dark) {
     .formButton {
       color: var(--foreground);
+       background-color: #ca5c3d;;
     }
   }
 }

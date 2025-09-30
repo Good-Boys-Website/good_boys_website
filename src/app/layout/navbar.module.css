@@ -179,7 +179,6 @@
       height: auto;
       margin-right: 3rem;
     }
-
     .menuButtonBurger, .menuButtonBurger::before,
     .menuButtonBurger::after  {
       background-color: var(--foreground);
@@ -191,7 +190,7 @@
       color: var(--foreground);
     }
     #hamMenuContainer {
-      background-color: var(--gbBlue);
+      background-color: #ca5c3d;
       border: none;
     }
   }

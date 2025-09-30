@@ -352,7 +352,7 @@
     .bookingButton,
     .servicesButton {
       color: var(--foreground);
-      background-color: var(--gbBlue);
+      background-color: #ca5c3d;;
     }
   }
 }
