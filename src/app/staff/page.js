@@ -30,14 +30,14 @@ function StaffCard({
         <p className={styles.stats}>Dog Breed: {dog_breed}</p>
         <p className={styles.stats}>Dog Topping: {dog_topping}</p>
         <p className={styles.stats}>Famous Dog: {famous_dog}</p>
-        <Link
+        {/*<Link
           href="/services"
           className={styles.bookButton}
           role="button"
           aria-label="Book an appointment with Nick"
         >
           Book With Nick
-        </Link>
+        </Link>*/}
       </div>
     </li>
   );

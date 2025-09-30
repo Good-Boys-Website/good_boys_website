@@ -72,7 +72,6 @@ export default function Services() {
           </p>
         </div>
       </header>
-      <h2 className={styles.bookingHeader}>Old or new, we want to see you.</h2>
       <section className={styles.bookingSection}>
         <div className={styles.bookingButtons}>
           <a
@@ -82,7 +81,7 @@ export default function Services() {
             <button className={styles.bookingButton}>Book now</button>
           </a>
         </div>
-        <div className={styles.bookingButtons}>
+        {/*<div className={styles.bookingButtons}>
           <a
             href="https://form.moego.pet/go/form?formId=531fada1d9c04b85995a109b44359401"
             target="_blank"
@@ -91,7 +90,7 @@ export default function Services() {
               I&apos;m a new client
             </button>
           </a>
-        </div>
+        </div>*/}
       </section>
       <article>
         <h1 className={styles.sectionHeader}>Services</h1>
