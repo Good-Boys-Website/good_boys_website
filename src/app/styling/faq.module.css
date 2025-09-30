@@ -99,7 +99,7 @@
     color: var(--darkModeGray);
   }
   .answer:hover {
-    background-color: var(--darkModeBlack);
+    background-color: #2e3f51;
   }
 }
 

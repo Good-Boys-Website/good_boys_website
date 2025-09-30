@@ -181,14 +181,17 @@
     color: var(--foreground);
   }
   .formButton {
-    color: var(--background);
+    color: #f8f3f1;
+    background-color: #ca5c3d;
+;
   }
   .formButton:hover {
-    color: var(--foreground);
+    color: #374d64;
+    background-color: #d6d2d2;
   }
   .formInput,
   .formInputMessage {
-    background-color: var(--darkModeBlack);
+    background-color: #2e3f51;
   }
   .subHeaderForm {
     color: var(--darkModeGray);

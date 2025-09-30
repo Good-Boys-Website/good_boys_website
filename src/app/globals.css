@@ -15,14 +15,15 @@
   --foreground: black;
 
   --darkModeBlack: #252525;
-  --darkModeGray: #ccc7c5;
+  --darkModeGray: #d6d2d2;
+  --darkModeBody: #d6d2d2;
   --darkModeSuggestionList: #2b2a2a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: black;
-    --background: #374D64;
+    --background: #374d64;
     --foreground: #f8f3f1;
   }
 }
@@ -84,11 +85,13 @@ button:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-    button {
-    color: var(--background);
+  button {
+    color: #f8f3f1;
+    background-color: #ca5c3d;
   }
   button:hover {
-    color: var(--foreground);
+    color: #374d64;
+    background-color: #d6d2d2;
   }
 }
 
@@ -123,4 +126,3 @@ button:hover {
     color-scheme: dark;
   }
 }
-

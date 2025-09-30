@@ -142,12 +142,14 @@
     color: var(--foreground);
   }
   .review {
-    background-color: var(--darkModeBlack);
+    background-color: #2e3f51;
   }
-  .copy,
-  .copyBody,
   .subHeader {
     color: var(--darkModeGray);
+  }
+  .copy,
+  .copyBody {
+    color: var(--darkModeBody);
   }
 }
 

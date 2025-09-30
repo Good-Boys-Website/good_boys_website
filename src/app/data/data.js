@@ -329,7 +329,7 @@ export const staff = [
   {
     id: 3,
     name: "Emma Biggs",
-    position: "Bather Extraordinaire, Grooming Assistant",
+    position: "Groomer",
     dog_breed: "Boxer",
     dog_topping: "Ketchup or Chili Cheese",
     famous_dog: "Perdita, 101 Dalmatians",
