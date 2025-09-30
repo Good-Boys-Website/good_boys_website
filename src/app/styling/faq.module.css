@@ -173,6 +173,7 @@
     }
     .button {
       color: var(--foreground);
+      background-color: #ca5c3d;;
     }
   }
 }
