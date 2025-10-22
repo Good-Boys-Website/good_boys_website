@@ -93,7 +93,7 @@ export default function Services() {
         </div>*/}
       </section>
       <article>
-        <h1 className={styles.sectionHeader}>Services</h1>
+        {/* <h1 className={styles.sectionHeader}>Services</h1>
         <section className={styles.serviceSection}>
           <ul className={styles.serviceMenu}>
             {serviceMenu.map((service) => (
@@ -113,7 +113,7 @@ export default function Services() {
               />
             ))}
           </ul>
-        </section>
+        </section> */}
         <h3 className={styles.sectionHeader}>Promos & Discounts</h3>
       </article>
       <article data-scroll-section className={styles.mainPage}>
