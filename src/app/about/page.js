@@ -48,7 +48,7 @@ export default function About() {
           his days crunching data as a full-time analyst. He takes the lead
           in managing the admin and financial aspects of our furry venture.
         </p>
-
+        
         <Image
           ref={photoMobile2Ref}
           className={`${styles.photoMobile} ${

@@ -68,7 +68,7 @@ export default function Services() {
         <div className={styles.bannerCopy}>
           <p className={styles.header}>Let&apos;s get to grooming.</p>
           <p className={styles.subHeader}>
-            Book your appointment with Good Boys below.
+            Check our premium dog grooming services.
           </p>
         </div>
       </header>
@@ -91,6 +91,49 @@ export default function Services() {
             </button>
           </a>
         </div>*/}
+      </section>
+      <section data-scroll-section className={styles.section}>
+        <div className={styles.groomCopy}>
+          <h2 className={styles.sectionHeader}>
+            What Services We Offer
+          </h2>
+          <p className={styles.copy}>
+            <b>Dog Bath:</b> We start with a nice clean bath using the right high-end products to give your pooch a shiny fur coat.
+            <b>Hair Cut:</b> We offer precision haircuts for your dog and ensure they look best in class.
+            <b>Specialty Grooming:</b> There&apos;s many ways to style a dog and provide unique designs and safe fur dyes to your dog&apos;s life; from rainbows to tiger print.
+            <b>Nail Trimming:</b> We all need the occasional mani/pedi; so does your dog. We ensure your dog&apos;s nails are trimmed and proper.
+            <b>Ear Cleaning:</b> Routine ear cleaning is essential for your dog&apos;s health. We&apos;ll gently wipe away debris so your canine can hear clearly.
+            <b>Tooth Brushing:</b> We&apos;ll brush your dog&apos;s teeth for polished pearly white teeth without the foul breath.
+            <b>Anal Gland Expression:</b> It&apos;s not for everybody, good thing we&apos;re professionals.
+          </p>
+          <h2>
+            What Dogs We Service
+          </h2>
+          <p className={styles.copy}>
+            Good Boys offers premium dog grooming for dogs of any age or breed. We price based on your dog&apos;s weight, 
+            from small dogs to big dogs.
+            <b>Small Dog:</b> Dogs under 22 pounds.
+            <b>Medium Dog:</b> 23-40 pounds
+            <b>Large Dog:</b> 41-75 pounds
+            <b>Extra-Large Dogs:</b> 75-150+ pounds.
+          </p>
+          <h2>
+            What sets Good Boys apart?
+          </h2>
+          <p className={styles.copy}>
+            At Good Boys, premium dog grooming means personalized care, top-tier products, and a calm, one-on-one experience 
+            designed around your dog&apos;s comfort and well-being. 
+            
+            Each groomer work with one dog at a time, creating a low-stress environment where pups can relax and enjoy the process. 
+            Every groom is tailored to your dog&apos;s coat type, skin needs, and personality; no rushed appointments, no assembly-line grooming.
+            
+            We use high-quality, professional grooming products selected to promote healthy skin and a soft, well-maintained coat, 
+            along with modern tools that allow for safe, precise grooming. Our experienced groomers take the time to listen to your 
+            preferences and ensure your dog leaves looking great and feeling even better.
+            
+            Premium, to us, means attention to detail, patience, and genuine care. Every single visit.
+          </p>
+        </div>
       </section>
       <article>
         {/* <h1 className={styles.sectionHeader}>Services</h1>
@@ -115,6 +158,10 @@ export default function Services() {
           </ul>
         </section> */}
         <h3 className={styles.sectionHeader}>Promos & Discounts</h3>
+        <p className={styles.copy}>
+          We value our customers and are grateful for your trust. 
+          To showcase our gratitude, Good Boys offers promotions and discounts for new customers, referrals and reviews.
+        </p>
       </article>
       <article data-scroll-section className={styles.mainPage}>
         <section className={styles.firstTimeSection}>
@@ -128,7 +175,8 @@ export default function Services() {
           />
           <p className={styles.mainText}>First Time Clients</p>
           <p className={styles.subText}>
-            Free toothbrush add-on (no more stinky breath).
+            We&apos;re glad to meet you! Get a free tooth brush service add-on for new clients, 
+            no more stinky breath.
           </p>
           <div className={styles.priceSection}>
             <p className={styles.price}>
@@ -148,7 +196,9 @@ export default function Services() {
             />
             <p className={styles.mainText}>Re-furral Program</p>
             <p className={styles.subText}>
-              Tell your friends about us and get a discount.
+              Tell your friends about us and get a discount through our referral program. 
+              Word of mouth is one of the best ways to support local business, so we want to reward your referral. 
+              Just make sure they drop your name.
             </p>
             <div className={styles.priceSection}>
               <p className={styles.priceReferral}>
@@ -168,7 +218,9 @@ export default function Services() {
             />
             <p className={styles.mainText}>Give us a review</p>
             <p className={styles.subText}>
-              If you think we&apos;re neat, let us know!
+              If you think we&apos;re neat, let us know! We appreciate your business and 
+              would love to hear about it on Google or Yelp. Reviews help us out immensely, 
+              so we want to help you.
             </p>
             <div className={styles.priceSection}>
               <p className={styles.priceReferral}>

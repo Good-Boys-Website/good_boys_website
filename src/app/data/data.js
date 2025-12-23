@@ -269,39 +269,69 @@ export const faqs = [
     id: 1,
     question: "What do I need to bring to my first appointment at Good Boys?",
     answer:
-      "For your first appointment you must bring you dogs rabies paperwork, NOT the tag, so we can verify the expiration date! If you'd like to bring your dogs' favorite treats along please feel free to do so!having whichever body part is being dyed maneuvered, and the confidence to garner attention from everyone on the block!",
+      "For your first dog grooming appointment, you must bring you dog's rabies paperwork, NOT the tag, so we can verify the expiration date! If you'd like to bring your dog's favorite treats along please feel free to do so!"
   },
   {
     id: 2,
     question:
       "Does Good Boys have a cancellation policy? What if I'm just a few minutes late?",
     answer:
-      "Good Boys requires 48 hours notice for all cancellations. If you are running late we ask that you let us know ASAP to see if we will still be able to take you! If you are more than 15 minutes late and have not reached out, you will be charged as a no show.",
+      "Good Boys requires 48 hours notice for all cancellations. If you are running late we ask that you let us know ASAP to see if we will still be able to service your appointment! If you are more than 15 minutes late and have not reached out, you will be charged as a no show.",
   },
   {
     id: 3,
     question:
       "My dog struggles with grooming and has bit other groomers in the past- can you groom them?",
     answer:
-      "At this time Good Boys does not accept aggressive dogs for the safety of our groomer, We are a small operation and a bite could put us out of work for a few days or months depending on the severity. We are more than happy to refer you to another groomer who specializes in handling aggressive or bitey dogs!",
+      "At this time Good Boys does not accept aggressive dogs for the safety of our groomers. To provide our personalized dog grooming service, we’re a small scale operation and a bite could put us out of work for a few days or months depending on the severity. We are more than happy to refer you to another groomer who specializes in handling aggressive or bitey dogs!",
   },
   {
     id: 4,
-    question: "My dog has fleas- can you help?",
+    question: "My dog has fleas - can you help?",
     answer:
-      "To reduce the risk of fleas spreading from dog to dog, we do not accept pets that are known to have fleas. If we find fleas after the groom has started we may continue the groom in cases that aren't severe, but a fee will be added on top of the regular groom price.",
+      "To reduce the risk of fleas spreading from dog to dog, we do not accept pets that are known to have fleas. If we find fleas after the groom has started we may continue the groom in cases that aren't severe, but a sanitation fee will be added on top of the regular groom price to keep our salon clean. Fleas can be dangerous to canine health and can give your dog anemia, tapeworms and other diseases infectious to dogs and humans.",
   },
   {
     id: 5,
-    question: "What about ticks?",
+    question: "Can you help if my dog has ticks?",
     answer:
-      "Good Boys will remove up to 5 ticks- if we find more than 5 we will refer you to a vet for further treatment.",
+      "Good Boys will remove up to 5 ticks in a grooming appointment - if we find more than 5 we will refer you to a vet for further treatment. Ticks can transmit diseases to dogs, such as Lyme Disease, and may need veterinary care. Ticks can infect dogs, humans and other pets.",
   },
   {
     id: 6,
+    question: "What to expect from a grooming appointment?",
+    answer:
+      "When you bring your dog in for a grooming appointment at Good Boys, you can expect a calm, one-on-one experience from start to finish. Every groom begins with a soothing bath using high-quality products tailored to your dog’s skin and coat, followed by a gentle blow-dry. We’ll then proceed with a customized haircut or tidy-up, taking breaks and using treats as needed to keep your pup comfortable. We finish with a nail trim, ear cleaning, and any finishing touches to ensure your dog looks — and feels — their best. Our goal is a stress-free visit and a happy, fresh-smelling dog at pickup.",
+  },
+  {
+    id: 7,
     question: "Can color be added to any dog, any groom?",
     answer:
-      "Color can be added on after an initial appointment where we get to know your pup! Not all dogs are candidates for color as it requires a the dog be comfortable with standing still, having whichever body part is being dyed maneuvered, and the confidence to garner attention from everyone on the block!",
+      "Color can be added on after an initial dog grooming appointment where we get to know your pup! Not all dogs are candidates for color as it requires a the dog be comfortable with standing still, having whichever body part is being dyed maneuvered, and the confidence to garner attention from everyone on the block!",
+  },
+  {
+    id: 8,
+    question: "What services are offered in a specialty grooming appointment?",
+    answer:
+      "In a specialty grooming session, we go beyond the basics to meet the unique needs of your dog’s coat and style preferences. Specialty grooms can include breed-specific cuts, custom scissoring, and advanced styling tailored to your dog’s fur type and personality. Every specialty appointment is personalized — we work with you and your dog to create a look that fits their lifestyle and comfort level. Let us know your vision, and we’ll tailor the grooming plan around it for a premium result.",
+  },
+  {
+    id: 9,
+    question: "Does Good Boys Grooming offer promotions or discounts?",
+    answer:
+      "While we focus on delivering premium, personalized care every time, we occasionally offer seasonal promotions or special pricing for new clients. These change from time to time, so be sure to check our website or ask when you book your appointment to see what’s available. Our priority is always high-quality grooming tailored to each dog, and we appreciate loyal clients who trust us with their pups again and again.",
+  },
+  {
+    id: 10,
+    question: "What can I do in the neighborhood while my dog is being groomed?",
+    answer:
+      "Good Boys is located in a lively Chicago neighborhood with plenty to explore while your dog enjoys their spa day. Grab a coffee at Dollop Coffee Co, stroll nearby parks, browse boutique shops like Loop Vintage and Cloud & Bunny, or enjoy a bite at BienMiSabe, Urban Vegan, Disco Taco, or Crushed Pizzeria; some of the eateries just steps from our door. We’ll notify you as soon as your pup is ready — and when you return, they’ll be fresh, pampered, and excited to see you!"
+  },
+  {
+    id: 11,
+    question: "Is Good Boys accessible by the CTA, PACE or Metra?",
+    answer:
+      "Yes, Good Boys is a few blocks from the Montrose Brown Line station as well as the Ashland & Montrose bus stop.",
   },
 ];
 
