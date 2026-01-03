@@ -59,7 +59,7 @@
 }
 
 .spaDogBest {
-  margin: .5rem .5rem 0rem .5rem
+  margin-top: 0.5rem;
 }
 
 .spaDogThree {
@@ -222,6 +222,15 @@
     border-radius: 0px;
   }
 
+  .spaDogsSection {
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  .spaDogBest {
+    border-radius: 0px;
+  }
+
   #spaDogBottom {
     margin-bottom: 0rem;
   }
@@ -289,16 +298,15 @@
   @media (prefers-color-scheme: dark) {
     .spaDayButton {
       color: var(--foreground);
-      background-color: #ca5c3d;;
+      background-color: #ca5c3d;
     }
   }
 }
 
 @media (min-width: 1600px) {
-
-.section,
-.reviewsSection {
-  align-self: center;
-  width: 1600px;
-}
+  .section,
+  .reviewsSection {
+    align-self: center;
+    width: 1600px;
+  }
 }
