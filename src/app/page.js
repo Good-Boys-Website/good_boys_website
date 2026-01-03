@@ -23,7 +23,9 @@ export default function Home() {
         <h1 className={styles.header}>
           Your dog called - They want a makeover.
         </h1>
-        <p className={styles.subHeader}>Book Good Boys today for the ultimate dog grooming spa day.</p>
+        <p className={styles.subHeader}>
+          Book Good Boys today for the ultimate dog grooming spa day.
+        </p>
         <Image
           className={styles.heroPhoto}
           src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744333722/resized_b08phu.jpg"
@@ -40,40 +42,43 @@ export default function Home() {
           height={4032}
           priority
         />
-        <section data-scroll-section className={styles.section}>
-        <div className={styles.groomCopy}>
+        <section data-scroll-section className={styles.sectionBest}>
+          <div className={styles.groomCopy}>
             <h2 className={styles.sectionHeader}>
               Best-in-class grooming for Chicago dogs.
             </h2>
-            <p className={styles.copy}>
-              Good Boys prioritizes stress-free dog grooming by operating at a small
-              scale on Chicago's Northside. It's simple: dogs get stressed out, just like us. We want to
-              keep the vibes mellow and ensure your dog <b>loves</b> their
-              grooming experience.
-
-              Good Boys offers personalized dog grooming from our family owned, small business. 
-              We&apos;re not your mom&apos;s dog groomer, but we are a trusted dog grooming salon in Chicago&apos;s northside. 
-              
-              Our salon offers an attentive bath, precision haircut, premium dog grooming styles, nail trimming, 
-              ear cleaning and plenty of dog treats. All while using high-end products, right for your dog. 
-              We&apos;ll also express your dog&apos;s anal glands, cause we know you don&apos;t want to.
+            <p className={styles.copyBest}>
+              Good Boys prioritizes stress-free dog grooming by operating at a
+              small scale on Chicago's Northside. It's simple: dogs get stressed
+              out, just like us. We want to keep the vibes mellow and ensure
+              your dog <b>loves</b> their grooming experience. Good Boys offers
+              personalized dog grooming from our family owned, small business.
+              We&apos;re not your mom&apos;s dog groomer, but we are a trusted
+              dog grooming salon in Chicago&apos;s northside. Our salon offers
+              an attentive bath, precision haircut, premium dog grooming styles,
+              nail trimming, ear cleaning and plenty of dog treats. All while
+              using high-end products, right for your dog. We&apos;ll also
+              express your dog&apos;s anal glands, cause we know you don&apos;t
+              want to.
             </p>
           </div>
-          <Image
-            className={styles.spaDog}
-            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744333191/IMG_6897_aogyjy.jpg"
-            alt="Photo of a freshly groomed dog"
-            width={3024}
-            height={4032}
-          />
-          <Image
-            className={styles.spaDog}
-            id={styles.spaDogBottom}
-            src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744333190/IMG_9259_tb4coe.jpg"
-            alt="Photo of a freshly groomed dog"
-            width={3024}
-            height={4032}
-          />
+          <div className={styles.spaDogsSection}>
+            <Image
+              className={styles.spaDogBest}
+              src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744333191/IMG_6897_aogyjy.jpg"
+              alt="Photo of a freshly groomed dog"
+              width={3024}
+              height={4032}
+            />
+            <Image
+              className={styles.spaDogBest}
+              id={styles.spaDogBottom}
+              src="https://res.cloudinary.com/do4shdwcc/image/upload/v1744333190/IMG_9259_tb4coe.jpg"
+              alt="Photo of a freshly groomed dog"
+              width={3024}
+              height={4032}
+            />
+          </div>
         </section>
         <section data-scroll-section className={styles.section}>
           <div className={styles.spaSection}>
@@ -82,13 +87,16 @@ export default function Home() {
             </h3>
             <ul className={styles.spaSectionCopy}>
               <li className={styles.copyHeader}>
-                We start with a soothing bath and blow dry using quality products tailored to your dog&apos;s skin and coat type.
-              </li>
-              <li className={styles.copyBody}>
-                Then, we move on to a custom groom taking it at your dog&apos;s pace. Sometimes we need to take treat breaks, and that's okay.
+                We start with a soothing bath and blow dry using quality
+                products tailored to your dog&apos;s skin and coat type.
               </li>
               <li className={styles.copyHeader}>
-                Finally, a nail trim and ear cleaning and once we wrap up, your dog&apos;s sent home with a seasonal bandana. How cute is that?
+                Then, we move on to a custom groom taking it at your dog&apos;s
+                pace. Sometimes we need to take treat breaks, and that's okay.
+              </li>
+              <li className={styles.copyBody}>
+                Finally, a nail trim and ear cleaning and once we wrap up, your
+                dog&apos;s sent home with a seasonal bandana. How cute is that?
               </li>
               {/* <li className={styles.copyBody}>
                 ... taking it at your dogs pace. Sometimes we need to take treat
@@ -119,25 +127,26 @@ export default function Home() {
             <h2 className={styles.sectionHeader}>
               We&apos;re a family-owned dog grooming salon near you.
             </h2>
-            <p className={styles.copy}>
-              Good Boys has offered premium dog grooming in Chicago since 2023. 
-              Unlike other businesses, Nick and Arthur both live in Chicago with their two beloved poodles. 
-              Nick has over seven years of experience in grooming Chicago&apos;s dogs. Our trusted salon provides 
-              high-end service from owners who care about our community.
-
-              Good Boys is located on Ashland Ave and Montrose Ave between the Ravenswood and North Center neighborhoods; 
-              and just a short walk from the Montrose Brown Line CTA station. Good Boys offers premium grooming for 
-              dogs from all over Chicago, including nearby Lincoln Square, Andersonville, Uptown and Lakeview West neighborhoods.
-
-              While we groom dogs in our neighborhood, we have treasured clients from all over Chicago.
+            <p className={styles.copyBody}>
+              Good Boys has offered premium dog grooming in Chicago since 2023.
+              Unlike other businesses, Nick and Arthur both live in Chicago with
+              their two beloved poodles. Nick has over seven years of experience
+              in grooming Chicago&apos;s dogs. Our trusted salon provides
+              high-end service from owners who care about our community. Good
+              Boys is located on Ashland Ave and Montrose Ave between the
+              Ravenswood and North Center neighborhoods; and just a short walk
+              from the Montrose Brown Line CTA station. Good Boys offers premium
+              grooming for dogs from all over Chicago, including nearby Lincoln
+              Square, Andersonville, Uptown and Lakeview West neighborhoods.
+              While we groom dogs in our neighborhood, we have treasured clients
+              from all over Chicago.
             </p>
-            <h2 className={styles.sectionHeader}>
-              Our Values
-            </h2>
+            <h2 className={styles.sectionHeader}>Our Values</h2>
             <p className={styles.copy}>
-              Good Boys values providing your dog with a premium, relaxing dog grooming and high-end spa experience. 
-              We value delivering customer satisfaction by providing the right custom grooming service that meets your vision 
-              for your canine friend.
+              Good Boys values providing your dog with a premium, relaxing dog
+              grooming and high-end spa experience. We value delivering customer
+              satisfaction by providing the right custom grooming service that
+              meets your vision for your canine friend.
             </p>
           </div>
         </section>
