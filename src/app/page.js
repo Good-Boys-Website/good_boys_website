@@ -49,15 +49,15 @@ export default function Home() {
             </h2>
             <p className={styles.copyBest}>
               Good Boys prioritizes stress-free dog grooming by operating at a
-              small scale on Chicago's Northside. It's simple: dogs get stressed
-              out, just like us. We want to keep the vibes mellow and ensure
-              your dog <b>loves</b> their grooming experience. Good Boys offers
-              personalized dog grooming from our family owned, small business.
-              We&apos;re not your mom&apos;s dog groomer, but we are a trusted
-              dog grooming salon in Chicago&apos;s northside. Our salon offers
-              an attentive bath, precision haircut, premium dog grooming styles,
-              nail trimming, ear cleaning and plenty of dog treats. All while
-              using high-end products, right for your dog. We&apos;ll also
+              small scale on Chicago&apos;s Northside. It&apos;s simple: dogs
+              get stressed out, just like us. We want to keep the vibes mellow
+              and ensure your dog <b>loves</b> their grooming experience. Good
+              Boys offers personalized dog grooming from our family owned, small
+              business. We&apos;re not your mom&apos;s dog groomer, but we are a
+              trusted dog grooming salon in Chicago&apos;s northside. Our salon
+              offers an attentive bath, precision haircut, premium dog grooming
+              styles, nail trimming, ear cleaning and plenty of dog treats. All
+              while using high-end products, right for your dog. We&apos;ll also
               express your dog&apos;s anal glands, cause we know you don&apos;t
               want to.
             </p>
@@ -92,7 +92,8 @@ export default function Home() {
               </li>
               <li className={styles.copyHeader}>
                 Then, we move on to a custom groom taking it at your dog&apos;s
-                pace. Sometimes we need to take treat breaks, and that's okay.
+                pace. Sometimes we need to take treat breaks, and that&apos;s
+                okay.
               </li>
               <li className={styles.copyHeaderBottom}>
                 Finally, a nail trim and ear cleaning and once we wrap up, your
