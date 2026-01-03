@@ -32,6 +32,35 @@
   z-index: 1000;
 }
 
+.copy {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: var(--gbGrayText);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 4rem;
+  width: 1400px;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 220px;
+  padding: 1rem;
+  margin: 1rem;
+  margin-left: 0rem;
+  border-radius: 10px;;
+  background-color: white;
+}
+
+.itemDescription {
+  font-weight: 300;
+  padding-top: 1rem;
+}
+
 .subHeader {
   font-size: 26px;
   margin-top: 2rem;
@@ -149,7 +178,7 @@
   font-weight: 600;
   padding-top: 4rem;
   padding-left: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .bookingHeader {
