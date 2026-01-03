@@ -92,74 +92,85 @@ export default function Services() {
           </a>
         </div>*/}
       </section>
-      <section>
-        <h2 className={styles.sectionHeader}>What Services We Offer</h2>
-        <div className={styles.serviceList}>
-          <ul className={styles.copy}>
-            <li className={styles.serviceItem}>
-              <b>Dog Bath:</b>{" "}
-              <p className={styles.itemDescription}>
-                We start with a nice clean bath using the right high-end
-                products to give your pooch a shiny fur coat.
-              </p>
-            </li>
-            <li className={styles.serviceItem}>
-              <b>Hair Cut:</b>
-              <p className={styles.itemDescription}>
-                We offer precision haircuts for your dog and ensure they look
-                best in class.
-              </p>
-            </li>
-            <li className={styles.serviceItem}>
-              <b>Specialty Grooming:</b>
-              <p className={styles.itemDescription}>
-                There&apos;s many ways to style a dog and provide unique designs
-                and safe fur dyes to your dog&apos;s life; from rainbows to
-                tiger print.
-              </p>
-            </li>
-            <li className={styles.serviceItem}>
-              <b>Nail Trimming:</b>
-              <p className={styles.itemDescription}>
-                We all need the occasional mani/pedi; so does your dog. We
-                ensure your dog&apos;s nails are trimmed and proper.
-              </p>
-            </li>
-            <li className={styles.serviceItem}>
-              <b>Ear Cleaning:</b>
-              <p className={styles.itemDescription}>
-                Routine ear cleaning is essential for your dog&apos;s health.
-                We&apos;ll gently wipe away debris so your canine can hear
-                clearly.
-              </p>
-            </li>
-            <li className={styles.serviceItem}>
-              <b>Tooth Brushing:</b>
-              <p className={styles.itemDescription}>
-                We&apos;ll brush your dog&apos;s teeth for polished pearly white
-                teeth without the foul breath.
-              </p>
-            </li>
-            <li className={styles.serviceItem}>
-              <b>Anal Gland Expression:</b>
-              <p className={styles.itemDescription}>
-                It&apos;s not for everybody, good thing we&apos;re
-                professionals.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h2>What Dogs We Service</h2>
-        <p className={styles.copy}>
+      <section className={styles.serviceSection}>
+        <h3 className={styles.sectionHeader}>What Services We Offer</h3>
+        <ul className={styles.copy}>
+          <li className={styles.serviceItem}>
+            <b>Dog Bath:</b>{" "}
+            <p className={styles.itemDescription}>
+              We start with a nice clean bath using the right high-end products
+              to give your pooch a shiny fur coat.
+            </p>
+          </li>
+          <li className={styles.serviceItem}>
+            <b>Hair Cut:</b>
+            <p className={styles.itemDescription}>
+              We offer precision haircuts for your dog and ensure they look best
+              in class.
+            </p>
+          </li>
+          <li className={styles.serviceItem}>
+            <b>Specialty Grooming:</b>
+            <p className={styles.itemDescription}>
+              There&apos;s many ways to style a dog and provide unique designs
+              and safe fur dyes to your dog&apos;s life; from rainbows to tiger
+              print.
+            </p>
+          </li>
+          <li className={styles.serviceItem}>
+            <b>Nail Trimming:</b>
+            <p className={styles.itemDescription}>
+              We all need the occasional mani/pedi; so does your dog. We ensure
+              your dog&apos;s nails are trimmed and proper.
+            </p>
+          </li>
+          <li className={styles.serviceItem}>
+            <b>Ear Cleaning:</b>
+            <p className={styles.itemDescription}>
+              Routine ear cleaning is essential for your dog&apos;s health.
+              We&apos;ll gently wipe away debris so your canine can hear
+              clearly.
+            </p>
+          </li>
+          <li className={styles.serviceItem}>
+            <b>Tooth Brushing:</b>
+            <p className={styles.itemDescription}>
+              We&apos;ll brush your dog&apos;s teeth for polished pearly white
+              teeth without the foul breath.
+            </p>
+          </li>
+          <li className={styles.serviceItem}>
+            <b>Anal Gland Expression:</b>
+            <p className={styles.itemDescription}>
+              It&apos;s not for everybody, good thing we&apos;re professionals.
+            </p>
+          </li>
+        </ul>
+        <h2 className={styles.sectionHeader}>What Dogs We Service</h2>
+        <p className={styles.copyTag}>
           Good Boys offers premium dog grooming for dogs of any age or breed. We
           price based on your dog&apos;s weight, from small dogs to big dogs.
-          <b>Small Dog:</b> Dogs under 22 pounds.
-          <b>Medium Dog:</b> 23-40 pounds
-          <b>Large Dog:</b> 41-75 pounds
-          <b>Extra-Large Dogs:</b> 75-150+ pounds.
         </p>
-        <h2>What sets Good Boys apart?</h2>
-        <p className={styles.copy}>
+        <ul className={styles.copy}>
+          <li className={styles.serviceItemDog}>
+            <b>Small Dog:</b>
+            <p className={styles.itemDescription}>Dogs under 22 pounds.</p>
+          </li>
+          <li className={styles.serviceItemDog}>
+            <b>Medium Dog:</b>
+            <p className={styles.itemDescription}>23-40 pounds</p>
+          </li>
+          <li className={styles.serviceItemDog}>
+            <b>Large Dog:</b>
+            <p className={styles.itemDescription}>41-75 pounds</p>
+          </li>
+          <li className={styles.serviceItemDog}>
+            <b>Extra-Large Dogs:</b>
+            <p className={styles.itemDescription}>75-150+ pounds.</p>
+          </li>
+        </ul>
+        <h2 className={styles.sectionHeader}>What sets Good Boys apart?</h2>
+        <p className={styles.copyTag}>
           At Good Boys, premium dog grooming means personalized care, top-tier
           products, and a calm, one-on-one experience designed around your
           dog&apos;s comfort and well-being. Each groomer work with one dog at a
@@ -175,7 +186,7 @@ export default function Services() {
           visit.
         </p>
       </section>
-      <article>
+      <article className={styles.serviceSection}>
         {/* <h1 className={styles.sectionHeader}>Services</h1>
         <section className={styles.serviceSection}>
           <ul className={styles.serviceMenu}>
@@ -198,13 +209,13 @@ export default function Services() {
           </ul>
         </section> */}
         <h3 className={styles.sectionHeader}>Promos & Discounts</h3>
-        <p className={styles.copy}>
+        <p className={styles.copyTag}>
           We value our customers and are grateful for your trust. To showcase
           our gratitude, Good Boys offers promotions and discounts for new
           customers, referrals and reviews.
         </p>
       </article>
-      <article data-scroll-section className={styles.mainPage}>
+      <article className={styles.mainPage}>
         <section className={styles.firstTimeSection}>
           <Image
             className={styles.firstTimePhoto}

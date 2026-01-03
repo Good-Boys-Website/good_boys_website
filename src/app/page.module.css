@@ -205,7 +205,11 @@
     color: var(--darkModeGray);
   }
   .copy,
-  .copyBody {
+  .copyBody,
+  .copyBest,
+  .copyBodyFamily,
+  .copyHeader,
+  .copyHeaderBottom {
     color: var(--darkModeBody);
   }
 }
