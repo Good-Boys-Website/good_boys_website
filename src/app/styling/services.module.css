@@ -32,6 +32,57 @@
   z-index: 1000;
 }
 
+.copy,
+.copyTag {
+  display: flex;
+  
+  flex-wrap: wrap;
+  color: var(--gbGrayText);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 4rem;
+}
+
+.copyTag {
+  margin-bottom: 2rem;
+  width: 900px;
+}
+
+.sectionHeader,
+.bookingHeader {
+  align-self: flex-start;
+  font-family: "InstrumentSans", Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  margin-bottom: .5rem;
+}
+
+.serviceItem,
+.serviceItemDog {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 220px;
+  padding: 1rem;
+  margin: 1rem;
+  margin-left: 0rem;
+  border-radius: 10px;;
+  background-color: rgb(241, 240, 233);
+}
+
+.serviceItemDog {
+  background-color: rgb(241, 240, 233);
+  height: auto;
+}
+
+.itemDescription {
+  font-weight: 300;
+  padding-top: 1rem;
+}
+
 .subHeader {
   font-size: 26px;
   margin-top: 2rem;
@@ -142,14 +193,11 @@
   margin: 0rem 4rem 10rem 4rem;
 }
 
-.sectionHeader,
-.bookingHeader {
-  font-family: "InstrumentSans", Arial, sans-serif;
-  font-size: 42px;
-  font-weight: 600;
-  padding-top: 4rem;
-  padding-left: 4rem;
-  margin-bottom: 4rem;
+.serviceSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .bookingHeader {
@@ -208,7 +256,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .subText {
+  .subText, .copyTag {
     color: var(--darkModeGray);
   }
   .sectionHeader,
@@ -242,9 +290,14 @@
   .firstTimePhoto,
   .referralPhoto,
   .servicesButton,
-  .sizeAndPrice {
+  .sizeAndPrice,
+  .serviceSection,
+  .serviceItem,
+  .serviceItemDog,
+  .copyTag {
     width: 100%;
   }
+
   .bannerSection {
     flex-direction: column-reverse;
   }
@@ -276,6 +329,12 @@
     margin-top: 2rem;
     margin-bottom: 4rem;
   }
+  .copy,
+  .copyTag {
+flex-direction: column;
+padding: 0rem 1rem 0rem 1rem;
+width: 100%;
+  }
   .serviceMenu,
   .serviceMenuTwo {
     flex-direction: column;
@@ -305,9 +364,8 @@
     width: 90%;
   }
   .sectionHeader {
-    padding-top: 2rem;
     padding-left: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
   }
   .mainPage {
     flex-direction: column;
