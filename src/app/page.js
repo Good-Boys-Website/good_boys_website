@@ -94,21 +94,10 @@ export default function Home() {
                 Then, we move on to a custom groom taking it at your dog&apos;s
                 pace. Sometimes we need to take treat breaks, and that's okay.
               </li>
-              <li className={styles.copyBody}>
+              <li className={styles.copyHeaderBottom}>
                 Finally, a nail trim and ear cleaning and once we wrap up, your
                 dog&apos;s sent home with a seasonal bandana. How cute is that?
               </li>
-              {/* <li className={styles.copyBody}>
-                ... taking it at your dogs pace. Sometimes we need to take treat
-                breaks, and that&apos;s okay.
-              </li>
-              <li className={styles.copyHeader}>
-                Finally, a nail trim and ear cleaning...
-              </li>
-              <li className={styles.copyBody} id={styles.copyBodyBottom}>
-                ... and once we wrap up, they&apos;re sent home with a seasonal
-                bandana. How cute is that? */
-              /* </li> */}
             </ul>
             <Link href="/services">
               <button className={styles.spaDayButton}>Book A Spa Day</button>
@@ -122,12 +111,12 @@ export default function Home() {
             height={4032}
           />
         </section>
-        <section data-scroll-section className={styles.section}>
+        <section data-scroll-section className={styles.sectionFamily}>
           <div className={styles.groomCopyMobile}>
-            <h2 className={styles.sectionHeader}>
+            <h2 className={styles.sectionHeaderFamily}>
               We&apos;re a family-owned dog grooming salon near you.
             </h2>
-            <p className={styles.copyBody}>
+            <p className={styles.copyBodyFamily}>
               Good Boys has offered premium dog grooming in Chicago since 2023.
               Unlike other businesses, Nick and Arthur both live in Chicago with
               their two beloved poodles. Nick has over seven years of experience
@@ -142,7 +131,7 @@ export default function Home() {
               from all over Chicago.
             </p>
             <h2 className={styles.sectionHeader}>Our Values</h2>
-            <p className={styles.copy}>
+            <p className={styles.copyBodyFamily}>
               Good Boys values providing your dog with a premium, relaxing dog
               grooming and high-end spa experience. We value delivering customer
               satisfaction by providing the right custom grooming service that
