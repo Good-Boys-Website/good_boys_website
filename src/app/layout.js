@@ -39,7 +39,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${introRust.variable} ${instrumentSans.variable}`}>
+      <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SG8GF3HFBL"
           strategy="afterInteractive"
@@ -52,6 +52,8 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-SG8GF3HFBL');
           `}
         </Script>
+      </head>
+      <body className={`${introRust.variable} ${instrumentSans.variable}`}>
         <Navbar />
         {children}
         <Footer />
