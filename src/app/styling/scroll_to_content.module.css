@@ -43,16 +43,6 @@
 
 @media (max-width: 1300px) {
   .scroll {
-    right: 0.5rem;
-    bottom: 1rem;
-    padding: 0.5rem 0.5rem 0.15rem 0.5rem;
-  }
-
-  .arrow {
-    font-size: 4rem;
-    padding: 1rem;
-    border-radius: 50px;
-    background-color: var(--gbBlue);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
   }
 }

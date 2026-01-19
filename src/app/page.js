@@ -51,15 +51,17 @@ export default function Home() {
               Good Boys prioritizes stress-free dog grooming by operating at a
               small scale on Chicago&apos;s Northside. It&apos;s simple: dogs
               get stressed out, just like us. We want to keep the vibes mellow
-              and ensure your dog <b>loves</b> their grooming experience. Good
-              Boys offers personalized dog grooming from our family owned, small
-              business. We&apos;re not your mom&apos;s dog groomer, but we are a
-              trusted dog grooming salon in Chicago&apos;s northside. Our salon
-              offers an attentive bath, precision haircut, premium dog grooming
-              styles, nail trimming, ear cleaning and plenty of dog treats. All
-              while using high-end products, right for your dog. We&apos;ll also
-              express your dog&apos;s anal glands, cause we know you don&apos;t
-              want to.
+              and ensure your dog <b>loves</b> their grooming experience.
+            </p>
+            <p className={styles.copyBest}>
+              Good Boys offers personalized dog grooming from our family owned,
+              small business. We&apos;re not your mom&apos;s dog groomer, but we
+              are a trusted dog grooming salon in Chicago&apos;s northside.
+            </p>
+            <p className={styles.copyBest}>
+              Our salon offers an attentive bath, precision haircut, premium dog
+              grooming styles, nail trimming, ear cleaning and plenty of dog
+              treats. All while using high-end products, right for your dog.
             </p>
           </div>
           <div className={styles.spaDogsSection}>
@@ -121,9 +123,11 @@ export default function Home() {
               Good Boys has offered premium dog grooming in Chicago since 2023.
               Unlike other businesses, Nick and Arthur both live in Chicago with
               their two beloved poodles. Nick has over seven years of experience
-              in grooming Chicago&apos;s dogs. Our trusted salon provides
-              high-end service from owners who care about our community. Good
-              Boys is located on Ashland Ave and Montrose Ave between the
+              in grooming Chicago&apos;s dogs, and our trusted salon provides
+              high-end service from owners who care about our community.
+            </p>
+            <p className={styles.copyBodyFamily}>
+              Good Boys is located on Ashland Ave and Montrose Ave between the
               Ravenswood and North Center neighborhoods; and just a short walk
               from the Montrose Brown Line CTA station. Good Boys offers premium
               grooming for dogs from all over Chicago, including nearby Lincoln
