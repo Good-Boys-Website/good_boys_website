@@ -125,12 +125,13 @@
 .copyBest {
   width: 460px;
   margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 
 .copyBody,
 .copyBodyFamily {
   width: 480px;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .copyBodyFamily {
