@@ -15,6 +15,16 @@
   width: 100%;
 }
 
+.servicesBanner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.servicesBannerMobile {
+  display: none;
+}
+
 .bannerCopy {
   display: flex;
   flex-direction: column;
@@ -32,21 +42,32 @@
   z-index: 1000;
 }
 
-.copy,
-.copyTag {
-  display: flex;
-  
-  flex-wrap: wrap;
-  color: var(--gbGrayText);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.5;
-  padding-left: 4rem;
+.subHeader {
+  font-size: 26px;
+  margin-top: 2rem;
 }
 
-.copyTag {
-  margin-bottom: 2rem;
-  width: 900px;
+.bookingSection {
+  display: flex;
+  justify-content: center;
+}
+
+.bookingButtons {
+  margin: 2rem 3rem 2rem 3rem;
+}
+
+.bookingButton {
+  font-family: "IntroRust", Arial, sans-serif;
+  font-size: 22px;
+  padding: 2rem 1.9rem 2rem 1.9rem;
+  width: 400px;
+}
+
+.serviceSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .sectionHeader,
@@ -57,7 +78,19 @@
   font-weight: 600;
   padding-top: 4rem;
   padding-left: 4rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
+}
+
+.copy,
+.copyTag {
+  display: flex;
+
+  flex-wrap: wrap;
+  color: var(--gbGrayText);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 4rem;
 }
 
 .serviceItem,
@@ -69,13 +102,8 @@
   padding: 1rem;
   margin: 1rem;
   margin-left: 0rem;
-  border-radius: 10px;;
+  border-radius: 10px;
   background-color: rgb(241, 240, 233);
-}
-
-.serviceItemDog {
-  background-color: rgb(241, 240, 233);
-  height: auto;
 }
 
 .itemDescription {
@@ -83,22 +111,21 @@
   padding-top: 1rem;
 }
 
-.subHeader {
-  font-size: 26px;
-  margin-top: 2rem;
+.copyTag {
+  margin-bottom: 2rem;
+  width: 900px;
 }
 
-.servicesBanner {
-  display: block;
-  width: 100%;
+.serviceItemDog {
+  background-color: rgb(241, 240, 233);
   height: auto;
 }
 
-.servicesBannerMobile {
-  display: none;
+.mid_section {
+  align-self: center;
 }
 
-.serviceMenu,
+/*.serviceMenu,
 .serviceMenuTwo {
   display: flex;
   flex-direction: row;
@@ -168,23 +195,7 @@
 .size,
 .servicePrice {
   font-weight: 400;
-}
-
-.bookingSection {
-  display: flex;
-  justify-content: center;
-}
-
-.bookingButtons {
-  margin: 2rem 3rem 2rem 3rem;
-}
-
-.bookingButton {
-  font-family: "IntroRust", Arial, sans-serif;
-  font-size: 22px;
-  padding: 2rem 1.9rem 2rem 1.9rem;
-  width: 400px;
-}
+}*/
 
 .mainPage {
   display: flex;
@@ -193,21 +204,14 @@
   margin: 0rem 4rem 10rem 4rem;
 }
 
-.serviceSection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+.firstTimeSection {
+  margin-bottom: 4rem;
+  margin-right: 2rem;
 }
 
 .bookingHeader {
   text-align: center;
   padding-left: 0rem;
-}
-
-.firstTimeSection {
-  margin-bottom: 4rem;
-  margin-right: 2rem;
 }
 
 .firstTimePhoto,
@@ -256,7 +260,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .subText, .copyTag {
+  .subText,
+  .copyTag {
     color: var(--darkModeGray);
   }
   .sectionHeader,
@@ -331,11 +336,11 @@
   }
   .copy,
   .copyTag {
-flex-direction: column;
-padding: 0rem 1rem 0rem 1rem;
-width: 100%;
+    flex-direction: column;
+    padding: 0rem 1rem 0rem 1rem;
+    width: 100%;
   }
-  .serviceMenu,
+  /*.serviceMenu,
   .serviceMenuTwo {
     flex-direction: column;
     margin: 0rem 1rem 0rem 1rem;
@@ -344,7 +349,7 @@ width: 100%;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-  }
+  }*/
   .bookingHeader {
     text-align: start;
     padding-left: 1rem;
@@ -365,7 +370,7 @@ width: 100%;
   }
   .sectionHeader {
     padding-left: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
   .mainPage {
     flex-direction: column;
@@ -410,7 +415,7 @@ width: 100%;
     .bookingButton,
     .servicesButton {
       color: var(--foreground);
-      background-color: #ca5c3d;;
+      background-color: #ca5c3d;
     }
   }
 }
