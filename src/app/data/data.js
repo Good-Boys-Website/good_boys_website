@@ -269,7 +269,7 @@ export const faqs = [
     id: 1,
     question: "What do I need to bring to my first appointment at Good Boys?",
     answer:
-      "For your first dog grooming appointment, you must bring you dog's rabies paperwork, NOT the tag, so we can verify the expiration date! If you'd like to bring your dog's favorite treats along please feel free to do so!"
+      "For your first dog grooming appointment, you must bring you dog's rabies paperwork, NOT the tag, so we can verify the expiration date! If you'd like to bring your dog's favorite treats along please feel free to do so!",
   },
   {
     id: 2,
@@ -323,9 +323,10 @@ export const faqs = [
   },
   {
     id: 10,
-    question: "What can I do in the neighborhood while my dog is being groomed?",
+    question:
+      "What can I do in the neighborhood while my dog is being groomed?",
     answer:
-      "Good Boys is located in a lively Chicago neighborhood with plenty to explore while your dog enjoys their spa day. Grab a coffee at Dollop Coffee Co, stroll nearby parks, browse boutique shops like Loop Vintage and Cloud & Bunny, or enjoy a bite at BienMiSabe, Urban Vegan, Disco Taco, or Crushed Pizzeria; some of the eateries just steps from our door. We’ll notify you as soon as your pup is ready — and when you return, they’ll be fresh, pampered, and excited to see you!"
+      "Good Boys is located in a lively Chicago neighborhood with plenty to explore while your dog enjoys their spa day. Grab a coffee at Dollop Coffee Co, stroll nearby parks, browse boutique shops like Loop Vintage and Cloud & Bunny, or enjoy a bite at BienMiSabe, Urban Vegan, Disco Taco, or Crushed Pizzeria; some of the eateries just steps from our door. We’ll notify you as soon as your pup is ready — and when you return, they’ll be fresh, pampered, and excited to see you!",
   },
   {
     id: 11,
@@ -358,16 +359,6 @@ export const staff = [
   },
   {
     id: 3,
-    name: "Emma Biggs",
-    position: "Groomer",
-    dog_breed: "Boxer",
-    dog_topping: "Ketchup or Chili Cheese",
-    famous_dog: "Perdita, 101 Dalmatians",
-    photo:
-      "https://res.cloudinary.com/do4shdwcc/image/upload/v1748561942/emma_biggs_bather_staff_c_pad_b_gen_fill_ar_1_1_h7apdm.jpg",
-  },
-  {
-    id: 4,
     name: "Lo Mancini",
     position: "Bathing Wizard, Grooming Assistant",
     dog_breed: "Greyhound",
