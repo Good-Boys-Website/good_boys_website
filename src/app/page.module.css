@@ -33,14 +33,14 @@
 
 .section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 4rem;
 }
 
 .sectionBest {
   display: flex;
   justify-content: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-top: 4rem;
 }
 
@@ -55,20 +55,23 @@
 .spaDogsSection {
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
+  margin-left: 6rem;
+}
+
+.spaDogsSection :last-child {
+  margin-top: 2rem;
 }
 
 .spaDogBest {
-   width: 300px;
+  width: 300px;
   height: auto;
   margin-top: 0.5rem;
 }
 
 .spaDogThree {
-  width: 540px;
-  height: auto;
+  width: auto;
+  height: 600px;
 }
-
 
 .sectionHeader,
 .sectionHeaderTwo,
@@ -76,7 +79,7 @@
   font-size: 42px;
   font-weight: 600;
   margin-bottom: 1rem;
-  width: 340px;
+  width: 480px;
 }
 
 .sectionHeaderFamily {
@@ -123,8 +126,7 @@
 }
 
 .copyBest {
-  width: 460px;
-  margin-right: 2rem;
+  width: 550px;
   margin-bottom: 2rem;
 }
 
@@ -135,14 +137,15 @@
 }
 
 .copyBodyFamily {
- color: var(--gbGrayText);
+  color: var(--gbGrayText);
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
   width: 600px;
 }
 
-.spaDayButton {
+.spaDayButton,
+.quoteButton {
   width: 460px;
 }
 
@@ -293,7 +296,9 @@
   .copyHeaderBottom,
   .copyBest,
   .review,
-  .copyBodyFamily {
+  .copyBodyFamily,
+  .quoteButton,
+  .sectionHeader {
     width: 100%;
   }
 

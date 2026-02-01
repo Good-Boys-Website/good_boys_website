@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import QuoteForm from "./components/QuoteForm";
 import { reviews } from "./data/data";
@@ -16,6 +18,17 @@ function ReviewCard({ review, name }) {
 }
 
 export default function Home() {
+  const scrollToForm = () => {
+    setTimeout(() => {
+      const contactSection = document.getElementById("quoteform");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        console.warn("Form section not found");
+      }
+    }, 200);
+  };
+
   return (
     <main className={`${styles.page} fade-in`}>
       <ScrollToContent />
@@ -63,6 +76,9 @@ export default function Home() {
               grooming styles, nail trimming, ear cleaning and plenty of dog
               treats. All while using high-end products, right for your dog.
             </p>
+            <button className={styles.quoteButton} onClick={scrollToForm}>
+              Get A Custom Quote
+            </button>
           </div>
           <div className={styles.spaDogsSection}>
             <Image

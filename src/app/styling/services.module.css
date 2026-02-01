@@ -68,6 +68,17 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  pointer-events: none;
+}
+
+.serviceSection.visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+  pointer-events: auto;
 }
 
 .sectionHeader,
@@ -97,13 +108,15 @@
 .serviceItemDog {
   display: flex;
   flex-direction: column;
+  color: var(--foreground);
   width: 300px;
   height: 220px;
   padding: 1rem;
   margin: 1rem;
   margin-left: 0rem;
-  border-radius: 10px;
-  background-color: rgb(241, 240, 233);
+  border: 1px solid var(--gbGrayButton);
+  border-radius: 8px;
+  background-color: white;
 }
 
 .itemDescription {
@@ -117,7 +130,6 @@
 }
 
 .serviceItemDog {
-  background-color: rgb(241, 240, 233);
   height: auto;
 }
 
@@ -274,6 +286,10 @@
   .serviceCard,
   .serviceCardTwo {
     color: var(--foreground);
+    background-color: #2e3f51;
+  }
+    .serviceItem,
+    .serviceItemDog {
     background-color: #2e3f51;
   }
 }
