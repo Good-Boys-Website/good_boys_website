@@ -6,7 +6,6 @@ import Link from "next/link";
 import styles from "./navbar.module.css";
 
 export default function Navbar() {
-  // Functionality to open and close ham menu
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -21,9 +20,6 @@ export default function Navbar() {
   return (
     <>
       <nav className={`${styles.nav} fade-in`}>
-        <Link href="/">
-          <p className={styles.link}>HOME</p>
-        </Link>
         <Link href="/services">
           <p className={styles.link}>SERVICES</p>
         </Link>
@@ -102,13 +98,6 @@ export default function Navbar() {
         className={`${styles.menu} ${menuOpen ? styles.active : ""}`}
         aria-label="Mobile Navigation"
       >
-        <div className={styles.navItem}>
-          <Link className={styles.navContainer} href="/">
-            <h4 className={styles.link} role="heading">
-              HOME
-            </h4>
-          </Link>
-        </div>
         <div className={styles.navItem}>
           <Link className={styles.navContainer} href="/services">
             <h4 className={styles.link} role="heading">

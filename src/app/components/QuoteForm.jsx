@@ -43,14 +43,14 @@ export default function QuoteForm() {
   } = useEmailForm(formInitialState, validationFields);
 
   return (
-    <section className={styles.formContainer}>
+    <section className={styles.formContainer} id="quoteform">
       <h1 className={styles.formHeader}>Get a custom quote for your dog.</h1>
       <form
         className={styles.form}
         ref={formRef}
         onSubmit={(e) =>
           sendEmail(e, process.env.NEXT_PUBLIC_EMAILJS_REQUEST_QUOTE_ID, () =>
-            setIsModalVisible(true)
+            setIsModalVisible(true),
           )
         }
         encType="multipart/form-data"
