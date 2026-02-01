@@ -3,8 +3,8 @@
 import Image from "next/image";
 
 /*import { serviceMenu } from "../data/data";
-import { serviceMenuTwo } from "../data/data";
-import useVisibilityObserver from "../hooks/useVisibilityObserver";*/
+import { serviceMenuTwo } from "../data/data";*/
+import useVisibilityObserver from "../hooks/useVisibilityObserver";
 import styles from "@/app/styling/services.module.css";
 
 /*function ServiceMenuCard({ name, options }) {
@@ -46,6 +46,8 @@ function ServiceMenuTwoCard({ name, price }) {
 }*/
 
 export default function Services() {
+  const [serviceRef, serviceRefVisible] = useVisibilityObserver(0.1);
+
   return (
     <main className={`${styles.page} fade-in`}>
       <header className={styles.bannerSection}>
@@ -92,7 +94,10 @@ export default function Services() {
           </a>
         </div>*/}
       </section>
-      <section className={styles.serviceSection}>
+      <section
+        ref={serviceRef}
+        className={`${styles.serviceSection} ${serviceRefVisible ? styles.visible : ""}`}
+      >
         <h3 className={styles.sectionHeader}>What Services We Offer</h3>
         <ul className={styles.copy}>
           <li className={styles.serviceItem}>
@@ -163,26 +168,26 @@ export default function Services() {
             <p className={styles.itemDescription}>75-150+ pounds.</p>
           </li>
         </ul>
-        <div className={styles.mid_section}>
-          <h2 className={styles.sectionHeader}>What sets Good Boys apart?</h2>
-          <p className={styles.copyTag}>
-            At Good Boys, premium dog grooming means personalized care, top-tier
-            products, and a calm, one-on-one experience designed around your
-            dog&apos;s comfort and well-being. Each groomer work with one dog at
-            a time, creating a low-stress environment where pups can relax and
-            enjoy the process. Every groom is tailored to your dog&apos;s coat
-            type, skin needs, and personality; no rushed appointments, no
-            assembly-line grooming. We use high-quality, professional grooming
-            products selected to promote healthy skin and a soft,
-            well-maintained coat, along with modern tools that allow for safe,
-            precise grooming. Our experienced groomers take the time to listen
-            to your preferences and ensure your dog leaves looking great and
-            feeling even better. Premium, to us, means attention to detail,
-            patience, and genuine care. Every single visit.
-          </p>
-        </div>
       </section>
-      <article className={styles.serviceSection}>
+      <div className={styles.mid_section}>
+        <h2 className={styles.sectionHeader}>What sets Good Boys apart?</h2>
+        <p className={styles.copyTag}>
+          At Good Boys, premium dog grooming means personalized care, top-tier
+          products, and a calm, one-on-one experience designed around your
+          dog&apos;s comfort and well-being. Each groomer work with one dog at a
+          time, creating a low-stress environment where pups can relax and enjoy
+          the process. Every groom is tailored to your dog&apos;s coat type,
+          skin needs, and personality; no rushed appointments, no assembly-line
+          grooming. We use high-quality, professional grooming products selected
+          to promote healthy skin and a soft, well-maintained coat, along with
+          modern tools that allow for safe, precise grooming. Our experienced
+          groomers take the time to listen to your preferences and ensure your
+          dog leaves looking great and feeling even better. Premium, to us,
+          means attention to detail, patience, and genuine care. Every single
+          visit.
+        </p>
+      </div>
+      <article className={styles.promoSection}>
         {/* <h1 className={styles.sectionHeader}>Services</h1>
         <section className={styles.serviceSection}>
           <ul className={styles.serviceMenu}>
