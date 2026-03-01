@@ -357,16 +357,6 @@ export const staff = [
     photo:
       "https://res.cloudinary.com/do4shdwcc/image/upload/v1749170804/arthur_petravich_staff_c_crop_w_2777_h_2777_x_0_y_0_ttgjbc.jpg",
   },
-  {
-    id: 3,
-    name: "Lo Mancini",
-    position: "Bathing Wizard, Grooming Assistant",
-    dog_breed: "Greyhound",
-    dog_topping: "Chili",
-    famous_dog: "Santa's Little Helper, The Simpsons",
-    photo:
-      "https://res.cloudinary.com/do4shdwcc/image/upload/v1748561942/lo_mancini_bather_staff_c_pad_b_gen_fill_ar_1_1_jddekn.jpg",
-  },
 ];
 
 export const serviceMenu = [
