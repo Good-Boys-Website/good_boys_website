@@ -341,9 +341,6 @@ export const staff = [
     id: 1,
     name: "Nick Petravich",
     position: "Co-Owner, Lead Groomer, Dog Dad",
-    dog_breed: "Poodle",
-    dog_topping: "Ketchup & onion",
-    famous_dog: "Shadow, Homeward Bound",
     photo:
       "https://res.cloudinary.com/do4shdwcc/image/upload/v1749170805/nick_petravich_groomer_staff_c_crop_w_2777_h_2777_x_0_y_0_wbnlef.jpg",
   },
@@ -351,11 +348,15 @@ export const staff = [
     id: 2,
     name: "Arthur Petravich",
     position: "Co-Owner, Finance & Strategy, also a Dog Dad",
-    dog_breed: "Great Dane",
-    dog_topping: "Chicago style",
-    famous_dog: "Winn-Dixie, Because of Winn- Dixie",
     photo:
       "https://res.cloudinary.com/do4shdwcc/image/upload/v1749170804/arthur_petravich_staff_c_crop_w_2777_h_2777_x_0_y_0_ttgjbc.jpg",
+  },
+  {
+    id: 3,
+    name: "Theresa Duran",
+    position: "Dog Groomer & Stylist",
+    photo:
+      "https://res.cloudinary.com/do4shdwcc/image/upload/v1773180153/theresa_web_exxvc6.jpg",
   },
 ];
 
