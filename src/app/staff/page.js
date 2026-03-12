@@ -1,19 +1,11 @@
 "use clinet";
 
 import Image from "next/image";
-import Link from "next/link";
 import { staff } from "@/app/data/data";
 
 import styles from "@/app/styling/staff.module.css";
 
-function StaffCard({
-  name,
-  position,
-  dog_breed,
-  dog_topping,
-  famous_dog,
-  photo,
-}) {
+function StaffCard({ name, position, photo }) {
   return (
     <li data-scroll-section className={styles.staffCard}>
       <Image
@@ -27,17 +19,6 @@ function StaffCard({
       <div className={styles.info}>
         <p className={styles.name}>{name}</p>
         <p className={styles.position}>{position}</p>
-        <p className={styles.stats}>Dog Breed: {dog_breed}</p>
-        <p className={styles.stats}>Dog Topping: {dog_topping}</p>
-        <p className={styles.stats}>Famous Dog: {famous_dog}</p>
-        {/*<Link
-          href="/services"
-          className={styles.bookButton}
-          role="button"
-          aria-label="Book an appointment with Nick"
-        >
-          Book With Nick
-        </Link>*/}
       </div>
     </li>
   );
@@ -56,9 +37,6 @@ export default function Staff() {
               photo={member.photo}
               name={member.name}
               position={member.position}
-              dog_breed={member.dog_breed}
-              dog_topping={member.dog_topping}
-              famous_dog={member.famous_dog}
             />
           ))}
         </ul>
