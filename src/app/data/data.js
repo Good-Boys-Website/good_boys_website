@@ -237,8 +237,9 @@ export const dogBreeds = [
 ];
 
 export const dogWeights = [
-  "Small (1-22 lbs)",
-  "Medium (23-40 lbs)",
+  "Extra Small (0-10lbs)",
+  "Small (11-20 lbs)",
+  "Medium (21-40 lbs)",
   "Large (41-75 lbs)",
   "Extra Large (76-150 lbs)",
 ];
