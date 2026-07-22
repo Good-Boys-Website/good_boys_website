@@ -55,6 +55,38 @@ export default function Home() {
           height={4032}
           priority
         />
+        {/*<div className={styles.intakeForm}>
+          <iframe
+            src="https://form.moego.pet/go/form?formId=531fada1d9c04b85995a109b44359401"
+            width="100%"
+            height="100%"
+            title="Intake Form"
+            frameborder="0"
+            scrolling="auto"
+            allow="payment; geolocation; microphone; camera"
+            sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-modals allow-downloads"
+          ></iframe>
+        </div>*/}
+        <section className={styles.bookingSection}>
+          <div className={styles.bookingButtons}>
+            <a
+              href="https://booking.moego.pet/ol/GoodBoysDogGrooming/book"
+              target="_blank"
+            >
+              <button className={styles.bookingButton}>Book now</button>
+            </a>
+          </div>
+          <div className={styles.bookingButtons}>
+            <a
+              href="https://form.moego.pet/go/form?formId=531fada1d9c04b85995a109b44359401"
+              target="_blank"
+            >
+              <button className={styles.bookingButton}>
+                I&apos;m a new client
+              </button>
+            </a>
+          </div>
+        </section>
         <section data-scroll-section className={styles.sectionBest}>
           <div className={styles.groomCopy}>
             <h2 className={styles.sectionHeader}>

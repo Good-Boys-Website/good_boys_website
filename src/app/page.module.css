@@ -44,6 +44,26 @@
   padding-top: 4rem;
 }
 
+/*.intakeForm {
+  height: 600px;
+}*/
+
+.bookingSection {
+  display: flex;
+  justify-content: center;
+}
+
+.bookingButtons {
+  margin: 6rem 3rem 2rem 3rem;
+}
+
+.bookingButton {
+  font-family: "IntroRust", Arial, sans-serif;
+  font-size: 22px;
+  padding: 2rem 1.9rem 2rem 1.9rem;
+  width: 400px;
+}
+
 .spaDog,
 .spaDogThree,
 .spaDogBest {
@@ -216,6 +236,10 @@
   .copyHeaderBottom {
     color: var(--darkModeBody);
   }
+  .bookingButton {
+    color: var(--foreground);
+    background-color: #ca5c3d;
+  }
 }
 
 /* mobile styling */
@@ -298,8 +322,25 @@
   .review,
   .copyBodyFamily,
   .quoteButton,
-  .sectionHeader {
+  .sectionHeader,
+  .bookingSection,
+  .bookingButton {
     width: 100%;
+  }
+
+  .bookingSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bookingButtons:first-child {
+    margin-bottom: 0rem;
+  }
+  .bookingButtons {
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    width: 90%;
   }
 
   .sectionFamily {

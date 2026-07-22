@@ -83,7 +83,7 @@ export default function Services() {
             <button className={styles.bookingButton}>Book now</button>
           </a>
         </div>
-        {/*<div className={styles.bookingButtons}>
+        <div className={styles.bookingButtons}>
           <a
             href="https://form.moego.pet/go/form?formId=531fada1d9c04b85995a109b44359401"
             target="_blank"
@@ -92,7 +92,7 @@ export default function Services() {
               I&apos;m a new client
             </button>
           </a>
-        </div>*/}
+        </div>
       </section>
       <section
         ref={serviceRef}
